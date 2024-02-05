@@ -223,15 +223,29 @@
 
 # Reason of using Single Quotation,Double Quotation,Triple Quotation in a String with example
 # z='i love python'
-# # z='i love's python'
+# print(z)
+# Output:i love python
+# z='i love's python'
+# print(z)
+# Output:    z='i love's python'
+#                             ^
+# SyntaxError: unterminated string literal 
 # z="i love's python"
-# # z="i love
-# # python"
+# print(z)
+# Output:i love's python
+# z="i love
+# python"
+# print(z)
+# Output:z="i love
+#          ^
+# SyntaxError: unterminated string literal 
 # z='''i love
 # pyhton'''
 # print(z)
+# Output:i love
+#        pyhton
 
-# 
+
 # Function means ( ) aur Method means .( )
 # string operation
 # concatenation
@@ -562,7 +576,7 @@
 # mylist.remove(4)
 # print(mylist)
 # Output:[1, 2, 3, 5, 10, 7, 8, 9, 11]       
-# # yeh use hota hai reverse karne ke element ko
+# # yeh use hota hai reverse karne ke liye element ko
 # mylist.reverse()
 # print(mylist)
 # Output:[11, 9, 8, 7, 10, 5, 3, 2, 1]       
@@ -570,7 +584,7 @@
 # mylist.sort()
 # print(mylist)
 # Output:[1, 2, 3, 5, 7, 8, 9, 10, 11]       
-# # reverse=True means yeh descending order mai sort karega element ko aur by default yeh reverse=False hota hota hai
+# # reverse=True means yeh descending order mai sort karega element ko aur by default yeh reverse=False hota  hai
 # toh descending order mai reverse karne ke liye reverse=True daalna parta hai
 # mylist.sort(reverse=True)
 # print(mylist)
@@ -773,6 +787,175 @@
 # a="hello world"
 # print(len(a))
 # Output:11
+
+# Comparison or relational operator (ismey boolean mai he output aayega means True aur False )
+# >,<,>=,<=,==,!=
+# x=10
+# print(x>20)
+# # Output:False
+# print(x<20)
+# # Output:True
+# print(x>=20)
+# # Output:False
+# print(x<=20)
+# # Output:True
+# print(x!=20)
+# # Output:True
+# print(x==20)
+# # Output:False
+# print(x>10)
+# # Output:False
+# print(x>=10)
+# # Output:True
+# print(x!=10)
+# # Output:False
+
+# Assignment operator 
+# =,+=,-=,*=,%=,/=,//=
+# x=10
+# x=x+5
+# print(x)
+# Output:15
+# x+=5
+# print(x)
+# Output:15
+
+x=10
+# x=x-5
+# print(x)
+# Output:5
+# x-=5
+# print(x)
+# Output:5
+
+# Membership Operator(boolean mai aayega output ismey bhi means True aur False )
+# in , not in
+# t=(2,3,1,45,67,8)
+# print(t)
+# Output:(2,3,1,45,67,8)
+# print(45 in t)
+# Output:True
+# print(50 in t)
+# Output:False
+# print(50 not in t)
+# Output:True
+#print(50 not in t)
+# print(40 not in t)
+# Output:True
+
+# Identity Operator
+# is , is not
+# a=[1,2,3]
+# b=[1,2,3]
+# print(a==b) # compare karega yeh elements dono variable ke 
+# Output:True
+# print(id(a))
+# Output:139767580863872
+# print(id(b))
+# Output:139767580008896
+# print(a is b) # compare karega yeh location dono variable ke elemets ka
+# Output:False
+
+# Immutable mai true dega aur mutable mai false dega because immutable ko one time stored karta hai
+# same location pai aur mutable mai harr baar alag-alag location pai stored karega elemets ko
+# x=10
+# y=10
+# print(x==y)
+# # Output:True
+# print(id(x))
+# # Output:9789280
+# print(id(y))
+# # Output:9789280
+
+# x=2588
+# y=2588
+# print(x==y)
+# # Output:True
+# print(id(x))
+# # Output:140391871175536
+# print(id(y))
+# # Output:140391871175536
+# print(x is y)
+# Output:True
+
+#Conditional statement
+# if,else,elif
+# if(condition->True)
+#     executable block
+
+# print("hello")
+# if(True):
+#     print("hi")
+# print("bye")    
+#  Output:hello
+#         hi
+#         bye
+
+# print("hello")
+# if(False):
+#     print("hi")
+# print("bye")    
+# Output:hello
+#        bye
+
+# x=10
+# print("hello")
+# if(x>10):
+#     print("hi")
+# print("bye")
+# Output:hello
+#        bye
+
+# take age from user and print hello if age is greater than 18
+# user=int(input("Enter Your age:"))
+# if(user>18):
+#     print("hello")
+# Output:Enter Your age:19
+#                   hello
+
+# Output:Enter Your age:18
+
+# take age from user and check he is eligible for vote or not
+
+# age=int(input("enter age"))
+# if(age>=18):
+#     print("eligible for vote")
+# else:
+#     print("Not eligible for vote")    
+# Output:enter age23
+# eligible for vote
+# Output:enter age17
+# Not eligible for vote
+
+# take number from user and check it is positive or negative
+# number=float(input("Enter a number: "))
+# if number>0:
+#     print("number is positive")
+# else:
+#     print("number is negative")  
+#   Output:Enter a number:23
+#    number is positive
+#   Output:Enter a number:-2
+#    number is negative
+
+
+# Take two number from a and b and check which one is greater and smaller
+
+# a=int(input("Enter a number: "))
+# b=int(input("Enter a number: "))
+# if(a>b):
+#     print("a is greater")
+# else:
+#     print("b is greater")    
+# Output:Enter a number:23
+#        Enter a number:3
+#        a is greater
+
+# Output:Enter a number:3
+#        Enter a number:23
+#        b is greater
+
+
 
 
 
