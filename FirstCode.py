@@ -955,17 +955,150 @@ x=10
 #        Enter a number:23
 #        b is greater
 
+# example of if,elif and else
+# a=int(input("Enter a number: "))
+# b=int(input("Enter a number: "))
+# if(a>b):
+#      print("a>b")
+# elif(b>a):
+#      print("b>a")
+# else:
+#      print("a==b")    
+# Output:Enter a number: 23
+#        Enter a number: 20
+#        a>b
+
+# Output:Enter a number: 20
+#        Enter a number: 34
+#        b>a
+
+# if,if,else(ismey first 'if' statement ko alag lega aur dusre 'if' statement aur 'else' statement ko saath mai lega)
+# a=int(input("enter first number"))
+# b=int(input("enter second number"))
+# if(a>b):
+#      print("a>b")
+
+# if(b>a):
+#      print("b>a")
+# else:
+#      print("a==b")          
 
 
+# take two numbers and operator from user and calculate the numbers based on user entered operator
+# num1=float(input("enter the first number:"))
+# num2=float(input("enter the second number:"))
+# operator=input("Enter the operator(+,-,*,/,//): ")
 
+# if (operator=="+"):
+#      print(num1+num2)
+# elif (operator=="-"):
+#      print(num1-num2)
+# elif (operator=="*"):
+#      print(num1*num2)
+# elif (operator=="/"):
+#      print(num1/num2)
+# elif (operator=="//"):
+#      print(num1//num2)
+# else:
+#      print("invalid operator")     
+# Output:enter the first number:5
+#        enter the second number:5
+#        Enter the operator(+,-,*,/,//): +
+#        10.0
+     
+# a=int(input("enter number"))
+# # print(11%2==0)     
+# if(a%2==0):
+#      print("even number")
+# else:
+#      print("odd number")     
+# Output:enter number8
+#        even number
+# Output:enter number11
+#        odd number
 
+#take number from user and check it is divisible by 7 or not
+# number = int(input("Enter a number: "))
+# if number % 7 == 0:
+#     print(f"{number} is divisible by 7.")
+# else:
+#     print(f"{number} is not divisible by 7.")
+# # Output:Enter a number: 49
+# #        49 is divisible by 7.
+# #take number from user and check it is multiple of 5 or not
+# number = int(input("Enter a number: "))
 
+# if number % 5 == 0:
+#     print(f"{number} is a multiple of 5.")
+# else:
+#     print(f"{number} is not a multiple of 5.")
+# Output:Enter a number: 25   
+#        25 is a multiple of 5.
+    
+# Logical Opearator(ismey answer boolean mai aayega ya toh True aayega aur ya toh False aayega)
+# and,or,not
+# and(dono conditon true chahiye toh true milega otherwise false milega agar ek bhi false hai toh)
+# print(True and True)    
+# Output:True
+# print(False and True)
+# Output:False
+# print(False and False)
+# Output:False
 
+# or(koi bhi ek condition true rahega toh true milega)
+# print(True or True)    
+# Output:True
+# print(False or True)
+# Output:True
+# print(False or False)
+# Output:False
 
+# or and and combination
+# print(True or False and True)
+# Output:True 
+# print(True or True and False)
+# Output:True 
 
+# and
+# print(10>2 and 10<20)
+# Output:True
+# print(10>2 and 10<8)
+# Output:False
 
+# or
+# print(10>2 or 10<20)
+# Output:True
+# print(10>2 or 10<8)
+# Output:True
 
+# not(true ka false hoga aur false ko true hoga means ulta)
+# print(not True)
+# Output:False
+# print(not 10>2)
+# Output:False
 
+# 0-20->hello
+# 20-50->hii
+# 50-80->hey
+# 80-100->bye
 
+# take a number from user and if user number is between 0-20 then print 'hello' and if user number is between 20-50 then print 'hi' and if user number 
+# is between 50-80 then print 'hey' and if user number is between 80-100 then print 'bye' in python
 
+# user_number = int(input("Enter a number: "))
 
+# if 0 <= user_number <= 20:
+#     print("Hello")
+# elif 20 < user_number <= 50:
+#     print("Hi")
+# elif 50 < user_number <= 80:
+#     print("Hey")
+# elif 80 < user_number <= 100:
+#     print("Bye")
+# else:
+#     print("Number is outside the specified ranges.")
+
+# Output:Enter a number: 20
+#        Hello  
+# Output:Enter a number: 80
+#        Hey
