@@ -1103,4 +1103,228 @@ x=10
 # Output:Enter a number: 80
 #        Hey
 
-print("hellos")
+# Leap year program
+# take year from user and check it is leap year or not
+# basic leap year code but not valid
+# year=1996
+# if(year%4==0):
+#     print(f'year{year} is leap year')
+# else:
+#     print(f'year{year} is not leap year')   
+#  Output:year1996 is leap year
+    
+# Leap year code but valid(accurate method)
+# if(year%4==0 and year%100!=0):
+#     print(f'year{year} is leap year')
+# elif(year%400==0):    
+#     print(f'year{year} is leap year')
+# else:
+#         print(f'year{year} is not leap year')
+# Output:year1996 is leap year
+
+# Leap year code but valid with 'or' operator (accurate method)
+# if(year%4==0 and year%100!=0)or (year%400==0):
+#     print(f'year{year} is leap year')
+# else:
+#         print(f'year{year} is not leap year')
+# Output:year1996 is leap year
+
+# User input leap year
+# year = int(input("Enter a year: "))
+
+# if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+#     print(f'Year {year} is a leap year.')
+# else:
+#     print(f'Year {year} is not a leap year.')
+# Output:Enter a year: 2004
+# Year 2004 is a leap year.
+
+# Ternary operator
+# x=10
+# result="hello" if x%2==0 else "bye"
+# print(result)
+# Output:hello
+
+# User input
+# x = int(input("Enter a number: "))
+# result="hello" if x%2==0 else "bye"
+# print(result)
+# Output:Enter a number: 11
+# bye
+
+# Leap year using ternary operator
+# year = int(input("Enter a year: "))
+
+# result = "Leap year" if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0) else "Not a leap year"
+
+# print(result)
+# Output:Enter a year: 2024
+# Leap year
+# Enter a year: 2023
+# Not a leap year
+
+# write a program to check whether a person is eligible for voting or not(accept age from the user)
+# age = int(input("Enter your age: "))
+
+# if age >= 18:
+#     print("You are eligible to vote.")
+# else:
+#     print("You are not eligible to vote yet.")
+# Output:Enter your age: 24
+# You are eligible to vote.
+
+# write a program to check whether a number entered by a user is even or odd
+# number = int(input("Enter a number: "))
+
+# if number % 2 == 0:
+#     print(f"{number} is an even number.")
+# else:
+#     print(f"{number} is an odd number.")
+# Output:Enter a number: 24
+# 24 is an even number.
+
+# write a program to check whether a number is divisible by 7 or not
+
+# number = int(input("Enter a number: "))
+
+# if number % 7 == 0:
+#     print(f"{number} is divisible by 7.")
+# else:
+#     print(f"{number} is not divisible by 7.")
+#Output: Enter a number: 49
+# 49 is divisible by 7.
+
+# write a program to display "Hello" if a number entered by user is a multiple of five otherwise print "Bye"
+
+# number = int(input("Enter a number: "))
+
+# if number % 5 == 0:
+#     print("Hello")
+# else:
+#     print("Bye")
+# Output:Enter a number: 25
+# Hello
+# Output:Enter a number: 63
+# Bye
+
+# write a program to calculate the electricity bill(accept number  of unit from user) according to the following criteria: 
+# Unit: 
+# first 100 units
+# next 100 units
+# after 200 units. 
+# Price:
+# no charge
+# Rs 5 per unit
+# Rs 10 per unit.
+# (For example if input unit is 350 then total bill amount is Rs 2000)
+
+# Get input from the user
+# units = int(input("Enter the number of units: "))
+
+# Initialize variables for bill calculation
+# first_100_units = min(units, 100)
+# next_100_units = max(0, min(units - 100, 100))
+# remaining_units = max(0, units - 200)
+
+# Calculate the bill amount based on the criteria
+# if units <= 100:
+#     bill_amount = 0
+# else:
+#     if units <= 200:
+#         bill_amount = next_100_units * 5
+#     else:
+#         bill_amount = next_100_units * 5 + remaining_units * 10
+
+# Display the total bill amount
+# print(f"The electricity bill for {units} units is Rs {bill_amount}")
+
+# Output:Enter the number of units: 5
+# The electricity bill for 5 units is Rs 0
+
+# write a program to check whether the last digit of a number(entered by user)is divisible by 3 or not
+
+# number = int(input("Enter a number: "))
+
+# last_digit = abs(number) % 10
+
+# if last_digit % 3 == 0:
+#     print(f"The last digit {last_digit} is divisible by 3.")
+# else:
+#     print(f"The last digit {last_digit} is not divisible by 3.")
+# Output:Enter a number: 24
+# The last digit 4 is not divisible by 3.
+# Output:Enter a number: 23
+# The last digit 3 is divisible by 3.
+
+# write a program to determine whether a number(accepted from the user) is divisible by 2 and 3 both
+
+# number = int(input("Enter a number: "))
+
+# if number % 2 == 0 and number % 3 == 0:
+#     print(f"{number} is divisible by both 2 and 3.")
+# else:
+#     print(f"{number} is not divisible by both 2 and 3.")
+# Output:Enter a number: 24
+# 24 is divisible by both 2 and 3.
+# Output:Enter a number: 53
+# 53 is not divisible by both 2 and 3.
+
+# accept the age of 4 people and display the youngest one?
+
+# age1 = int(input("Enter the age of person 1: "))
+# age2 = int(input("Enter the age of person 2: "))
+# age3 = int(input("Enter the age of person 3: "))
+# age4 = int(input("Enter the age of person 4: "))
+
+# if age1 <= age2 and age1 <= age3 and age1 <= age4:
+#     youngest_age = age1
+# elif age2 <= age1 and age2 <= age3 and age2 <= age4:
+#     youngest_age = age2
+# elif age3 <= age1 and age3 <= age2 and age3 <= age4:
+#     youngest_age = age3
+# else:
+#     youngest_age = age4
+
+# print(f"The youngest person is {youngest_age} years old.")
+# Output:Enter the age of person 1: 24
+# Enter the age of person 2: 43
+# Enter the age of person 3: 20
+# Enter the age of person 4: 100
+# The youngest person is 20 years old.
+
+# accept the age of 4 people and display the Oldest one?
+
+# age1 = int(input("Enter the age of person 1: "))
+# age2 = int(input("Enter the age of person 2: "))
+# age3 = int(input("Enter the age of person 3: "))
+# age4 = int(input("Enter the age of person 4: "))
+
+# if age1 >= age2 and age1 >= age3 and age1 >= age4:
+#     oldest_age = age1
+# elif age2 >= age1 and age2 >= age3 and age2 >= age4:
+#     oldest_age = age2
+# elif age3 >= age1 and age3 >= age2 and age3 >= age4:
+#     oldest_age = age3
+# else:
+#     oldest_age = age4
+
+# print(f"The oldest person is {oldest_age} years old.")
+# Output:Enter the age of person 1: 40
+# Enter the age of person 2: 100
+# Enter the age of person 3: 18
+# Enter the age of person 4: 19           
+# The oldest person is 100 years old.
+
+# write a program to check whether a year is leap year or not
+
+# year = int(input("Enter a year: "))
+
+# if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+#     print(f"{year} is a leap year.")
+# else:
+#     print(f"{year} is not a leap year.")
+
+# Output:Enter a year: 2024
+# 2024 is a leap year.
+# Output:Enter a year: 2023
+# 2023 is not a leap year.
