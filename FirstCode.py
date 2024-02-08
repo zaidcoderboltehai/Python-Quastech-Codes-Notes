@@ -1208,39 +1208,30 @@ x=10
 # Bye
 
 # write a program to calculate the electricity bill(accept number  of unit from user) according to the following criteria: 
-# Unit: 
-# first 100 units
-# next 100 units
-# after 200 units. 
-# Price:
-# no charge
-# Rs 5 per unit
-# Rs 10 per unit.
+# Unit:                           #Price:
+# first 100 units                 # no charge
+# next 100 units                  # Rs 5 per unit
+# after 200 units.                # Rs 10 per unit.
 # (For example if input unit is 350 then total bill amount is Rs 2000)
 
-# Get input from the user
-# units = int(input("Enter the number of units: "))
+# units=350
 
-# Initialize variables for bill calculation
-# first_100_units = min(units, 100)
-# next_100_units = max(0, min(units - 100, 100))
-# remaining_units = max(0, units - 200)
-
-# Calculate the bill amount based on the criteria
-# if units <= 100:
-#     bill_amount = 0
+# if (units>=0 and units<=100):  # first 100 units ka no charge hai means free 
+#    print("no charge")
+# elif (units>=101 and units<=200):  #yaha pai 100 units tak ke andarr ka joh bhi aayega woh no charge rahega aur baki ka 100 units ke uppar ka number multiply hojayega
+# # 5 se
+#     units=units-100
+#     print("total price-: ",units*5)
+# elif (units>=201): #edhar 101 se 200 tak ka joh number rahega woh multiply hojayega 5 se aur 200 units ke uppar ka number add hojayega 10 se aur dono add hoke 
+# # aajayega answer 
+#     fg=100*5
+#     units=units-200
+#     total_price=fg+(units*10)
+#     print(f"Total Price : {total_price}")    
 # else:
-#     if units <= 200:
-#         bill_amount = next_100_units * 5
-#     else:
-#         bill_amount = next_100_units * 5 + remaining_units * 10
-
-# Display the total bill amount
-# print(f"The electricity bill for {units} units is Rs {bill_amount}")
-
-# Output:Enter the number of units: 5
-# The electricity bill for 5 units is Rs 0
-
+#     print("invalid units")    
+# Output:Total Price : 2000
+    
 # write a program to check whether the last digit of a number(entered by user)is divisible by 3 or not
 
 # number = int(input("Enter a number: "))
@@ -1328,3 +1319,122 @@ x=10
 # 2024 is a leap year.
 # Output:Enter a year: 2023
 # 2023 is not a leap year.
+
+# write a program to check whether a number entered is three digit number or not
+
+# number = int(input("Enter a number: "))
+
+# if 100 <= number <= 999:
+#     print(f"{number} is a three-digit number.")
+# else:
+#     print(f"{number} is not a three-digit number.")
+
+# Output: Enter a number: 333
+# 333 is a three-digit number.
+# Output:Enter a number: 34
+# 34 is not a three-digit number.
+    
+# match case(switch case) #possible values ke liye kaam aata hai yeh,isme logical operator type ka function operate nahi kar sakte hai means logical programs nahi kar
+# sakte hai aur if,elif aur else statement mai logical opearator ka kaam sakte hai
+
+# n1=int(input("Enter first number: "))
+# n2=int(input("Enter second number: "))
+# op=input("Enter the operator(+,-,*): ")
+
+# match op:
+#     case "+":
+#         print(n1+n2)
+#     case "-":
+#         print(n1-n2)
+#     case "*":
+#         print(n1*n2)  
+#     case _:                       #default hai yeh
+#         print("invalid operator") 
+#Output:Enter first number: 2
+# Enter second number: 3
+# Enter the operator(+,-,*): +
+# 5    
+
+# if True:
+#     print("hello")
+# else:
+#     print("bye")    
+#Output: hello
+    
+# if 10:
+#     print("hi")
+# else:
+#     print("bye")
+#Output: hi
+
+# if 0:
+#     print("hi")
+# else:
+#     print("bye")
+#Output: bye
+
+# if -10:
+#     print("hi")
+# else:
+#     print("bye")    
+#Output: hi
+
+# if "hi":
+#     print("hi")
+# else:
+#     print("bye")
+#Output:hi
+    
+# if "":
+#     print("hi")
+# else:
+#     print("bye")    
+# Output:bye
+    
+# if " ":
+#     print("hi")
+# else:
+#     print("bye") 
+# Output:hi
+   
+
+# if False:
+#     print("hi")
+# else:
+#     print("bye")    
+# Output:bye
+
+# if None:
+#     print("hi")
+# else:
+#     print("bye")    
+# Output:bye
+
+# #  0,false,None,"" or [] any
+
+# name=input("enter name")
+
+# if name:
+#     print(f"hello {name}")
+# else:
+#     print("error") 
+# Output:enter namezaid
+# hello zaid
+
+# data=[1]
+
+# if data:
+#     print("data exist")
+# else:
+#     print("error")    
+# Output:data exist
+
+# print(bool(""))
+# Output:False
+
+# print(bool(" "))
+# Output:True
+
+# print(bool(0)) 
+# Output:False
+
