@@ -1,15 +1,19 @@
 # Python is a high level case-sensitive independent interpreted programing language which is used for general 
 # purpose and allow to operate on any operating systems.
+# Case-Sensitive means small 'a' is not equal to capital 'A'.
 # Datatype->Datatype is a classification or categorization of data elements.
-# There are two types of datatype:-
-# Immutable aur mutable
-# Immutable mai numeric,string,tuple aur boolean hota hai jisme se numeric mai integer,float aur complex no. hota hai
-# Mutable mai List,dict aur set hota hai 
+# There are two types of datatypes:-
+# Immutable aur mutable:-
+# Immutable mai numeric,string,tuple aur boolean hota hai jisme se numeric mai integer,float aur complex no. hota hai.
+# Mutable mai List,dict aur set hota hai.
 # Hello Zaid Code
-# print->Function hai
+# print()->Function hai.
 # print("Hello Zaid")
 
 # Output:Hello Zaid
+
+# Function aisa hota hai->( )
+# Method aisa hota hai->.( )
 
 # Multiplication Code
 # print(10*30)
@@ -30,7 +34,8 @@
 
 # A string is a sequence of character or collection of character which is enclosed or surrounded by single,double and triple
 # quotation mark.
-# String,List aur Tuple teeno ke chaar same operation hote hai like concatenation,Replication,Indexing and slicing hota hai 
+# String,List aur Tuple teeno ke chaar same operation hote hai like concatenation,Replication,Indexing and slicing hota hai.
+# Operation of strings: 
 # Concatenation of Two Strings
 # x="hello"
 # y="world"
@@ -44,8 +49,8 @@
 #         helloworld
 #         hello world
 
-# id use hota location number pata karna ke liye jaha pai elements stored hora hai memory mai
-# id->Function hai
+# id use hota hai location number pata karna ke liye jaha pai elements stored hora hai memory mai.
+# id()->Function hai.
 # print(id(x))
 # print(id(y))
 
@@ -53,7 +58,7 @@
 #        1613799051888
 
 # Variable is like a container in which we can store any data like string, integers etc.
-# Varibale name cannot start with a number 
+# Varibale name cannot start with a number.
 # 1x=2
 # print(1x)
 # Output:1x=2
@@ -66,8 +71,8 @@
 
 # Output:2
 
-# Spaces are not allowed in a variable
-
+# Spaces are not allowed in a variable.
+# Addition of two numbers
 # a=10
 # b=20
 # total numbers=a+b
@@ -88,40 +93,46 @@
 # Output:10
 #        20
 #        30
-# Special Characters are not allowed in a varibale('@','$','&') except underscore('_')
+# Special Characters are not allowed in a varibale('@','$','&') except underscore('_').
 # A variable cannot be a keyword means reserved words i.e.(while,if,else,elif,True)
+
 # override
 # a=10
 # a=20
 # print(a)
+# Output:20
 
 # a=10
 # print(a)
+# Output:10
 # a=20
 # print(a)
+# Output:20
 
 # print("hello")
+# Output:hello
 # print normally as a function used hota hai but print=10 edhar as a variable le liye hai toh ab yeh aagai function jaisa kaam 
-# nahi karega as a variable kaam karega toh esliye hum 'del print' use karke print delete kar degai toh fir aagai jaakai as a 
-# variable work nahi karega fir waapis se function jaisa work karega
+# nahi karega as a variable kaam karega toh esliye hum 'del print' use karke print as a variable delete kar degai toh fir yeh aagai jaakai as a 
+# variable work nahi karega firse waapis se function jaisa work karega.
 # print=10
 # print("world")
 # Output:print("world")
 # TypeError: 'int' object is not callable
 
 # # case sensitive hai del
+# print=10
 # del print
+# Output:"       #delete hogaya yaha pai print=10
 # print("world")
+# Output:world
 
 # swapping values
 # x=10
 # y=20
 # print(x,y)
-
 # Output:10 20
-# x,y=y,x
+# x,y=y,x          # edhar 'x' mai 'y' ki value 20 aajayegi aur 'y' mai 'x' ki value 10 aajayegi
 # print(x,y)
-
 # Output:20 10
 
 # Multiple variable assignment with different values
@@ -133,7 +144,10 @@
 
 # a,b,c=100,200,300
 # print(a,b,c)
+# print(a)
 # Output:100 200 300
+# Output:100
+
 
 # Multiple variable assignment with same values
 # p=10
@@ -147,13 +161,13 @@
 # print(p)
 # Output:10 
 
-# user input value
+# user input value code
 # a=input("Enter Any Value: ")
 # print("User Enter Value is ",a)
 # Output:Enter Any Value: zaid
 # User Enter Value is  zaid
 
-# Concatenation of First_name and Last_name
+# Concatenation of First_name and Last_name code
 # first_name=input("Enter first_name: ")
 # last_name=input("Enter last_name: ")
 # print("User Fullname is ",first_name+last_name)
@@ -163,7 +177,7 @@
 #        User Fullname is  AnsariZaid
 #        User Fullname is  Ansari Zaid
 
-# Concatenation of First_number and Last_number
+# Concatenation of First_number and Last_number code
 # first_number=int(input("Enter first_number: "))
 # second_number=int(input("Enter second_number: "))
 # print("Addition of two numbers are ",first_number+second_number)
@@ -172,7 +186,7 @@
 #        Addition of two numbers are  4
 
 # Arithemetic operator
-
+# python mai by default numbers decimal mai hote hai like 2.0,3.0 .
 # +,-,/,*,%,//,**
 # Addition->'+'.
 # Subtraction->'-'.
@@ -183,7 +197,7 @@
 # Modulus->'%':Yeh use hota hai remainder find karne ke liye but remainder ya toh '0'hota hai ya toh '1' hota hai agar '0'
 # remainder hoga means divisible hai aur '1' remainder hai toh divisible nhi hai.
 # Multiplication->'*'.
-# Exponentiation->'**':Means square ,cube nikalna like 2**2 i.e. 2 raise to power 2=4 aur 2**3 i.e. 2 raise to power 3=8 
+# Exponentiation->'**':Means square ,cube nikalna like 2**2 i.e. 2 raise to power 2 =4 aur 2**3 i.e. 2 raise to power 3 =8 .
 
 # print(10/2)
 # Output:5.0
@@ -201,7 +215,7 @@
 # print(2**3)
 # Output:8
 
-# type function use hota hai datatype find karne ke liye
+# type( ) function use hota hai datatype find karne ke liye
 # a=10
 # print(a)
 # print(type(a))
@@ -220,14 +234,17 @@
 # c='''hello world'''
 # print(a,b,c)
 # print(type(a),type(b),type(c))
+# Output:
+# hello world hello world hello world
+# <class 'str'> <class 'str'> <class 'str'>
 
 # Reason of using Single Quotation,Double Quotation,Triple Quotation in a String with example
 # z='i love python'
 # print(z)
 # Output:i love python
-# z='i love's python'
+# z='i love's python'   
 # print(z)
-# Output:    z='i love's python'
+# Output:    z='i love's python' # single quotation ke andarr waapis se dusra single quotation use nahi kar sakte hai esliye double quotation use karna parta hai
 #                             ^
 # SyntaxError: unterminated string literal 
 # z="i love's python"
@@ -236,7 +253,7 @@
 # z="i love
 # python"
 # print(z)
-# Output:z="i love
+# Output:z="i love  #Long string ke liye triple quotation use karte hai
 #          ^
 # SyntaxError: unterminated string literal 
 # z='''i love
@@ -248,7 +265,7 @@
 
 # Function means ( ) aur Method means .( )
 # string operation
-# concatenation
+# concatenation:
 # x='i love python'
 # y='program.'
 # z=x+y
@@ -257,9 +274,9 @@
 # print(x+y)
 # Output:i love pythonprogram.
 
-# replication
+# replication:
 # a="hellozaid "
-# print(a*10)
+# print(a*10) #edhar ten times "hello world" repeat hoga
 # Output:hellozaid hellozaid hellozaid hellozaid hellozaid hellozaid hellozaid hellozaid hellozaid hellozaid 
 
 # indexing
@@ -283,20 +300,19 @@
 # Output:r
 # print(x[-1])
 # Output:m
-# postive indexing start with '0' means from first word and negative indexing start with '-1' means 
-# from last word
+# postive indexing start with '0' means from first word and negative indexing start with '-1' means from last word
 
 # slicing
 # In Python, slicing is a way to extract a portion of a sequence, such as a string, list, or tuple. The basic idea is to 
 # specify a range of elements that you want to extract from the sequence. This range is defined by providing the starting index 
 # and the ending index, separated by a colon.
 # x="i love python program"
-# print(x[start:end:step(default[1])])
+# print(x[start:end:step(default[1])]) #step by default 1 hoga
 # positive slice
 # number chahe positive ho ya negative ho start small index number se hona chahiye aur end greater index number se hona chahiye  
 # agar start index number greater hai toh step:-1 legai aur agar start small index number hai toh step:1 legai.
 # starting ka index number '0' hamesha include hoga but last ka index number include nhi hoga exlude hoga for ex:
-# '7' liye index number end ka woh include nhi hoga exclude hoke '6' index number tak ka include hoga like an array 
+# '7' liye index number end ka woh include nhi hoga exclude hoke '6' index number tak ka include hoga like an array.
 # print(x[7:12])
 # Output:pytho
 # print(x[7:13])
@@ -373,14 +389,12 @@
 # # count use hota hai particular element kitni baar aaya hai woh count karne ke liye
 # print(s.count("o"))
 # Output:3
-# # startswith use hota hai check karne ke liye ki element particular word ke saath start hora hai ki 
-# # nahi
+# # startswith use hota hai check karne ke liye ki element particular word ke saath start hora hai ki nahi(answer True ya False mai aayega)
 # print(s.startswith("i"))
 # Output:True
 # print(s.startswith("o"))
 # Output:False
-# # endswith use hota hai check karne ke liye ki element particular word ke saath end hora hai ki 
-# # nahi
+# # endswith use hota hai check karne ke liye ki element particular word ke saath end hora hai ki nahi(answer True ya False mai aayega)
 # print(s.endswith("m"))
 # Output:True
 # print(s.endswith("a"))
@@ -390,8 +404,7 @@
 # # replace use hoga 'is' ko "it's" se replace karne ke liye
 # print(s.replace("is","it's"))
 # Output:It it's python program
-# # swapcase capital words ko small words mai convert kar dega aur small words ko capital words mai convert kar dega jitne bhi 
-# elements hai unko
+# # swapcase capital words ko small words mai convert kar dega aur small words ko capital words mai convert kar dega jitne bhi elements hai unko
 # print(s.swapcase())
 # Output:iT IS PYTHON PROGRAM
 
@@ -429,7 +442,7 @@
 # A tuple is a collection of homogenous and heterogenous data elements which is enclosed or surrounded by paranthesis or circle
 # bracket '( )' and separated by ','.
 # names=("karan","priya","kunal","pankaj")
-# # names=("karan","priya","kunal","pankaj",2) isme integer bhi le sakte hai woh bhi allow hai
+# # names=("karan","priya","kunal","pankaj",2) isme integer bhi le sakte hai woh bhi allow karta hai string ke saath.
 # print(names)
 # Output:('karan', 'priya', 'kunal', 'pankaj')
 # # indexing opeartion
@@ -469,8 +482,8 @@
 # print(type(x))
 # Output:<class 'tuple'>
 
-# yeh bhi tuple he hai circle bracket nahi hai yeh sochke confuse mat hojana tuple ka main 
-# definition he hai separated by ',' toh iss wajah se yeh bhi tuple he hai integer mat samajhna isey
+# yeh bhi tuple he hai circle bracket nahi hai yeh sochke confuse mat hojana tuple ka main definition he hai separated by ',' 
+# toh iss wajah se yeh bhi tuple he hai integer mat samajhna isey
 # d=23,45,67,8,67
 # print(d)
 # Output:(23, 45, 67, 8, 67)
@@ -485,7 +498,7 @@
 # print(d.count(67))
 # Output:2
 
-# List
+# List(pura same hai yeh tuple ke jaisa bas method iske kam hai compare to tuple)
 # List is a collection of homogenous and heterogenous data elements which is enclosed or surrounded by Square Bracket '[ ]' and
 #  separated by ','.
 # names=["karan","priya","kunal","pankaj"]
@@ -545,8 +558,31 @@
 # Output:[1, 2, 3, 4, 5, 10]
 # add=[7,8,9,11]
 # # append method add karne ka kaam karta hai at the end of element but extend method integer aur string dono ko 
-# # saath mai merge kar sakta hai but concatenation mai same datatypes chahiye rehta hai different 
-# # datatypes nhi chalta hai
+# # saath mai merge kar sakta hai but concatenation mai same datatypes chahiye rehta hai different datatypes nhi chalta hai
+# difference between append and extend  list method in python with simple english words (5 points)
+# Certainly! Here are five key points explaining the difference between the `append` and `extend` methods in Python lists using simple language:
+
+# 1. **Adding Elements:**
+#    - **Append:** Adds a single element to the end of the list.
+#    - **Extend:** Adds multiple elements, such as elements of another iterable (list, tuple, etc.), to the end of the list.
+
+# 2. **Input Type:**
+#    - **Append:** Takes a single argument, which can be any data type (number, string, object, etc.).
+#    - **Extend:** Takes an iterable (list, tuple, etc.) as its argument.
+
+# 3. **Effect on Original List:**
+#    - **Append:** Modifies the original list by adding the specified element at the end.
+#    - **Extend:** Modifies the original list by adding all elements from the iterable at the end.
+
+# 4. **Usage Example:**
+#    - **Append:** `my_list.append(5)` adds the number 5 to the end of the list.
+#    - **Extend:** `my_list.extend([6, 7, 8])` adds the elements 6, 7, and 8 to the end of the list.
+
+# 5. **Multiple Elements:**
+#    - **Append:** Only adds one element at a time.
+#    - **Extend:** Can add multiple elements at once, making it efficient for combining lists.
+# In summary, `append` adds a single element, while `extend` adds multiple elements from an iterable to the end of the list.
+
 # mylist.extend(add)
 # print(mylist)
 # Output:[1, 2, 3, 4, 5, 10, 7, 8, 9, 11]    
@@ -561,7 +597,7 @@
 # print(mylist)
 # Output:[1, 2, 3, 4, 5, 10, 7, 8, 9, 11]
 # # insert use hota insert karne ke liye element ko particular defined index number position pai jaise yaha pai humne
-# # index number 1 pai 50 add kiya hai (index_number,insert_value)
+# # index number 1 pai 50 add kiya hai (index_number,insert_new_value)
 # mylist.insert(1,50)
 # print(mylist)
 # Output:[1, 50, 2, 3, 4, 5, 10, 7, 8, 9, 11]
@@ -576,16 +612,16 @@
 # mylist.remove(4)
 # print(mylist)
 # Output:[1, 2, 3, 5, 10, 7, 8, 9, 11]       
-# # yeh use hota hai reverse karne ke liye element ko
+# # yeh use hota hai reverse karne ke liye element ko but jaisa woh sorted hai waise he same sorted way mai reverse hokai elements aayega
 # mylist.reverse()
 # print(mylist)
 # Output:[11, 9, 8, 7, 10, 5, 3, 2, 1]       
-# # sort karega element ko based on ascending order
+# # sort karega element ko based on ascending order(chhote se bada order)
 # mylist.sort()
 # print(mylist)
 # Output:[1, 2, 3, 5, 7, 8, 9, 10, 11]       
 # # reverse=True means yeh descending order mai sort karega element ko aur by default yeh reverse=False hota  hai
-# toh descending order mai reverse karne ke liye reverse=True daalna parta hai
+# toh descending order mai reverse karne ke liye reverse=True daalna parta hai(bade se chhota order)
 # mylist.sort(reverse=True)
 # print(mylist)
 # Output:[11, 10, 9, 8, 7, 5, 3, 2, 1]
@@ -620,7 +656,7 @@
 # l=["i","love","python","programming"]
 # s=" ".join(l)
 # print(s)
-# Output:i love python programming
+# Output:i love python programming       # Python mai by default string hota hai
 # print(type(s))
 # Output:<class 'str'>
 
@@ -637,11 +673,13 @@
 
 # # dictionary
 # # dictionary unordered hota hai
-# # dictionary is a collection of key value pairs which is enclosed by curly braces'{ }' and separated by ','
-# # dictionary mai key hamesha immutable hoti hai means woh belong karti hai numeric,string,tuple and boolean se aur 
-# # value mutable ya immutable dono ho sakta hai
-# # d={"key":value}
-
+# # dictionary is a collection of key value pairs which is enclosed or surrounded by curly braces'{ }' and separated by ','
+# # dictionary mai key hamesha immutable hota hai means woh belong karta hai numeric,string,tuple and boolean immutable datatypes se aur 
+# # value mutable ya immutable dono ho sakta hai.
+# # d={"key":   value}
+#        |        |
+#        v        v
+#      {immutable,mutable}
 # d={"a":10,"b":20,"c":30}
 # print(d)
 # Output:{'a': 10, 'b': 20, 'c': 30}
@@ -662,10 +700,10 @@
 # # values () apne ko values batata hai sirf
 # print(info.values())
 # Output:dict_values(['karan', 'azaid@gmail.com', '2234asdf'])     
-# # yeh list of tuples dikhata hai means key aur value dono par with circle bracket
+# # yeh list of tuples dikhata hai means key aur value dono but with circle bracket
 # print(info.items())
 # Output:dict_items([('name', 'karan'), ('email', 'azaid@gmail.com'), ('password', '2234asdf')])
-# # get se particular key daalke uska value show kar sakte hai
+# # get method se particular 'key' daalke uska 'value' show kar sakte hai
 # print(info.get("name"))
 # Output:karan
 # # iss tarha se bhi key ke values show kar sakte hai
@@ -673,24 +711,22 @@
 # Output:karan
 
 # # difference between get operation and get method
-# # yeh get operation hai isme agar joh key nhi hai means defined kiya huwa nhi hai 
-# # woh daalegai toh error aayega
-# print(info["fullname"])
+# # yeh get operation hai isme agar joh key nhi hai means defined kiya huwa nhi hai  woh daalegai toh error aayega
+# print(info["fullname"])    #ismey direct 'key' defined karke values nikalte hai
 # Output:print(info["fullname"])
 #              ~~~~^^^^^^^^^^^^
 # KeyError: 'fullname'
-# # yeh get method hai isme agar joh key nhi hai means defined kiya huwa nhi hai woh daalegai toh
-# # error nhi aayega  
-# print(info.get("name","hello"))
+# # yeh get method hai isme agar joh key nhi hai means defined kiya huwa nhi hai woh daalegai toh error nhi aayega  
+# print(info.get("name","hello"))  #ismey bhi 'key' defined karke he values nikalte hai but .get( ) bhi lagate hai saath mai
 # Output:karan
 # # isme hello daal diye hai toh woh dikhayega
 # print(info.get("fullname","hello"))
 # Output:hello
-# # isme none dikhayega kyu ki kuch nahi diye hai
+# # isme none dikhayega kyu ki kuch nahi diye hai aur "fullname" defined key nahi hai dictionay mai
 # print(info.get("fullname"))
 # Output:None
 
-# # but yeh dono single key value pair add karte hai
+# # but 'get opeartion' aur 'get method' yeh dono single key value pair add karte hai.
 # # isme age:24 add kar diye hai dictionary mai
 # info.setdefault("age",24)
 # print(info)
@@ -700,8 +736,7 @@
 # print(info)
 # Output:{'name': 'karan', 'email': 'azaid@gmail.com', 'password': '2234asdf', 'age': 24, 'city': 'thane'}
 
-# # update bhi used hota hai add karne ke liye key value pair dictionary mai but edhar mutilpe key value pairs 
-# # add kar sakte hai
+# # update bhi used hota hai add karne ke liye 'key value' pair dictionary mai but edhar mutilpe key value pairs  add kar sakte hai
 
 # info["age"]=25
 # info.update({"city":"kalva"})
@@ -722,10 +757,8 @@
 # set
 # set unordered hota hai means harr baar elements print karne pai elements koi bhi sequence mai show hote hai output mai
 # jisey hum predict nahi kar sakte hai ki kis sequence mai elements print hogai output mai.
-# set is a collection of unique values but without key value pairs and it is enclosed by '{ }' and separated
-# by ','
-# set mai elemenet immutable datatypes hote hai but set mutable datatypes hota hai means element belong karte hai 
-# immutable datatypes se
+# set is a collection of unique values but without key value pairs and it is enclosed or surrounded by '{ }' and separated by ','
+# set mai elemenet immutable datatypes hote hai but set mutable datatypes hota hai means element belong karte hai immutable datatypes se
 
 # s={1,2,5,3,4,5}
 # print(s)
@@ -742,8 +775,7 @@
 # Output:<class 'set'>
 
 # # isme list ko daaley hai set ke andarr toh error aara hai aur list mutable datatypes hota hai aur maine kya bola tha 
-# set ke elements immutable datatypes se belong karte hai esliye edhar error aara hai list ko set ke andarr daalne pai 
-# as an elements
+# set ke elements immutable datatypes se belong karte hai esliye edhar error aara hai list ko set ke andarr daalne pai as an elements
 # s={1,2,5,3,[4,5]}
 # print(s)
 # Output:s={1,2,5,3,[4,5]}
@@ -813,18 +845,18 @@
 # Assignment operator 
 # =,+=,-=,*=,%=,/=,//=
 # x=10
-# x=x+5
+# x=x+5   #edhar previous 'x' ki value laikai addition karega(x=10)
 # print(x)
 # Output:15
-# x+=5
+# x+=5      #edhar previous 'x' ki value laikai addition karega(x=10)
 # print(x)
 # Output:15
 
 x=10
-# x=x-5
+# x=x-5          #edhar previous 'x' ki value laikai subtraction karega(x=10)              
 # print(x)
 # Output:5
-# x-=5
+# x-=5           #edhar previous 'x' ki value laikai subtraction karega(x=10)     
 # print(x)
 # Output:5
 
@@ -839,7 +871,6 @@ x=10
 # Output:False
 # print(50 not in t)
 # Output:True
-#print(50 not in t)
 # print(40 not in t)
 # Output:True
 
@@ -879,7 +910,7 @@ x=10
 # Output:True
 
 #Conditional statement
-# if,else,elif
+# if,elif,else
 # if(condition->True)
 #     executable block
 
@@ -916,7 +947,6 @@ x=10
 # Output:Enter Your age:18
 
 # take age from user and check he is eligible for vote or not
-
 # age=int(input("enter age"))
 # if(age>=18):
 #     print("eligible for vote")
@@ -941,31 +971,31 @@ x=10
 
 # Take two number from a and b and check which one is greater and smaller
 
-# a=int(input("Enter a number: "))
-# b=int(input("Enter a number: "))
+# a=int(input("Enter first number: "))
+# b=int(input("Enter second number: "))
 # if(a>b):
 #     print("a is greater")
 # else:
 #     print("b is greater")    
-# Output:Enter a number:23
-#        Enter a number:3
+# Output:Enter first number: 23
+#        Enter second number: 2
 #        a is greater
 
-# Output:Enter a number:3
-#        Enter a number:23
+# Output:Enter first number: 2
+#        Enter second number: 23
 #        b is greater
-
+    
 # example of if,elif and else
-# a=int(input("Enter a number: "))
-# b=int(input("Enter a number: "))
+# a=int(input("Enter first number: "))
+# b=int(input("Enter second number: "))
 # if(a>b):
 #      print("a>b")
 # elif(b>a):
 #      print("b>a")
 # else:
 #      print("a==b")    
-# Output:Enter a number: 23
-#        Enter a number: 20
+# Output:Enter first number: 23
+#        Enter second number: 20
 #        a>b
 
 # Output:Enter a number: 20
@@ -982,6 +1012,16 @@ x=10
 #      print("b>a")
 # else:
 #      print("a==b")          
+# Output:enter first number23
+#        enter second number3
+#        a>b
+#        a==b
+# Output:enter first number2
+#        enter second number23
+#        b>a 
+# Output:enter first number23
+#        enter second number23
+#        a==b  
 
 
 # take two numbers and operator from user and calculate the numbers based on user entered operator
@@ -1025,6 +1065,7 @@ x=10
 #     print(f"{number} is not divisible by 7.")
 # # Output:Enter a number: 49
 # #        49 is divisible by 7.
+     
 # #take number from user and check it is multiple of 5 or not
 # number = int(input("Enter a number: "))
 
@@ -1037,7 +1078,7 @@ x=10
     
 # Logical Opearator(ismey answer boolean mai aayega ya toh True aayega aur ya toh False aayega)
 # and,or,not
-# and(dono conditon true chahiye toh true milega otherwise false milega agar ek bhi false hai toh)
+# and operator(dono conditon true chahiye toh true milega otherwise false milega agar ek bhi false hai toh)
 # print(True and True)    
 # Output:True
 # print(False and True)
@@ -1045,7 +1086,7 @@ x=10
 # print(False and False)
 # Output:False
 
-# or(koi bhi ek condition true rahega toh true milega)
+# or operator(koi bhi ek condition true rahega toh true milega)
 # print(True or True)    
 # Output:True
 # print(False or True)
@@ -1053,30 +1094,31 @@ x=10
 # print(False or False)
 # Output:False
 
-# or and and combination
+# 'or' and 'and' operator combination
 # print(True or False and True)
 # Output:True 
 # print(True or True and False)
 # Output:True 
 
-# and
+# and operator
 # print(10>2 and 10<20)
 # Output:True
 # print(10>2 and 10<8)
 # Output:False
 
-# or
+# or operator
 # print(10>2 or 10<20)
 # Output:True
 # print(10>2 or 10<8)
 # Output:True
 
-# not(true ka false hoga aur false ko true hoga means ulta)
+# not(true ka false hoga aur false ka true hoga means ulta hoga)
 # print(not True)
 # Output:False
 # print(not 10>2)
 # Output:False
 
+# program
 # 0-20->hello
 # 20-50->hii
 # 50-80->hey
@@ -1122,14 +1164,14 @@ x=10
 #         print(f'year{year} is not leap year')
 # Output:year1996 is leap year
 
-# Leap year code but valid with 'or' operator (accurate method)
+# Leap year code but valid( with 'or' operator) (accurate method)
 # if(year%4==0 and year%100!=0)or (year%400==0):
 #     print(f'year{year} is leap year')
 # else:
 #         print(f'year{year} is not leap year')
 # Output:year1996 is leap year
 
-# User input leap year
+# User input leap year code
 # year = int(input("Enter a year: "))
 
 # if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
@@ -1139,7 +1181,7 @@ x=10
 # Output:Enter a year: 2004
 # Year 2004 is a leap year.
 
-# Ternary operator
+# Ternary operator 
 # x=10
 # result="hello" if x%2==0 else "bye"
 # print(result)
@@ -1208,29 +1250,29 @@ x=10
 # Bye
 
 # write a program to calculate the electricity bill(accept number  of unit from user) according to the following criteria: 
-# Unit:                           #Price:
-# first 100 units                 # no charge
-# next 100 units                  # Rs 5 per unit
-# after 200 units.                # Rs 10 per unit.
+# Unit:                           Price:
+# first 100 units                 no charge
+# next 100 units                  Rs 5 per unit
+# after 200 units.                Rs 10 per unit.
 # (For example if input unit is 350 then total bill amount is Rs 2000)
 
 # units=350
 
-# if (units>=0 and units<=100):  # first 100 units ka no charge hai means free 
+#if (units>=0 and units<=100):  # first 100 units ka no charge hai means free 
 #    print("no charge")
-# elif (units>=101 and units<=200):  #yaha pai 100 units tak ke andarr ka joh bhi aayega woh no charge rahega aur baki ka 100 units ke uppar ka number multiply hojayega
+#elif (units>=101 and units<=200):  #yaha pai 100 units tak ke andarr ka joh bhi aayega woh no charge rahega aur baki ka 100 units ke uppar ka number multiply hojayega
 # # 5 se
 #     units=units-100
 #     print("total price-: ",units*5)
-# elif (units>=201): #edhar 101 se 200 tak ka joh number rahega woh multiply hojayega 5 se aur 200 units ke uppar ka number add hojayega 10 se aur dono add hoke 
+#elif (units>=201): #edhar 101 se 200 tak ka joh number rahega woh multiply hojayega 5 se aur 200 units ke uppar ka number add hojayega 10 se aur dono add hoke 
 # # aajayega answer 
 #     fg=100*5
 #     units=units-200
 #     total_price=fg+(units*10)
 #     print(f"Total Price : {total_price}")    
-# else:
+#else:
 #     print("invalid units")    
-# Output:Total Price : 2000
+#Output:Total Price : 2000
     
 # write a program to check whether the last digit of a number(entered by user)is divisible by 3 or not
 
@@ -1335,7 +1377,7 @@ x=10
 # 34 is not a three-digit number.
     
 # match case(switch case) #possible values ke liye kaam aata hai yeh,isme logical operator type ka function operate nahi kar sakte hai means logical programs nahi kar
-# sakte hai aur if,elif aur else statement mai logical opearator ka kaam sakte hai
+# sakte hai aur if,elif aur else statement mai logical opearator ka kaam kar sakte hai.
 
 # n1=int(input("Enter first number: "))
 # n2=int(input("Enter second number: "))
@@ -1429,6 +1471,14 @@ x=10
 #     print("error")    
 # Output:data exist
 
+# data=[]
+
+# if data:
+#     print("data exist")
+# else:
+#     print("error")    
+# Output:error
+
 # print(bool(""))
 # Output:False
 
@@ -1438,3 +1488,119 @@ x=10
 # print(bool(0)) 
 # Output:False
 
+# homework
+
+# x=5
+# if(x>10):
+#     print("Done")
+# else:
+#     print("TY")    
+# Output:TY
+
+# if(x):
+#     print("Done")
+# else:
+#     print("TY")    
+# Output:Done
+
+# if(" "):
+#     print("Done")
+# else:
+#     print("TY")    
+# Output:Done
+
+# if(4):
+#     print("Done")
+# else:
+#     print("TY")      
+# Output:Done
+
+# if(""):
+#     print("Done")
+# else:
+#     print("TY")    
+# Output:TY
+
+# if(None):
+#     print("Done")
+# else:
+#     print("TY")    
+# Output:TY
+    
+# if(0):
+#     print("Done")
+# else:
+#     print("TY") 
+# Output:TY 
+
+# if(pass):
+#     print("Done")
+# else:
+#     print("TY")    
+# Output:if(pass):
+#           ^^^^
+# SyntaxError: invalid syntax
+
+# if("Hi"):
+#     print("Done")
+# else:
+#     print("TY")
+# Output:Done
+    
+# if("."):
+#     print("Done")
+# else:
+#     print("TY")    
+# Output:Done
+
+# x=1
+# if(x<5):
+#     x=x+1
+#     print(x)
+#     continue
+# Output:continue
+#        ^^^^^^^^
+# SyntaxError: 'continue' not properly in loop
+
+# x=1
+# if(x<5):
+#     x=x+1
+#     print(x)
+#     if(x==3):
+#         break 
+#     continue
+#  Output:break 
+#         ^^^^^
+# SyntaxError: 'break' outside loop
+
+# x=5
+# if(x>5):
+#     if("Hi"):
+#         print("Done")
+#     else:
+#         print("TY")
+# else:
+#     if(x>=5):
+#         if(5):
+#             print("five")
+#         else:
+#             print("Not True")
+#     else:
+#         print("yes")  
+# Output: five
+
+# x=5
+# if(x<5):
+#     if(x!=0):
+#         print("me")
+#     else:
+#         print("this")
+# else:
+#     if(x<=5):
+#             print("yes")
+#             if(x==5):
+#                  print("Done")
+#             else:
+#                  print("okay")
+# Output: yes 
+#         Done
