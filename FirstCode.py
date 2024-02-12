@@ -1604,3 +1604,352 @@ x=10
 #                  print("okay")
 # Output: yes 
 #         Done
+
+# Again same code
+
+# write a program to check whether a person is eligible for voting or not(accept age from the user)
+# age = int(input("Enter your age: "))
+
+# if age >= 18:
+#     print("You are eligible to vote.")
+# else:
+#     print("You are not eligible to vote yet.")
+# Output:Enter your age: 24
+# You are eligible to vote.
+
+# write a program to check whether a number entered by a user is even or odd
+# number = int(input("Enter a number: "))
+
+# if number % 2 == 0:
+#     print(f"{number} is an even number.")
+# else:
+#     print(f"{number} is an odd number.")
+# Output:Enter a number: 24
+# 24 is an even number.
+
+# write a program to check whether a number is divisible by 7 or not
+
+# number = int(input("Enter a number: "))
+
+# if number % 7 == 0:
+#     print(f"{number} is divisible by 7.")
+# else:
+#     print(f"{number} is not divisible by 7.")
+#Output: Enter a number: 49
+# 49 is divisible by 7.
+
+# write a program to display "Hello" if a number entered by user is a multiple of five otherwise print "Bye"
+
+# number = int(input("Enter a number: "))
+
+# if number % 5 == 0:
+#     print("Hello")
+# else:
+#     print("Bye")
+# Output:Enter a number: 25
+# Hello
+# Output:Enter a number: 63
+# Bye
+
+# write a program to calculate the electricity bill(accept number  of unit from user) according to the following criteria: 
+# Unit:                           Price:
+# first 100 units                 no charge
+# next 100 units                  Rs 5 per unit
+# after 200 units.                Rs 10 per unit.
+# (For example if input unit is 350 then total bill amount is Rs 2000)
+
+# units=350
+
+#if (units>=0 and units<=100):  # first 100 units ka no charge hai means free 
+#    print("no charge")
+#elif (units>=101 and units<=200):  #yaha pai 100 units tak ke andarr ka joh bhi aayega woh no charge rahega aur baki ka 100 units ke uppar ka number multiply hojayega
+# # 5 se
+#     units=units-100
+#     print("total price-: ",units*5)
+#elif (units>=201): #edhar 101 se 200 tak ka joh number rahega woh multiply hojayega 5 se aur 200 units ke uppar ka number add hojayega 10 se aur dono add hoke 
+# # aajayega answer 
+#     fg=100*5
+#     units=units-200
+#     total_price=fg+(units*10)
+#     print(f"Total Price : {total_price}")    
+#else:
+#     print("invalid units")    
+#Output:Total Price : 2000
+    
+# write a program to check whether the last digit of a number(entered by user)is divisible by 3 or not
+
+# number = int(input("Enter a number: "))
+
+# last_digit = abs(number) % 10
+
+# if last_digit % 3 == 0:
+#     print(f"The last digit {last_digit} is divisible by 3.")
+# else:
+#     print(f"The last digit {last_digit} is not divisible by 3.")
+# Output:Enter a number: 24
+# The last digit 4 is not divisible by 3.
+# Output:Enter a number: 23
+# The last digit 3 is divisible by 3.
+
+# write a program to determine whether a number(accepted from the user) is divisible by 2 and 3 both
+
+# number = int(input("Enter a number: "))
+
+# if number % 2 == 0 and number % 3 == 0:
+#     print(f"{number} is divisible by both 2 and 3.")
+# else:
+#     print(f"{number} is not divisible by both 2 and 3.")
+# Output:Enter a number: 24
+# 24 is divisible by both 2 and 3.
+# Output:Enter a number: 53
+# 53 is not divisible by both 2 and 3.
+
+# accept the age of 4 people and display the youngest one?
+
+# age1 = int(input("Enter the age of person 1: "))
+# age2 = int(input("Enter the age of person 2: "))
+# age3 = int(input("Enter the age of person 3: "))
+# age4 = int(input("Enter the age of person 4: "))
+
+# if age1 <= age2 and age1 <= age3 and age1 <= age4:
+#     youngest_age = age1
+# elif age2 <= age1 and age2 <= age3 and age2 <= age4:
+#     youngest_age = age2
+# elif age3 <= age1 and age3 <= age2 and age3 <= age4:
+#     youngest_age = age3
+# else:
+#     youngest_age = age4
+
+# print(f"The youngest person is {youngest_age} years old.")
+# Output:Enter the age of person 1: 24
+# Enter the age of person 2: 43
+# Enter the age of person 3: 20
+# Enter the age of person 4: 100
+# The youngest person is 20 years old.
+
+# accept the age of 4 people and display the Oldest one?
+
+# age1 = int(input("Enter the age of person 1: "))
+# age2 = int(input("Enter the age of person 2: "))
+# age3 = int(input("Enter the age of person 3: "))
+# age4 = int(input("Enter the age of person 4: "))
+
+# if age1 >= age2 and age1 >= age3 and age1 >= age4:
+#     oldest_age = age1
+# elif age2 >= age1 and age2 >= age3 and age2 >= age4:
+#     oldest_age = age2
+# elif age3 >= age1 and age3 >= age2 and age3 >= age4:
+#     oldest_age = age3
+# else:
+#     oldest_age = age4
+
+# print(f"The oldest person is {oldest_age} years old.")
+# Output:Enter the age of person 1: 40
+# Enter the age of person 2: 100
+# Enter the age of person 3: 18
+# Enter the age of person 4: 19           
+# The oldest person is 100 years old.
+
+# write a program to check whether a year is leap year or not
+
+# year = int(input("Enter a year: "))
+
+# if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+#     print(f"{year} is a leap year.")
+# else:
+#     print(f"{year} is not a leap year.")
+
+# Output:Enter a year: 2024
+# 2024 is a leap year.
+# Output:Enter a year: 2023
+# 2023 is not a leap year.
+
+# write a program to check whether a number entered is three digit number or not
+
+# number = int(input("Enter a number: "))
+
+# if 100 <= number <= 999:
+#     print(f"{number} is a three-digit number.")
+# else:
+#     print(f"{number} is not a three-digit number.")
+
+# Output: Enter a number: 333
+# 333 is a three-digit number.
+# Output:Enter a number: 34
+# 34 is not a three-digit number.
+
+# A loop is used to execute a certain block of code until it's condition is met but if condition is not met it will automatically stopped looping.
+# There are two types of loop in python are:
+# 1)While loop
+# 2)For loop
+# While loop
+
+# while(True):
+#     print("hi")
+#     print("hello")
+#     print("bye")
+# Output:hi
+# hello
+# bye
+# hi
+# hello
+# bye
+# hi
+# hello
+# bye
+# Traceback (most recent call last):
+#   File "c:\Users\Zaid Ansari\OneDrive\Desktop\Quastech Python\FirstCode.py", line 1786, in <module>
+# print("bye")
+# KeyboardInterrupt
+# aisa aata rahega apne ko interrupt karna parega
+
+# while(False):
+#     print("hi")
+#     print("hello")
+#     print("bye")
+# Output:"
+
+# x=10
+# while(x>2):
+#     print("hi")
+#     print("hello")
+#     print("bye")
+# Output:# Output:hi
+# hello
+# bye
+# hi
+# hello
+# bye
+# hi
+# hello
+# bye
+# Traceback (most recent call last):
+#   File "c:\Users\Zaid Ansari\OneDrive\Desktop\Quastech Python\FirstCode.py", line 1786, in <module>
+# print("bye")
+# KeyboardInterrupt
+# aisa aata rahega apne ko interrupt karna parega
+
+# x=1
+# while(x<=10):
+#     print("hi")
+#     print("hello")
+#     print("bye")
+# Output:hi
+# hello
+# bye
+# hi
+# hello
+# bye
+# hi
+# hello
+# bye
+# Traceback (most recent call last):
+#   File "c:\Users\Zaid Ansari\OneDrive\Desktop\Quastech Python\FirstCode.py", line 1786, in <module>
+# print("bye")
+# KeyboardInterrupt
+# aisa aata rahega apne ko interrupt karna parega
+
+# Actual While loop code(means valid)(10 times run "hi","hello","bye")
+# x=1
+# while(x<=10):
+#     print("hi")
+#     print("hello")
+#     print("bye")
+#     x+=1                       # x=1  x<=10 ->True-> hi,hello,bye->  x+=1    x=2<-(aisa iterate hoga edhar aur check karega condition edhar)
+# print("out of loop")    
+# Output:hi   
+# hello
+# bye  
+# hi   
+# hello
+# bye  
+# hi   
+# hello
+# bye  
+# hi   
+# hello
+# bye
+# hi
+# hello
+# bye
+# hi
+# hello
+# bye
+# hi
+# hello
+# bye
+# hi
+# hello
+# bye
+# hi
+# hello
+# bye
+# hi
+# hello
+# bye
+# out of loop
+
+# iterable
+# x=1  x<=10 ->True
+#   hi,hello,bye
+#   x+=1    x=2
+
+# x=2  x<=10 ->True
+#   hi,hello,bye
+#   x+=1    x=3
+
+# x=3  x<=10 ->True
+#   hi,hello,bye
+#   x+=1    x=4
+
+# x=4  x<=10 ->True
+#   hi,hello,bye
+#   x+=1    x=5
+
+# x=5  x<=10 ->True
+#   hi,hello,bye
+#   x+=1    x=6
+
+# x=6  x<=10 ->True
+#   hi,hello,bye
+#   x+=1    x=6
+
+# x=6  x<=10 ->True
+#   hi,hello,bye
+#   x+=1    x=7
+
+# x=7  x<=10 ->True
+#   hi,hello,bye
+#   x+=1    x=8
+
+# x=8  x<=10 ->True
+#   hi,hello,bye
+#   x+=1    x=9
+
+# x=9  x<=10 ->True
+#   hi,hello,bye
+#   x+=1    x=10
+
+# x=10  x<=10 ->True
+#   hi,hello,bye
+#   x+=1    x=11
+
+# x=11  x<=10 ->False
+#   out of loop
+
+# print 1 to 10 number program
+# counter = 1
+
+# while counter <= 10:
+#     print(counter)
+#     counter += 1  # Increment the counter
+# Output:1 
+#        2 
+#        3 
+#        4 
+#        5 
+#        6 
+#        7 
+#        8 
+#        9 
+#       10
