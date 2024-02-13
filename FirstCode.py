@@ -1889,7 +1889,7 @@ x=10
 # bye
 # out of loop
 
-# iterable
+# iterable(10 times run "hi","hello","bye")
 # x=1  x<=10 ->True
 #   hi,hello,bye
 #   x+=1    x=2
@@ -1953,3 +1953,431 @@ x=10
 #        8 
 #        9 
 #       10
+
+# print 10 to 1 reverse  number program
+counter = 10
+
+# while counter >= 1:
+#     print(counter)
+#     counter -= 1  # Decrement the counter
+# Output:10
+#        9
+#        8
+#        7
+#        6
+#        5
+#        4
+#        3
+#        2
+#        1
+
+# iterable(# print 10 to 1 reverse  number program)
+# counter=10  counter>=1 ->True
+#   10
+#   counter-=1    counter=9
+
+# counter=9  counter>=1 ->True
+#   9
+#   counter-=1    counter=8
+
+# counter=8  counter>=1 ->True
+#   8
+#   counter-=1    counter=7
+
+# counter=7  counter>=1 ->True
+#   7
+#   counter-=1    counter=6
+
+# counter=6  counter>=1 ->True
+#   6
+#   counter-=1    counter=5
+
+# counter=5 counter>=1 ->True
+#   5
+#   counter-=1    counter=4
+
+# counter=4  counter>=1 ->True
+#   4
+#   counter-=1    counter=3
+
+# counter=3  counter>=1 ->True
+#   3
+#   counter-=1    counter=2
+
+# counter=2  counter>=1 ->True
+#   2
+#   counter-=1    counter=1
+
+# counter=1  counter>=1 ->True
+#   1
+#   counter-=1    counter=0
+
+# counter=0  counter>=1 ->False
+
+
+# Use a while loop to print even numbers from 1 to 10
+
+# counter = 1
+
+# while counter <= 10:
+#     if counter % 2 == 0:
+#         print(counter)
+#     counter += 1  # Increment the counter
+# Output:2
+#        4
+#        6
+#        8
+#        10
+
+# iterable
+# counter=1  counter<=10->True
+# 1%2==0->1 remainder->False
+# counter +=1    counter=2
+
+# counter=2  counter<=10->True
+# 2%2==0->0 remainder->True
+# print(counter)->2
+# counter +=1    counter=3
+    
+# counter=3  counter<=10->True
+# 3%2==0->1 remainder->False
+# counter +=1    counter=4
+
+# counter=4  counter<=10->True
+# 4%2==0->0 remainder->True
+# print(counter)->4
+# counter +=1    counter=5
+
+# counter=5  counter<=10->True
+# 5%2==0->1 remainder->False
+# counter +=1    counter=6
+
+# counter=6  counter<=10->True
+# 6%2==0->0 remainder->True
+# print(counter)->6
+# counter +=1    counter=7
+
+# counter=7  counter<=10->True
+# 7%2==0->1 remainder->False
+# counter +=1    counter=8
+
+# counter=8  counter<=10->True
+# 8%2==0->0 remainder->True
+# print(counter)->8
+# counter +=1    counter=9
+
+# counter=9  counter<=10->True
+# 9%2==0->1 remainder->False
+# counter +=1    counter=10
+    
+# counter=10  counter<=10->True
+# 10%2==0->0 remainder->True
+# print(counter)->10
+# counter +=1    counter=11
+
+# counter=11  counter<=10->False
+    
+# print even number from 1 to 10 and if even number is not occur then print "hello"
+
+# n=1
+# while(n<=10):
+#     if(n%2==0):
+#         print(n)
+#     else:
+#         print("hello")
+#     n=n+1        
+# Output:hello
+# 2
+# hello
+# 4
+# hello
+# 6
+# hello
+# 8
+# hello
+# 10 
+    
+# iterable(# print even number from 1 to 10 and if even number is not occur then print "hello")
+    
+# n=1 n<=10->True
+# 1%2==0->remainder 1->False
+# print("hello")
+# n=n+1 n=2
+    
+# n=2 n<=10->True
+# 2%2==0->remainder 0->True
+# print(2)
+# n=n+1 n=3
+    
+# n=3 n<=10->True
+# 3%2==0->remainder 1->False
+# print("hello")
+# n=n+1 n=4
+
+# n=4 n<=10->True
+# 4%2==0->remainder 0->True
+# print(4)
+# n=n+1 n=5
+
+# n=5 n<=10->True
+# 5%2==0->remainder 1->False
+# print("hello")
+# n=n+1 n=6
+
+# n=6 n<=10->True
+# 6%2==0->remainder 0->True
+# print(6)
+# n=n+1 n=7
+
+# n=7 n<=10->True
+# 7%2==0->remainder 1->False
+# print("hello")
+# n=n+1 n=8
+
+# n=8 n<=10->True
+# 8%2==0->remainder 0->True
+# print(8)
+# n=n+1 n=9
+
+# n=9 n<=10->True
+# 9%2==0->remainder 1->False
+# print("hello")
+# n=n+1 n=10
+
+# n=10 n<=10->True
+# 10%2==0->remainder 0->True
+# print(10)
+# n=n+1 n=11
+
+# n=11 n<=10->False
+
+# Use a while loop to print numbers from 1 to 20 that are divisible by both 2 and 3
+
+# number = 1
+
+# while number <= 20:
+#     if number % 2 == 0 and number % 3 == 0:
+#         print(number)
+#     number += 1  # Increment the number in each iteration
+# Output:6
+#        12
+#        18
+
+
+# Use a while loop to iterate through numbers from 1 to 20(count how much times numbers occurs which is divisible by 2 and 3 both)
+
+# Initialize variables
+# number = 1
+# count = 0
+
+# while number <= 20:
+#     # Check if the number is divisible by both 2 and 3
+#     if number % 2 == 0 and number % 3 == 0:
+#         print(number)
+#         count += 1  # Increment the count
+#     number += 1  # Increment the number in each iteration
+
+# # Print the total count of numbers divisible by both 2 and 3
+# print(f"Total count: {count}")
+
+# number=1  count=0
+# 1<=20->True
+# 1%2==0->remainder1->False
+# number+=1  number=2
+
+# number=2  count=0
+# 2<=20->True
+# 2%2==0->remainder0->True and 2%3==0->remainder1->False
+# False
+# number+=1  number=3
+
+# number=3  count=0
+# 3<=20->True
+# 3%2==0->remainder1->False
+# number+=1  number=4
+
+# number=4  count=0
+# 4<=20->True
+# 4%2==0->remainder0->True and 4%3==0->remainder1->False
+# False
+# number+=1  number=5
+
+# number=5  count=0
+# 5<=20->True
+# 5%2==0->remainder1->False
+# number+=1  number=6
+
+# number=6  count=0
+# 6<=20->True
+# 6%2==0->remainder0->True and 6%3==0->remainder0->True
+# True
+# print(6)
+# count=1
+# number+=1  number=7
+
+# number=7  count=0
+# 7<=20->True
+# 7%2==0->remainder1->False
+# number+=1  number=8
+
+# number=8  count=0
+# 8<=20->True
+# 8%2==0->remainder0->True and 8%3==0->remainder1->False
+# False
+# number+=1  number=9
+
+# number=9  count=0
+# 9<=20->True
+# 9%2==0->remainder1->False
+# number+=1  number=10
+
+# number=10  count=0
+# 10<=20->True
+# 10%2==0->remainder0->True and 10%3==0->remainder1->False
+# False
+# number+=1  number=11
+
+# number=11  count=0
+# 11<=20->True
+# 11%2==0->remainder1->False
+# number+=1  number=12
+
+# number=12  count=0
+# 12<=20->True
+# 12%2==0->remainder0->True and 12%3==0->remainder0->True
+# True
+# print(12)
+# count=2
+# number+=1  number=13
+
+# number=13  count=0
+# 13<=20->True
+# 13%2==0->remainder1->False
+# number+=1  number=14
+
+# number=14  count=0
+# 14<=20->True
+# 14%2==0->remainder0->True and 14%3==0->remainder1->False
+# False
+# number+=1  number=15
+
+# number=15  count=0
+# 15<=20->True
+# 15%2==0->remainder1->False
+# number+=1  number=16
+
+# number=16  count=0
+# 16<=20->True
+# 16%2==0->remainder0->True and 16%3==0->remainder1->False
+# False
+# number+=1  number=17
+
+# number=17  count=0
+# 17<=20->True
+# 17%2==0->remainder1->False
+# number+=1  number=18
+
+# number=18  count=0
+# 18<=20->True
+# 18%2==0->remainder0->True and 18%3==0->remainder0->True
+# True
+# print(18)
+# count=3
+# number+=1  number=19
+
+# number=19  count=0
+# 19<=20->True
+# 19%2==0->remainder1->False
+# number+=1  number=20
+
+# number=20  count=0
+# 20<=20->True
+# 20%2==0->remainder0->True and 20%3==0->remainder1->False
+# False
+# number+=1  number=21
+
+# number=21  count=0
+# 21<=20->False
+
+# Use a while loop to print each number separately using index number
+
+# my_list = [12, 24, 25, 18, 19, 40, 55]
+
+# # Initialize an index variable
+# index = 0
+
+# while index < len(my_list):
+#     print(my_list[index])
+#     index += 1  # Increment the index in each iteration
+
+# index=0
+# index=0<len(7)->True
+# print(12[0])
+# index +=1   index=1
+
+# index=1
+# index=1<len(7)->True
+# print(24[1])
+# index +=1   index=2
+
+# index=2
+# index=2<len(7)->True
+# print(25[2])
+# index +=1   index=3
+
+# index=3
+# index=3<len(7)->True
+# print(18[3])
+# index +=1   index=4
+
+# index=4
+# index=4<len(7)->True
+# print(19[4])
+# index +=1   index=5
+
+# index=5
+# index=5<len(7)->True
+# print(40[5])
+# index +=1   index=6
+
+# index=6
+# index=6<len(7)->True
+# print(55[6])
+# index +=1   index=7
+
+# index=7
+# index=7<len(7)->False
+
+# Homework 
+# print sum of 1 to 10 number(previous number se sum hoga)
+
+# Initialize variables
+# current_number = 1
+# cumulative_sum = 0
+
+# # Use a while loop to calculate the cumulative sum
+# while current_number <= 10:
+#     cumulative_sum += current_number
+#     current_number += 1
+
+# # Print the cumulative sum
+# print(f"The cumulative sum of numbers from 1 to 10 is: {cumulative_sum}")
+# Output:The cumulative sum of numbers from 1 to 10 is: 55
+
+# print 1 to 40 number which is divisble by 2 and 3 both 
+
+# Initialize variables
+# number = 1
+
+# # Use a while loop to iterate through numbers from 1 to 40
+# while number <= 40:
+#     # Check if the number is divisible by both 2 and 3
+#     if number % 2 == 0 and number % 3 == 0:
+#         print(number)
+#     number += 1  # Increment the number in each iteration
+# Output:6
+#        12
+#        18
+#        24
+#        30
+#        36
