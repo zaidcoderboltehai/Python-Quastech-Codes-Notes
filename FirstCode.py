@@ -2180,6 +2180,10 @@ counter = 10
 # # Print the total count of numbers divisible by both 2 and 3
 # print(f"Total count: {count}")
 
+# output:6
+# 12
+# 18
+# Total count: 3
 # number=1  count=0
 # 1<=20->True
 # 1%2==0->remainder1->False
@@ -2356,28 +2360,234 @@ counter = 10
 # cumulative_sum = 0
 
 # # Use a while loop to calculate the cumulative sum
+# # Initialize variables
+# current_number = 1
+# cumulative_sum = 0
+
 # while current_number <= 10:
 #     cumulative_sum += current_number
 #     current_number += 1
 
 # # Print the cumulative sum
 # print(f"The cumulative sum of numbers from 1 to 10 is: {cumulative_sum}")
+
 # Output:The cumulative sum of numbers from 1 to 10 is: 55
 
-# print 1 to 40 number which is divisble by 2 and 3 both 
-
+# print 1 to 40 number which is divisble by 2 and 3 both and print sum of 1 to 40 which is divisible by 2 and 3
 # Initialize variables
 # number = 1
+# count = 0
+# total_sum = 0
 
-# # Use a while loop to iterate through numbers from 1 to 40
+# Use a while loop to iterate through numbers from 1 to 40
 # while number <= 40:
 #     # Check if the number is divisible by both 2 and 3
 #     if number % 2 == 0 and number % 3 == 0:
 #         print(number)
+#         total_sum += number  # Add the number to the total sum
+#         count += 1  # Increment the count
 #     number += 1  # Increment the number in each iteration
+
+# # Print the total count of numbers divisible by both 2 and 3
+# print(f"Total count: {count}")
+
+# # Print the sum of numbers divisible by both 2 and 3
+# print(f"Sum of numbers divisible by both 2 and 3: {total_sum}")
 # Output:6
-#        12
-#        18
-#        24
-#        30
-#        36
+# 12
+# 18
+# 24
+# 30
+# 36
+# Total count: 6
+# Sum of numbers divisible by both 2 and 3: 126
+
+# print even number from this list program
+
+# Given list
+# a = [12, 23, 4, 8, 18, 8]
+
+# Initialize variables
+# index = 0
+
+# Use a while loop to print even numbers from the list
+# while index < len(a):
+#     if a[index] % 2 == 0:
+#         print(a[index])
+#     index += 1  # Increment the index in each iteration
+# Output:12
+# 4 
+# 8 
+# 18
+# 8  
+
+# iterable(# print even number from this list program)
+# a = [12, 23, 4, 8, 18, 8]
+# index = 0
+# 0 < len(7):
+# a[0]12%2==0->remainder 0->True
+# print(12)
+# index +=1  index=1
+    
+# Use a while loop to print leap years from the list
+    
+# Given list of years
+# year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+
+# Initialize variables
+# index = 0
+# leap_year_count = 0
+
+# Use a while loop to count and print leap years from the list
+# while index < len(year):
+#     y = year[index]
+#     if (y % 4 == 0 and y % 100 != 0) or (y % 400 == 0):
+#         print(y)
+#         leap_year_count += 1  # Increment the leap year count
+#     index += 1  # Increment the index in each iteration
+
+# # Print the total count of leap years
+# print(f"Total count of leap years: {leap_year_count}")
+# Output:2012
+#        2016
+#        2020
+#        2024
+#        Total count of leap years: 4
+
+# Given list of years
+# year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+
+# Initialize variables
+# index = 0
+# leap_year_count = 0
+# leap_years = []  # Empty list to store leap years
+
+# # Use a while loop to count and store leap years from the list
+# while index < len(year):
+#     y = year[index]
+#     if (y % 4 == 0 and y % 100 != 0) or (y % 400 == 0):
+#         print(y)
+#         leap_years.append(y)  # Append the leap year to the list
+#         leap_year_count += 1  # Increment the leap year count
+#     index += 1  # Increment the index in each iteration
+
+# # Print the total count of leap years
+# print(f"Total count of leap years: {leap_year_count}")
+
+# # Print the list of leap years
+# print("List of leap years:", leap_years)
+# Output:2012
+#        2016
+#        2020
+#        2024
+#        Total count of leap years: 4
+#        List of leap years: [2012, 2016, 2020, 2024]
+
+#  Given list of years
+year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+
+# Initialize variables
+# index = 0
+# leap_years = []  # Empty list to store leap years
+
+# Use a while loop to remove leap years from the list
+# while index < len(year):
+#     y = year[index]
+#     if (y % 4 == 0 and y % 100 != 0) or (y % 400 == 0):
+#         leap_years.append(year.pop(index))  # Remove and append the leap year from the list
+#     else:
+#         index += 1  # Increment the index if not a leap year
+
+# # Print the modified list without leap years
+# print("List without leap years:", year)
+
+# # Print the list of leap years
+# print("List of leap years removed:", leap_years)
+
+# iterable
+# index=0 count=0
+# 0<15-True
+# inde[0]->2010
+# 2010%4==0 ->True and 2010%
+
+# reverse program
+
+# n=123
+# rev=0
+# temp=n
+# while(temp>0):
+# rem=temp%10
+# rev=rev*10+rem
+# temp=temp // 10
+# print("Reverse of ", n , "is : ", rev)    
+# Output:
+# Reverse of  123 is :  321
+
+# rem=temp%10
+# rev=rev*10+rem
+# temp=temp // 10
+# temp=123   123>0->True
+# rem=123%10->3(last digit)
+# rev=0*10+3->3
+# temp=123//10->12(quotient)
+
+# rem=temp%10
+# rev=rev*10+rem
+# temp=temp // 10
+# temp=12  12>0->True
+# rem=12%10->2
+# rev=3*10+3+2->32
+# temp=12//10->1
+
+# rem=temp%10
+# rev=rev*10+rem
+# temp=temp // 10
+# temp=1 1>0->True
+# rem=1%10->1
+# rev=32*10+1->321
+# temp=1//10->0
+
+# palindrome
+# Number to check
+# n = 121
+
+# # Initialize variables
+# rev = 0
+# temp = n
+
+# Reverse the digits of the number
+# while temp > 0:
+#     rem = temp % 10
+#     rev = rev * 10 + rem
+#     temp = temp // 10
+
+# Check if the original number is equal to its reversed version
+# if n == rev:
+#     print(f"{n} is a palindrome.")
+# else:
+#     print(f"{n} is not a palindrome.")
+# Output:
+# 121 is a palindrome.
+
+# sum program
+
+# n=123
+# sum=0
+# temp=n
+# while(temp>0):
+#     rem=temp%10
+#     sum=sum+rem
+#     temp=temp // 10
+# print(f"sum of {n} is {sum}")    
+# Output:
+# sum of 123 is 6
+
+
+# hw
+# take list from user and find prime,palindrom numbers
+# a=[23,45,67,8]
+# 32,54,76,8
+
+# [102,101,201,232]
+# [101,232]
+
