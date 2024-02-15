@@ -1789,19 +1789,19 @@ x=10
 #     print("hello")
 #     print("bye")
 # Output:hi
-# hello
-# bye
-# hi
-# hello
-# bye
-# hi
-# hello
-# bye
+#        hello
+#        bye
+#        hi
+#        hello
+#        bye
+#        hi
+#        hello
+#        bye
+# aise aata rahega toh apne ko interrupt karna parega
 # Traceback (most recent call last):
 #   File "c:\Users\Zaid Ansari\OneDrive\Desktop\Quastech Python\FirstCode.py", line 1786, in <module>
 # print("bye")
-# KeyboardInterrupt
-# aisa aata rahega apne ko interrupt karna parega
+# KeyboardInterrupt(ctrl+c in terminal)
 
 # while(False):
 #     print("hi")
@@ -1814,20 +1814,20 @@ x=10
 #     print("hi")
 #     print("hello")
 #     print("bye")
-# Output:# Output:hi
-# hello
-# bye
-# hi
-# hello
-# bye
-# hi
-# hello
-# bye
+# Output:hi
+#        hello
+#        bye
+#        hi
+#        hello
+#        bye
+#        hi
+#        hello
+#        bye
+# aise aata rahega toh apne ko interrupt karna parega
 # Traceback (most recent call last):
 #   File "c:\Users\Zaid Ansari\OneDrive\Desktop\Quastech Python\FirstCode.py", line 1786, in <module>
 # print("bye")
 # KeyboardInterrupt
-# aisa aata rahega apne ko interrupt karna parega
 
 # x=1
 # while(x<=10):
@@ -1835,21 +1835,21 @@ x=10
 #     print("hello")
 #     print("bye")
 # Output:hi
-# hello
-# bye
-# hi
-# hello
-# bye
-# hi
-# hello
-# bye
+#        hello
+#        bye
+#        hi
+#        hello
+#        bye
+#        hi
+#        hello
+#        bye
+# aise aata rahega toh apne ko interrupt karna parega
 # Traceback (most recent call last):
 #   File "c:\Users\Zaid Ansari\OneDrive\Desktop\Quastech Python\FirstCode.py", line 1786, in <module>
 # print("bye")
 # KeyboardInterrupt
-# aisa aata rahega apne ko interrupt karna parega
 
-# Actual While loop code(means valid)(10 times run "hi","hello","bye")
+# Actual While loop code(means valid)(10 times print "hi","hello","bye")
 # x=1
 # while(x<=10):
 #     print("hi")
@@ -1858,36 +1858,36 @@ x=10
 #     x+=1                       # x=1  x<=10 ->True-> hi,hello,bye->  x+=1    x=2<-(aisa iterate hoga edhar aur check karega condition edhar)
 # print("out of loop")    
 # Output:hi   
-# hello
-# bye  
-# hi   
-# hello
-# bye  
-# hi   
-# hello
-# bye  
-# hi   
-# hello
-# bye
-# hi
-# hello
-# bye
-# hi
-# hello
-# bye
-# hi
-# hello
-# bye
-# hi
-# hello
-# bye
-# hi
-# hello
-# bye
-# hi
-# hello
-# bye
-# out of loop
+#        hello
+#        bye  
+#        hi   
+#        hello
+#        bye  
+#        hi   
+#        hello
+#        bye  
+#        hi   
+#        hello
+#        bye
+#        hi
+#        hello
+#        bye
+#        hi
+#        hello
+#        bye
+#        hi
+#        hello
+#        bye
+#        hi
+#        hello
+#        bye
+#        hi
+#        hello
+#        bye
+#        hi
+#        hello
+#        bye
+#        out of loop
 
 # iterable(10 times run "hi","hello","bye")
 # x=1  x<=10 ->True
@@ -1955,7 +1955,7 @@ x=10
 #       10
 
 # print 10 to 1 reverse  number program
-counter = 10
+# counter = 10
 
 # while counter >= 1:
 #     print(counter)
@@ -2087,15 +2087,15 @@ counter = 10
 #         print("hello")
 #     n=n+1        
 # Output:hello
-# 2
-# hello
-# 4
-# hello
-# 6
-# hello
-# 8
-# hello
-# 10 
+#        2
+#        hello
+#        4
+#        hello
+#        6
+#        hello
+#        8
+#        hello
+#        10 
     
 # iterable(# print even number from 1 to 10 and if even number is not occur then print "hello")
     
@@ -2181,9 +2181,11 @@ counter = 10
 # print(f"Total count: {count}")
 
 # output:6
-# 12
-# 18
-# Total count: 3
+#        12
+#        18
+#        Total count: 3
+
+# iterble(# Use a while loop to iterate through numbers from 1 to 20(count how much times numbers occurs which is divisible by 2 and 3 both))
 # number=1  count=0
 # 1<=20->True
 # 1%2==0->remainder1->False
@@ -2355,10 +2357,6 @@ counter = 10
 # Homework 
 # print sum of 1 to 10 number(previous number se sum hoga)
 
-# Initialize variables
-# current_number = 1
-# cumulative_sum = 0
-
 # # Use a while loop to calculate the cumulative sum
 # # Initialize variables
 # current_number = 1
@@ -2370,8 +2368,120 @@ counter = 10
 
 # # Print the cumulative sum
 # print(f"The cumulative sum of numbers from 1 to 10 is: {cumulative_sum}")
-
 # Output:The cumulative sum of numbers from 1 to 10 is: 55
+# Iteration 1: cumulative_sum = 1 (0 + 1)
+# Iteration 2: cumulative_sum = 3 (1 + 2)
+# Iteration 3: cumulative_sum = 6 (3 + 3)
+# Iteration 4: cumulative_sum = 10 (6 + 4)
+# ... and so on, until current_number becomes 11. The final result is the cumulative sum of numbers from 1 to 10, which is 55.
+
+# iterable 1
+# while current_number <= 10:
+# cumulative_sum += current_number
+# current_number += 1
+
+# current_number=1     cumulative_sum=0
+# 1<=10->True
+# cumulative_sum += 0+1->1
+# current_number +=1   current_number=2
+
+# iterable 2
+# while current_number <= 10:
+# cumulative_sum += current_number
+# current_number += 1
+
+# current_number=2     cumulative_sum=1
+# 2<=10->True
+# cumulative_sum +=1+2->3
+# current_number +=1   current_number=3
+
+# iterable 3
+# while current_number <= 10:
+# cumulative_sum += current_number
+# current_number += 1
+
+# current_number=3     cumulative_sum=3
+# 3<=10->True
+# cumulative_sum +=3+3->6
+# current_number +=1   current_number=4
+
+# iterable 4
+# while current_number <= 10:
+# cumulative_sum += current_number
+# current_number += 1
+
+# current_number=4     cumulative_sum=6
+# 4<=10->True
+# cumulative_sum +=6+4->10
+# current_number +=1   current_number=5
+
+# iterable 5
+# while current_number <= 10:
+# cumulative_sum += current_number
+# current_number += 1
+
+# current_number=5     cumulative_sum=10
+# 5<=10->True
+# cumulative_sum +=10+5->15
+# current_number +=1   current_number=6
+
+# iterable 6
+# while current_number <= 10:
+# cumulative_sum += current_number
+# current_number += 1
+
+# current_number=6     cumulative_sum=15
+# 6<=10->True
+# cumulative_sum +=15+6->21
+# current_number +=1   current_number=7
+
+# iterable 7
+# while current_number <= 10:
+# cumulative_sum += current_number
+# current_number += 1
+
+# current_number=7     cumulative_sum=21
+# 7<=10->True
+# cumulative_sum +=21+7->28
+# current_number +=1   current_number=8
+
+# iterable 8
+# while current_number <= 10:
+# cumulative_sum += current_number
+# current_number += 1
+
+# current_number=8     cumulative_sum=28
+# 8<=10->True
+# cumulative_sum +=28+8->36
+# current_number +=1   current_number=9
+
+# iterable 9
+# while current_number <= 10:
+# cumulative_sum += current_number
+# current_number += 1
+
+# current_number=9     cumulative_sum=36
+# 9<=10->True
+# cumulative_sum +=36+9->45
+# current_number +=1   current_number=10
+
+# iterable 10
+# while current_number <= 10:
+# cumulative_sum += current_number
+# current_number += 1
+
+# current_number=10     cumulative_sum=45
+# 10<=10->True
+# cumulative_sum +=45+10->55
+# current_number +=1   current_number=11
+
+# iterable 11
+# while current_number <= 10:
+# cumulative_sum += current_number
+# current_number += 1
+
+# current_number=11    cumulative_sum=55
+# 11<=10->False
 
 # print 1 to 40 number which is divisble by 2 and 3 both and print sum of 1 to 40 which is divisible by 2 and 3
 # Initialize variables
@@ -2516,9 +2626,9 @@ year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 
 # rev=0
 # temp=n
 # while(temp>0):
-# rem=temp%10
-# rev=rev*10+rem
-# temp=temp // 10
+#     rem=temp%10
+#     rev=rev*10+rem
+#     temp=temp // 10
 # print("Reverse of ", n , "is : ", rev)    
 # Output:
 # Reverse of  123 is :  321
@@ -2584,10 +2694,82 @@ year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 
 
 
 # hw
-# take list from user and find prime,palindrom numbers
 # a=[23,45,67,8]
-# 32,54,76,8
+# Output:
+# [32,54,76,8]
 
-# [102,101,201,232]
-# [101,232]
+# Reverse the digits of each number in the list using while loop
+# a = [23, 45, 67, 8]
 
+# reversed_list = []
+# index = 0
+
+# while index < len(a):
+#     num = a[index]
+#     reversed_num = 0
+
+#     while num > 0:
+#         rem = num % 10
+#         reversed_num = reversed_num * 10 + rem
+#         num = num // 10
+
+#     reversed_list.append(reversed_num)
+#     index += 1
+
+# print(reversed_list)
+# Output:[32, 54, 76, 8]
+
+# iterable 1
+# a=[23,45,67,8]
+# reversed_list=[]   index=0
+# 0<4->True
+# num=a=[23, 45, 67, 8][0]->23
+# reversed_num=0 
+# 23>0->True
+# rem=23%10->3
+# reversed_num=0*10+3->3
+# num=23 // 10->2
+# 2>0->True
+# rem=2%10->2
+# reversed_num=3*10+2->32
+# num=2 // 10->0
+# 0>0->False
+# [None].append(32) 
+# index +=1    index=1
+
+# iterable 2
+# 1<4->True
+# num=a=[23, 45, 67, 8][1]->45
+# reversed_num=0 
+# 45>0->True
+# rem=45%10->5
+# reversed_num=0*10+5->5
+# num=45 // 10->4
+# 4>0->True
+# rem=4%10
+
+
+# print only palindrome number in another list
+# numbers = [102, 101, 201, 232]
+
+# palindrome_list = []
+# index = 0
+
+# while index < len(numbers):
+#     current_num = numbers[index]
+
+#     original_num = current_num
+#     reversed_num = 0
+
+#     while current_num > 0:
+#         rem = current_num % 10
+#         reversed_num = reversed_num * 10 + rem
+#         current_num = current_num // 10
+
+#     if original_num == reversed_num:
+#         palindrome_list.append(original_num)
+
+#     index += 1
+
+# print("Palindrome numbers in the list:", palindrome_list)
+# Output:Palindrome numbers in the list: [101, 232]
