@@ -2996,48 +2996,128 @@ year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 
 # n=7  c=0
 
 # print 1 to 100 prime numbers using for loop and also count total prime numbers
-# Initialize variables
-# total_primes = 0
 
-# # Loop to print and count prime numbers from 1 to 100
-# for number in range(1, 101):
-#     if number < 2:
-#         continue  # Skip 0 and 1
-#     is_prime = True
-#     for i in range(2, int(number**0.5) + 1):
-#         if number % i == 0:
-#             is_prime = False
-#             break
-#     if is_prime:
-#         print(number)
-#         total_primes += 1
+# Initialize variables
+total_primes = 0
+
+# Loop to print and count prime numbers from 1 to 100
+for number in range(2, 101):
+    c = 0
+    # Loop to check for factors of number
+    for i in range(2, number):
+        if number % i == 0:
+            c += 1
+
+    # Determine if the current number is prime based on the value of c
+    result = f'{number} is not a prime number' if c > 0 else f'{number} is a prime number'
+    
+    # Print the result
+    print(result)
+
+    # Increment the total_primes count if the current number is prime
+    if c == 0:
+        total_primes += 1
 
 # Print the total count of prime numbers
-# print(f"Total prime numbers from 1 to 100: {total_primes}")
+print(f"Total prime numbers from 1 to 100: {total_primes}")
 # Output:
-# 2
-# 3 
-# 5 
-# 7 
-# 11
-# 13
-# 17
-# 19
-# 23
-# 29
-# 31
-# 37
-# 41
-# 43
-# 47
-# 53
-# 59
-# 61
-# 67
-# 71
-# 73
-# 79
-# 83
-# 89
-# 97
+# 2 is a prime number
+# 3 is a prime number     
+# 4 is not a prime number 
+# 5 is a prime number     
+# 6 is not a prime number 
+# 7 is a prime number     
+# 8 is not a prime number 
+# 9 is not a prime number 
+# 10 is not a prime number
+# 11 is a prime number    
+# 12 is not a prime number
+# 13 is a prime number
+# 14 is not a prime number
+# 15 is not a prime number
+# 16 is not a prime number
+# 17 is a prime number
+# 18 is not a prime number
+# 19 is a prime number
+# 20 is not a prime number
+# 21 is not a prime number
+# 22 is not a prime number
+# 23 is a prime number
+# 24 is not a prime number
+# 25 is not a prime number
+# 26 is not a prime number
+# 27 is not a prime number
+# 28 is not a prime number
+# 29 is a prime number
+# 30 is not a prime number
+# 31 is a prime number
+# 32 is not a prime number
+# 33 is not a prime number
+# 34 is not a prime number
+# 35 is not a prime number
+# 36 is not a prime number
+# 37 is a prime number
+# 38 is not a prime number
+# 39 is not a prime number
+# 40 is not a prime number
+# 41 is a prime number
+# 42 is not a prime number
+# 43 is a prime number
+# 44 is not a prime number
+# 45 is not a prime number
+# 46 is not a prime number
+# 47 is a prime number
+# 48 is not a prime number
+# 49 is not a prime number
+# 50 is not a prime number
+# 51 is not a prime number
+# 52 is not a prime number
+# 53 is a prime number
+# 54 is not a prime number
+# 55 is not a prime number
+# 56 is not a prime number
+# 57 is not a prime number
+# 58 is not a prime number
+# 59 is a prime number
+# 60 is not a prime number
+# 61 is a prime number
+# 62 is not a prime number
+# 63 is not a prime number
+# 64 is not a prime number
+# 65 is not a prime number
+# 66 is not a prime number
+# 67 is a prime number
+# 68 is not a prime number
+# 69 is not a prime number
+# 70 is not a prime number
+# 71 is a prime number
+# 72 is not a prime number
+# 73 is a prime number
+# 74 is not a prime number
+# 75 is not a prime number
+# 76 is not a prime number
+# 77 is not a prime number
+# 78 is not a prime number
+# 79 is a prime number
+# 80 is not a prime number
+# 81 is not a prime number
+# 82 is not a prime number
+# 83 is a prime number
+# 84 is not a prime number
+# 85 is not a prime number
+# 86 is not a prime number
+# 87 is not a prime number
+# 88 is not a prime number
+# 89 is a prime number
+# 90 is not a prime number
+# 91 is not a prime number
+# 92 is not a prime number
+# 93 is not a prime number
+# 94 is not a prime number
+# 95 is not a prime number
+# 96 is not a prime number
+# 97 is a prime number
+# 98 is not a prime number
+# 99 is not a prime number
+# 100 is not a prime number
 # Total prime numbers from 1 to 100: 25
