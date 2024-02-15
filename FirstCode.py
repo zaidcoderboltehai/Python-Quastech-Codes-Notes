@@ -2734,7 +2734,7 @@ year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 
 # reversed_num=3*10+2->32
 # num=2 // 10->0
 # 0>0->False
-# [None].append(32) 
+# [None].append(32)->[32]
 # index +=1    index=1
 
 # iterable 2
@@ -2746,8 +2746,28 @@ year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 
 # reversed_num=0*10+5->5
 # num=45 // 10->4
 # 4>0->True
-# rem=4%10
+# rem=4%10->4
+# reversed_num = 5 * 10 + 4->54
+# num=4 // 10->0
+# 0>0->False
+# [32].append(54)->[32,54]
+# index +=1    index=2
 
+# iterable 3
+# 2<4->True
+# num=a=[23, 45, 67, 8][1]->45
+# reversed_num=0 
+# 45>0->True
+# rem=45%10->5
+# reversed_num=0*10+5->5
+# num=45 // 10->4
+# 4>0->True
+# rem=4%10->4
+# reversed_num = 5 * 10 + 4->54
+# num=4 // 10->0
+# 0>0->False
+# [32].append(54)->[32,54]
+# index +=1    index=2
 
 # print only palindrome number in another list
 # numbers = [102, 101, 201, 232]
@@ -2773,3 +2793,37 @@ year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 
 
 # print("Palindrome numbers in the list:", palindrome_list)
 # Output:Palindrome numbers in the list: [101, 232]
+
+# iterable 1
+# numbers = [102, 101, 201, 232]
+# palindrome_list = []     index = 0
+# 0<4->True
+# current_num = [102,101,201,232][0]->102
+# original_num = 102
+# reversed_num = 0
+# 102>0->True
+# rem = 102 % 10->2
+# reversed_num = 0 * 10 + 2->2
+# current_num = 102 // 10->10
+# 10>0->True
+# rem = 10 % 10->0
+# reversed_num = 2 * 10 + 0->20
+# current_num = 10 // 10->1
+# 1>0->True
+# rem = 1 % 10->1
+# reversed_num = 20 * 10 + 1->201
+# current_num = 1 // 10->0
+# 0>0->False
+# if 102 == 201:->False
+# index +=1     index=1
+
+
+
+
+
+
+
+
+
+
+
