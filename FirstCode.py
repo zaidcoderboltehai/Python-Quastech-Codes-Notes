@@ -2692,12 +2692,7 @@ year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 
 # Output:
 # sum of 123 is 6
 
-
 # hw
-# a=[23,45,67,8]
-# Output:
-# [32,54,76,8]
-
 # Reverse the digits of each number in the list using while loop
 # a = [23, 45, 67, 8]
 
@@ -2755,19 +2750,24 @@ year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 
 
 # iterable 3
 # 2<4->True
-# num=a=[23, 45, 67, 8][1]->45
+# num=a=[23, 45, 67, 8][1]->67
 # reversed_num=0 
-# 45>0->True
-# rem=45%10->5
-# reversed_num=0*10+5->5
-# num=45 // 10->4
-# 4>0->True
-# rem=4%10->4
-# reversed_num = 5 * 10 + 4->54
-# num=4 // 10->0
+# 67>0->True
+# rem=67%10->7
+# reversed_num=0*10+7->7
+# num=67 // 10->6
+# 6>0->True
+# rem=6%10->6
+# reversed_num = 7 * 10 + 6->76
+# num=6 // 10->0
 # 0>0->False
-# [32].append(54)->[32,54]
-# index +=1    index=2
+# [32,54].append(76)->[32,54,76]
+# index +=1    index=3
+
+# iterable 4
+# 3<4->True
+# num=a=[23, 45, 67, 8][3]->8
+# rev
 
 # print only palindrome number in another list
 # numbers = [102, 101, 201, 232]
@@ -2817,13 +2817,227 @@ year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 
 # if 102 == 201:->False
 # index +=1     index=1
 
+# range
+# (start,end,step=1)(start->inclusive,end->exclusive)
+# for loop
+# for variable in(membership operator) (iterable_objects)->string,tuple,list,dictionary,set except numeric:
+#      body
+# for loop:when we know the number of iteration then we use for loop
+# for loop:it is a finite loop
+# for loop works on iterable object
+# while loop:when we don't know the number of iteration then we use while loop
+# while loop:it is an infinite loop
+# while loop works on specific condition 
+
+# for i in range(1,11):
+#     print(i)
+# Output:1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+# 10
+
+# l=[23,45,34,22,1]
+# for i in l:
+#     print(i)
+#     print("hello")
+# Output:23
+# hello
+# 45
+# hello
+# 34
+# hello
+# 22
+# hello
+# 1
+# hello
+
+# s="hello world"
+# for i in s:
+#     print(i)
+# Output:h
+# e
+# l
+# l
+# o
+ 
+# w
+# o
+# r
+# l
+# d
+
+# for i in 28:
+#     print(i)    
+# Output:
+#     for i in 28:
+# TypeError: 'int' object is not iterable
+
+# for i in "28":
+#     print(i)    
+# Output:
+# 2
+# 8
+    
+# for i in (28,1):
+#     print(i)  
+# Output:
+# 28
+# 1  
+
+# for i in (28,"hello world") [-1]:
+#     print(i)
+# Output:
+# h
+# e
+# l
+# l
+# o
+ 
+# w
+# o
+# r
+# l
+# d
+
+# for i in (28,"hello world") [0]:
+#     print(i)
+# Output:
+#     for i in (28,"hello world") [0]:
+# TypeError: 'int' object is not iterable
+
+# for i in (28,"hello world") [-1].split(" "):
+#     print(i)
+# Output:
+# hello
+# world
+
+# for i in (28,"hello world") [-1].split(" ")[0]:
+#     print(i)
+# Output:
+# h
+# e
+# l
+# l
+# o
+    
+# Using a for loop to print even numbers from 1 to 10
+# for number in range(1, 11):
+#     if number % 2 == 0:
+#         print(number)
+# Output:
+# 2
+# 4 
+# 6 
+# 8 
+# 10
+
+# take year 1900 to 2050 and print leap year in list
+# Initialize variables
+# leap_years = []
+
+# Check for leap years from 1900 to 2050
+# for year in range(1900, 2051):
+#     if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+#         leap_years.append(year)
+
+# Print the leap years
+# print("Leap years between 1900 and 2050:", leap_years)
+# Output:
+# Leap years between 1900 and 2050: [1904, 1908, 1912, 1916, 1920, 1924, 1928, 1932, 1936, 1940, 1944, 1948, 1952, 1956, 1960, 1964, 1968, 1972, 1976,
+# 1980, 1984, 1988, 1992, 1996, 2000, 2004, 2008, 2012, 2016, 2020, 2024, 2028, 2032, 2036, 2040, 2044, 2048]
 
 
+# prime number using while loop
 
+# n=8
+# i=2
+# end=n-1
+# c=0
+# while i<end:
+#     if(n%i==0):
+#         c+=1
+#     i+=1
 
+# if(c>0):
+#     print(f'{n} is not prime number')    
+# else:
+#     print(f'{n} is a prime number')    
+# Output:
+# 8 is not prime number    
+    
+# result=f'{n} is not prime number'  if(c>0) else f'{n} is a prime number'
+# print(result)
+# print(c)
+# Output:
+# 8 is not prime number
+# 2
+    
+# for loop
+# n=7
+# c=0
+# for i in range(2,n):
+#     if(n%i==0):
+#         c+=1
 
+# result=f'{n} is not prime number'  if(c>0) else f'{n} is a prime number'
+# print(result)
+# print(c)
+# Output:
+# 7 is a prime number
+# 0
 
+# iterable
+# n=7  c=0
 
+# print 1 to 100 prime numbers using for loop and also count total prime numbers
+# Initialize variables
+# total_primes = 0
 
+# # Loop to print and count prime numbers from 1 to 100
+# for number in range(1, 101):
+#     if number < 2:
+#         continue  # Skip 0 and 1
+#     is_prime = True
+#     for i in range(2, int(number**0.5) + 1):
+#         if number % i == 0:
+#             is_prime = False
+#             break
+#     if is_prime:
+#         print(number)
+#         total_primes += 1
 
-
+# Print the total count of prime numbers
+# print(f"Total prime numbers from 1 to 100: {total_primes}")
+# Output:
+# 2
+# 3 
+# 5 
+# 7 
+# 11
+# 13
+# 17
+# 19
+# 23
+# 29
+# 31
+# 37
+# 41
+# 43
+# 47
+# 53
+# 59
+# 61
+# 67
+# 71
+# 73
+# 79
+# 83
+# 89
+# 97
+# Total prime numbers from 1 to 100: 25
