@@ -1954,6 +1954,70 @@ x=10
 #        9 
 #       10
 
+# iterable 1
+# counter=1  
+# 1<=10->True
+# print(1)
+# counter += 1      counter=2
+
+# iterable 2
+# counter=2 
+# 2<=10->True
+# print(2)
+# counter += 1      counter=3
+
+# iterable 3
+# counter=3 
+# 3<=10->True
+# print(3)
+# counter += 1      counter=4
+
+# iterable 4
+# counter=4
+# 4<=10->True
+# print(4)
+# counter += 1      counter=5
+
+# iterable 5
+# counter=5 
+# 5<=10->True
+# print(5)
+# counter += 1      counter=6
+
+# iterable 6
+# counter=6 
+# 6<=10->True
+# print(6)
+# counter += 1      counter=7
+
+# iterable 7
+# counter=7
+# 7<=10->True
+# print(7)
+# counter += 1      counter=8
+
+# iterable 8
+# counter=8 
+# 8<=10->True
+# print(8)
+# counter += 1      counter=9
+
+# iterable 9
+# counter=9 
+# 9<=10->True
+# print(9)
+# counter += 1      counter=`10
+
+# iterable 10
+# counter=10 
+# 10<=10->True
+# print(10)
+# counter += 1      counter=11
+
+# iterable 11
+# counter=11 
+# 11<=10->False
+
 # print 10 to 1 reverse  number program
 # counter = 10
 
@@ -2163,6 +2227,132 @@ x=10
 #        12
 #        18
 
+# iterable 1(# Use a while loop to print numbers from 1 to 20 that are divisible by both 2 and 3)
+# number=1 
+# 1<=20->True
+# 1%2==0->1remainder->False 
+# number +=1   number=2
+
+# iterable 2 
+# number=2 
+# 2<=20->True
+# 2%2==0->0remainder->True and 2%3==0->2remainder->False
+# number +=1   number=3
+
+# iterable 3 
+# number=3 
+# 3<=20->True
+# 3%2==0->1remainder->False
+# number +=1   number=4
+
+# iterable 4 
+# number=4 
+# 4<=20->True
+# 4%2==0->0remainder->True and 4%3==0->1remainder->False
+# number +=1   number=5
+
+# iterable 5 
+# number=5 
+# 5<=20->True
+# 5%2==0->1remainder->False
+# number +=1   number=6
+
+# iterable 6 
+# number=6 
+# 6<=20->True
+# 6%2==0->0remainder->True and 6%3==0->0remainder->True
+# print(6)
+# number +=1   number=7
+
+# iterable 7 
+# number=7
+# 7<=20->True
+# 7%2==0->1remainder->False
+# number +=1   number=8
+
+# iterable 8 
+# number=8
+# 8<=20->True
+# 8%2==0->0remainder->True and 8%3==0->2remainder->False
+# number +=1   number=9
+
+# iterable 9
+# number=9
+# 9<=20->True
+# 9%2==0->1remainder->False
+# number +=1   number=10
+
+# iterable 10
+# number=10
+# 10<=20->True
+# 10%2==0->0remainder->True and 10%3==0->1remainder->False
+# number +=1   number=11
+
+# iterable 11
+# number=11
+# 11<=20->True
+# 11%2==0->1remainder->False
+# number +=1   number=12
+
+# iterable 12
+# number=12
+# 12<=20->True
+# 12%2==0->0remainder->True and 6%3==0->0remainder->True
+# print(12)
+# number +=1   number=13
+
+# iterable 13
+# number=13
+# 13<=20->True
+# 13%2==0->1remainder->False
+# number +=1   number=14
+
+# iterable 14
+# number=14
+# 14<=20->True
+# 14%2==0->0remainder->True and 14%3==0->2remainder->False
+# number +=1   number=15
+
+# iterable 15
+# number=15
+# 15<=20->True
+# 15%2==0->1remainder->False
+# number +=1   number=16
+
+# iterable 16
+# number=16
+# 16<=20->True
+# 16%2==0->0remainder->True and 16%3==0->1remainder->False
+# number +=1   number=17
+
+# iterable 17
+# number=17
+# 17<=20->True
+# 17%2==0->1remainder->False
+# number +=1   number=18
+
+# iterable 18
+# number=18
+# 18<=20->True
+# 18%2==0->0remainder->True and 18%3==0->0remainder->True
+# print(18)
+# number +=1   number=19
+
+# iterable 19
+# number=19
+# 19<=20->True
+# 19%2==0->1remainder->False
+# number +=1   number=20
+
+# iterable 20
+# number=20
+# 20<=20->True
+# 20%2==0->0remainder->True and 20%3==0->2remainder->False
+# number +=1   number=21
+
+# iterable 21
+# number=21
+# 21<=20->False
 
 # Use a while loop to iterate through numbers from 1 to 20(count how much times numbers occurs which is divisible by 2 and 3 both)
 
@@ -2185,7 +2375,7 @@ x=10
 #        18
 #        Total count: 3
 
-# iterble(# Use a while loop to iterate through numbers from 1 to 20(count how much times numbers occurs which is divisible by 2 and 3 both))
+# iterble(# Use a while loop to iterate through numbers from 1 to 20)(count how much times numbers occurs which is divisible by 2 and 3 both)
 # number=1  count=0
 # 1<=20->True
 # 1%2==0->remainder1->False
@@ -2316,6 +2506,7 @@ x=10
 #     print(my_list[index])
 #     index += 1  # Increment the index in each iteration
 
+# iterable
 # index=0
 # index=0<len(7)->True
 # print(12[0])
@@ -2483,7 +2674,7 @@ x=10
 # current_number=11    cumulative_sum=55
 # 11<=10->False
 
-# print 1 to 40 number which is divisble by 2 and 3 both and print sum of 1 to 40 which is divisible by 2 and 3
+# print 1 to 40 number which is divisble by 2 and 3 both and print sum of 1 to 40 which is divisible by 2 and 3 both
 # Initialize variables
 # number = 1
 # count = 0
@@ -2512,6 +2703,246 @@ x=10
 # Total count: 6
 # Sum of numbers divisible by both 2 and 3: 126
 
+# iterable 1(# print 1 to 40 number which is divisble by 2 and 3 both and print sum of 1 to 40 which is divisible by 2 and 3 both)
+# number=1 count=0  total_sum=0
+# 1<=40->True
+# 1%2==0->remainder1->False
+# number+=1  number=2
+
+# number=2  count=0  total_sum=0
+# 2<=40->True
+# 2%2==0->remainder0->True and 2%3==0->remainder2->False
+# False
+# number+=1  number=3
+
+# number=3  count=0  total_sum=0
+# 3<=40->True
+# 3%2==0->remainder1->False
+# number+=1  number=4
+
+# number=4  count=0  total_sum=0
+# 4<=40->True
+# 4%2==0->remainder0->True and 4%3==0->remainder1->False
+# False
+# number+=1  number=5
+
+# number=5  count=0  total_sum=0
+# 5<=40->True
+# 5%2==0->remainder1->False
+# number+=1  number=6
+
+# number=6  count=0  total_sum=0
+# 6<=40->True
+# 6%2==0->remainder0->True and 6%3==0->remainder0->True
+# True
+# print(6)
+# total_sum=0+6->6
+# count=1
+# number+=1  number=7
+
+# number=7  count=1   total_sum=6
+# 7<=40->True
+# 7%2==0->remainder1->False
+# number+=1  number=8
+
+# number=8  count=1   total_sum=6
+# 8<=40->True
+# 8%2==0->remainder0->True and 8%3==0->remainder1->False
+# False
+# number+=1  number=9
+
+# number=9  count=1   total_sum=6
+# 9<=40->True
+# 9%2==0->remainder1->False
+# number+=1  number=10
+
+# number=10  count=1  total_sum=6
+# 10<=40->True
+# 10%2==0->remainder0->True and 10%3==0->remainder1->False
+# False
+# number+=1  number=11
+
+# number=11  count=1  total_sum=6
+# 11<=40->True
+# 11%2==0->remainder1->False
+# number+=1  number=12
+
+# number=12  count=1  total_sum=6
+# 12<=40->True
+# 12%2==0->remainder0->True and 12%3==0->remainder0->True
+# True
+# print(12)
+# total_sum=6+12->18
+# count=2
+# number+=1  number=13
+
+# number=13  count=2  total_sum=18
+# 13<=40->True
+# 13%2==0->remainder1->False
+# number+=1  number=14
+
+# number=14  count=2  total_sum=18
+# 14<=40->True
+# 14%2==0->remainder0->True and 14%3==0->remainder1->False
+# False
+# number+=1  number=15
+
+# number=15  count=2  total_sum=18
+# 15<=40->True
+# 15%2==0->remainder1->False
+# number+=1  number=16
+
+# number=16  count=2  total_sum=18
+# 16<=40->True
+# 16%2==0->remainder0->True and 16%3==0->remainder1->False
+# False
+# number+=1  number=17
+
+# number=17  count=2  total_sum=18
+# 17<=40->True
+# 17%2==0->remainder1->False
+# number+=1  number=18
+
+# number=18  count=2   total_sum=18
+# 18<=40->True
+# 18%2==0->remainder0->True and 18%3==0->remainder0->True
+# True
+# print(18)
+# total_sum=18+18->36
+# count=3
+# number+=1  number=19
+
+# number=19  count=3   total_sum=36
+# 19<=40->True
+# 19%2==0->remainder1->False
+# number+=1  number=20
+
+# number=20  count=3   total_sum=36
+# 20<=40->True
+# 20%2==0->remainder0->True and 20%3==0->remainder2->False
+# False
+# number+=1  number=21
+
+# number=21  count=3   total_sum=36
+# 21<=40->True
+# 21%2==0->remainder1->False
+# number+=1  number=22
+
+# number=22  count=3   total_sum=36
+# 22<=40->True
+# 22%2==0->remainder0->True and 22%3==0->remainder1->False
+# False
+# number+=1  number=23
+
+# number=23  count=3   total_sum=36
+# 23<=40->True
+# 23%2==0->remainder1->False 
+# number+=1  number=24
+
+# number=24  count=3   total_sum=36
+# 24<=40->True
+# 24%2==0->remainder0->True and 24%3==0->remainder0->True
+# True
+# print(24)
+# total_sum=36+24->60
+# count=4
+# number+=1  number=25
+
+# number=25  count=4   total_sum=60
+# 25<=40->True
+# 25%2==0->remainder1->False 
+# number+=1  number=26
+
+# number=26  count=4   total_sum=60
+# 26<=40->True
+# 26%2==0->remainder0->True and 26%3==0->remainder2->False
+# False
+# number+=1  number=27
+
+# number=27  count=4   total_sum=60
+# 27<=40->True
+# 27%2==0->remainder1->False 
+# number+=1  number=28
+
+# number=28  count=4   total_sum=60
+# 28<=40->True
+# 28%2==0->remainder0->True and 28%3==0->remainder1->False 
+# False
+# number+=1  number=29
+
+# number=29  count=4   total_sum=60
+# 29<=40->True
+# 29%2==0->remainder1->False 
+# number+=1  number=30
+
+# number=30  count=4   total_sum=60
+# 30<=40->True
+# 30%2==0->remainder0->True  and 30%3==0->remainder0->True
+# True
+# print(30)
+# total_sum=60+30->90
+# count=5
+# number+=1  number=31
+
+# number=31  count=5   total_sum=90
+# 31<=40->True
+# 31%2==0->remainder1->False 
+# number+=1  number=32
+
+# number=32  count=5   total_sum=90
+# 32<=40->True
+# 32%2==0->remainder0->True  and 30%3==0->remainder2->False
+# False
+# number+=1  number=33
+# number=33  count=5   total_sum=90
+# 33<=40->True
+# 33%2==0->remainder1->False
+# number+=1  number=34
+
+# number=34  count=5   total_sum=90
+# 34<=40->True
+# 34%2==0->remainder0->True  and 34%3==0->remainder1->False
+# False
+# number+=1  number=35
+
+# number=35  count=5   total_sum=90
+# 35<=40->True
+# 35%2==0->remainder1->False 
+# number+=1  number=36
+
+# number=36  count=5   total_sum=90
+# 36<=40->True
+# 36%2==0->remainder0->True  and 36%3==0->remainder0->True
+# True
+# print(36)
+# total_sum=90+36->126
+# count=6
+# number+=1  number=37
+
+# number=37  count=6   total_sum=126
+# 37<=40->True
+# 37%2==0->remainder1->False 
+# number+=1  number=38
+
+# number=38  count=6   total_sum=126
+# 38<=40->True
+# 38%2==0->remainder0->True and 38%3==0->remainder2->False
+# number+=1  number=39
+
+# number=39  count=6   total_sum=126
+# 39<=40->True
+# 39%2==0->remainder1->False
+# number+=1  number=40
+
+# number=40  count=6   total_sum=126
+# 40<=40->True
+# 40%2==0->remainder0->True and 40%3==0->remainder1->False
+# False
+# number+=1  number=41
+
+# number=41  count=6   total_sum=126
+# 41<=40->False
+
 # print even number from this list program
 
 # Given list
@@ -2531,16 +2962,55 @@ x=10
 # 18
 # 8  
 
-# iterable(# print even number from this list program)
+# iterable1(# Use a while loop to print even numbers from the list)
 # a = [12, 23, 4, 8, 18, 8]
 # index = 0
-# 0 < len(7):
+# 0 < len(6):->True
 # a[0]12%2==0->remainder 0->True
 # print(12)
 # index +=1  index=1
-    
-# Use a while loop to print leap years from the list
-    
+
+# iterable2
+# a = [12, 23, 4, 8, 18, 8]
+# index = 1
+# 1 < len(6):->True
+# a[1]23%2==0->remainder 1->False
+# index +=1  index=2
+
+# iterable3
+# a = [12, 23, 4, 8, 18, 8]
+# index = 2
+# 2 < len(6):->True
+# a[2]4%2==0->remainder 0->True
+# index +=1  index=3
+
+# iterable4
+# a = [12, 23, 4, 8, 18, 8]
+# index = 3
+# 3 < len(6):->True
+# a[3]8%2==0->remainder 0->True
+# index +=1  index=4
+
+# iterable5
+# a = [12, 23, 4, 8, 18, 8]
+# index = 4
+# 4 < len(6):->True
+# a[4]18%2==0->remainder 0->True
+# index +=1  index=5
+
+# iterable6
+# a = [12, 23, 4, 8, 18, 8]
+# index = 5
+# 5 < len(6):->True
+# a[5]8%2==0->remainder 0->True
+# index +=1  index=6
+
+# iterable7
+# a = [12, 23, 4, 8, 18, 8]
+# index = 6
+# 6 < len(6):->False
+
+# Use a while loop to count and print leap years from the list
 # Given list of years
 # year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
 
@@ -2548,7 +3018,6 @@ x=10
 # index = 0
 # leap_year_count = 0
 
-# Use a while loop to count and print leap years from the list
 # while index < len(year):
 #     y = year[index]
 #     if (y % 4 == 0 and y % 100 != 0) or (y % 400 == 0):
@@ -2564,6 +3033,16 @@ x=10
 #        2024
 #        Total count of leap years: 4
 
+# iterable 1(# Use a while loop to count and print leap years from the list)
+# index=0   leap_year_count=0
+# 0<len(15)->True
+# year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+# y=[2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024][0]->2010
+# if(2010%4==0->remainder2->False and 2010%100!=0->remainder10->True)->False or (2010%400==0)->remainder10->False
+# index +=1   index=1
+
+
+# Use a while loop to count and store leap years from the list
 # Given list of years
 # year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
 
@@ -2572,7 +3051,6 @@ x=10
 # leap_year_count = 0
 # leap_years = []  # Empty list to store leap years
 
-# # Use a while loop to count and store leap years from the list
 # while index < len(year):
 #     y = year[index]
 #     if (y % 4 == 0 and y % 100 != 0) or (y % 400 == 0):
@@ -2593,14 +3071,151 @@ x=10
 #        Total count of leap years: 4
 #        List of leap years: [2012, 2016, 2020, 2024]
 
+
+# iterable 1(# Use a while loop to count and store leap years from the list )
+# index=0   leap_year_count=0   leap_years = []
+# 0<len(15)->True
+# year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+# y=[2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024][0]->2010
+# if(2010%4==0->remainder2->False and 2010%100!=0->remainder10->True)->False or (2010%400==0)->remainder10->False
+# index +=1   index=1
+
+# iterable 2
+# index=1   leap_year_count=0   leap_years = []
+# 1<len(15)->True
+# year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+# y=[2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024][1]->2011
+# if(2011%4==0->remainder3->False and 2011%100!=0->remainder11->True)->False or (2011%400==0)->remainder11->False
+# index +=1   index=2
+
+# iterable 3
+# index=2   leap_year_count=0   leap_years = []
+# 2<len(15)->True
+# year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+# y=[2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024][2]->2012
+# if(2012%4==0->remainder0->True and 2012%100!=0->remainder12->True)->True 
+# print(2012)
+# leap_years = [].append(2012)->[2012]
+# leap_year_count=1
+# index +=1   index=3
+
+# iterable 4
+# index=3   leap_year_count=1   leap_years = [2012]
+# 3<len(15)->True
+# year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+# y=[2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024][3]->2013
+# if(2013%4==0->remainder1->False and 2013%100!=0->remainder13->True)->False or (2013%400==0)->remainder13->False
+# index +=1   index=4
+
+# iterable 5
+# index=4   leap_year_count=1   leap_years = [2012]
+# 4<len(15)->True
+# year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+# y=[2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024][4]->2014
+# if(2014%4==0->remainder2->False and 2014%100!=0->remainder14->True)->False or (2014%400==0)->remainder14->False
+# index +=1   index=5
+
+# iterable 6
+# index=5   leap_year_count=1   leap_years = [2012]
+# 5<len(15)->True
+# year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+# y=[2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024][5]->2015
+# if(2015%4==0->remainder3->False and 2015%100!=0->remainder15->True)->False or (2015%400==0)->remainder15->False
+# index +=1   index=6
+
+# iterable 6
+# index=6   leap_year_count=1   leap_years = [2012]
+# 6<len(15)->True
+# year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+# y=[2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024][6]->2016
+# if(2016%4==0->remainder0->True and 2016%100!=0->remainder16->True)->True 
+# print(2016)
+# leap_years = [2012].append(2016)->[2012,2016]
+# leap_year_count=2
+# index +=1   index=7
+
+# iterable 7
+# index=7   leap_year_count=2   leap_years = [2012,2016]
+# 7<len(15)->True
+# year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+# y=[2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024][7]->2017
+# if(2017%4==0->remainder1->False and 2017%100!=0->remainder17->True)->False or (2017%400==0)->remainder17->False
+# index +=1   index=8
+
+# iterable 8
+# index=8   leap_year_count=2   leap_years = [2012,2016]
+# 8<len(15)->True
+# year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+# y=[2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024][8]->2018
+# if(2018%4==0->remainder2->False and 2018%100!=0->remainder18->True)->False or (2018%400==0)->remainder18->False
+# index +=1   index=9
+
+# iterable 9
+# index=9   leap_year_count=2   leap_years = [2012,2016]
+# 9<len(15)->True
+# year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+# y=[2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024][9]->2019
+# if(2019%4==0->remainder3->False and 2019%100!=0->remainder19->True)->False or (2019%400==0)->remainder19->False
+# index +=1   index=10
+
+# iterable 10
+# index=10   leap_year_count=2   leap_years = [2012,2016]
+# 10<len(15)->True
+# year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+# y=[2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024][10]->2020
+# if(2020%4==0->remainder0->True and 2020%100!=0->remainder20->True)->True 
+# print(2020)
+# leap_years = [2012,2016].append(2020)->[2012,2016,2020]
+# leap_year_count=3
+# index +=1   index=11
+
+# iterable 11
+# index=11   leap_year_count=3   leap_years = [2012,2016,2020]
+# 11<len(15)->True
+# year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+# y=[2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024][11]->2021
+# if(2021%4==0->remainder1->False and 2021%100!=0->remainder21->True)->False or (2021%400==0)->remainder21->False
+# index +=1   index=12
+
+# iterable 12
+# index=12   leap_year_count=3   leap_years = [2012,2016,2020]
+# 12<len(15)->True
+# year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+# y=[2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024][12]->2022
+# if(2022%4==0->remainder4->False and 2022%100!=0->remainder22->True)->False or (2022%400==0)->remainder22->False 
+# index +=1   index=13
+
+# iterable 13
+# index=13   leap_year_count=3   leap_years = [2012,2016,2020]
+# 13<len(15)->True
+# year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+# y=[2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024][13]->2023
+# if(2023%4==0->remainder3->False and 2023%100!=0->remainder23->True)->False or (2023%400==0)->remainder23->False
+# index +=1   index=14
+
+# iterable 14
+# index=14   leap_year_count=3   leap_years = [2012,2016,2020]
+# 14<len(15)->True
+# year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+# y=[2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024][14]->2024
+# if(2024%4==0->remainder0->True and 2024%100!=0->remainder24->True)->True 
+# print(2024)
+# leap_years = [2012,2016,2020].append(2024)->[2012,2016,2020,2024]
+# leap_year_count=4
+# index +=1   index=15
+
+# iterable 15
+# index=15   leap_year_count=4   leap_years = [2012,2016,2020,2024]
+# 15<len(15)->False
+
+# Use a while loop to remove leap years from the list
 #  Given list of years
-year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+# year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
 
 # Initialize variables
 # index = 0
 # leap_years = []  # Empty list to store leap years
 
-# Use a while loop to remove leap years from the list
 # while index < len(year):
 #     y = year[index]
 #     if (y % 4 == 0 and y % 100 != 0) or (y % 400 == 0):
@@ -2608,20 +3223,21 @@ year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 
 #     else:
 #         index += 1  # Increment the index if not a leap year
 
-# # Print the modified list without leap years
+# Print the modified list without leap years
 # print("List without leap years:", year)
 
-# # Print the list of leap years
+# Print the list of leap years
 # print("List of leap years removed:", leap_years)
+# Output:
+# List without leap years: [2010, 2011, 2013, 2014, 2015, 2017, 2018, 2019, 2021, 2022, 2023]
+# List of leap years removed: [2012, 2016, 2020, 2024]
 
 # iterable
-# index=0 count=0
-# 0<15-True
-# inde[0]->2010
-# 2010%4==0 ->True and 2010%
+# year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
+# index=0      leap_years = []
+# 0<15->True
 
 # reverse program
-
 # n=123
 # rev=0
 # temp=n
@@ -2633,31 +3249,34 @@ year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 
 # Output:
 # Reverse of  123 is :  321
 
-# rem=temp%10
-# rev=rev*10+rem
-# temp=temp // 10
-# temp=123   123>0->True
-# rem=123%10->3(last digit)
-# rev=0*10+3->3
-# temp=123//10->12(quotient)
+# iterable 1
+# n=123  rev=0   temp=n
+# 123>0->True
+# rem=temp%10->123%10->3(last digit)
+# rev=rev*10+rem->0*10+3->3
+# temp=temp // 10->123//10->12(quotient)
 
-# rem=temp%10
-# rev=rev*10+rem
-# temp=temp // 10
-# temp=12  12>0->True
-# rem=12%10->2
-# rev=3*10+3+2->32
-# temp=12//10->1
+# iterable 2
+# n=12  rev=3   temp=12
+# 12>0->True
+# rem=temp%10->12%10->2(last digit)
+# rev=rev*10+rem->3*10+2->32
+# temp=temp // 10->12//10->1(quotient)
 
-# rem=temp%10
-# rev=rev*10+rem
-# temp=temp // 10
-# temp=1 1>0->True
-# rem=1%10->1
-# rev=32*10+1->321
-# temp=1//10->0
+# iterable 3
+# n=1  rev=32   temp=1
+# 1>0->True
+# rem=temp%10->1%10->1(last digit)
+# rev=rev*10+rem->32*10+1->321
+# temp=temp // 10->1//10->0(quotient)
 
-# palindrome
+# iterable 4
+# n=0  rev=321   temp=0
+# 0>0->False
+
+# print(321)
+
+# palindrome program
 # Number to check
 # n = 121
 
@@ -2679,6 +3298,33 @@ year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 
 # Output:
 # 121 is a palindrome.
 
+# iterable 1
+# n=121  rev=0  temp=121
+# 121>0->True
+# rem = temp % 10->121%10->1(last digit)
+# rev = rev * 10 + rem->0*10+1->1
+# temp = temp // 10->121//10->12(quotient)
+
+# iterable 2
+# n=12  rev=1  temp=12
+# 12>0->True
+# rem = temp % 10->12%10->2(last digit)
+# rev = rev * 10 + rem->1*10+2->12
+# temp = temp // 10->12//10->1(quotient)
+
+# iterable 3
+# n=1  rev=12  temp=1
+# 1>0->True
+# rem = temp % 10->1%10->1(last digit)
+# rev = rev * 10 + rem->12*10+1->121
+# temp = temp // 10->1//10->0(quotient)
+
+# iterable 4
+# n=0  rev=121  temp=0
+# 0>0->False
+
+# print(121)
+
 # sum program
 
 # n=123
@@ -2691,6 +3337,33 @@ year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 
 # print(f"sum of {n} is {sum}")    
 # Output:
 # sum of 123 is 6
+
+# iterable 1
+# n=123  sum=0  temp=123
+# 123>0->True
+# rem=temp%10->123%10->3(last digit)
+# sum=sum+rem->sum=0+3->3
+# temp=temp // 10->123//10->12(quotient)
+
+# iterable 2
+# n=12  sum=3  temp=12
+# 12>0->True
+# rem=temp%10->12%10->2(last digit)
+# sum=sum+rem->sum=3+2->5
+# temp=temp // 10->12//10->1(quotient)
+
+# iterable 3
+# n=1  sum=5  temp=1
+# 1>0->True
+# rem=temp%10->1%10->1(last digit)
+# sum=sum+rem->sum=5+1->6
+# temp=temp // 10->1//10->0(quotient)
+
+# iterable 4
+# n=0  sum=6  temp=0
+# 0>0->False
+
+# print(6)
 
 # hw
 # Reverse the digits of each number in the list using while loop
@@ -2718,24 +3391,24 @@ year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 
 # a=[23,45,67,8]
 # reversed_list=[]   index=0
 # 0<4->True
-# num=a=[23, 45, 67, 8][0]->23
+# num=a[index]=[23, 45, 67, 8][0]->23
 # reversed_num=0 
 # 23>0->True
-# rem=23%10->3
+# rem=23%10->3(last digit)
 # reversed_num=0*10+3->3
-# num=23 // 10->2
+# num=23 // 10->2(quotient)
 # 2>0->True
-# rem=2%10->2
+# rem=2%10->2(last digit)
 # reversed_num=3*10+2->32
 # num=2 // 10->0
 # 0>0->False
-# [None].append(32)->[32]
+# [ ].append(32)->[32]
 # index +=1    index=1
 
 # iterable 2
 # 1<4->True
 # num=a=[23, 45, 67, 8][1]->45
-# reversed_num=0 
+# reversed_num=32
 # 45>0->True
 # rem=45%10->5
 # reversed_num=0*10+5->5
@@ -2832,45 +3505,45 @@ year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 
 # for i in range(1,11):
 #     print(i)
 # Output:1
-# 2
-# 3
-# 4
-# 5
-# 6
-# 7
-# 8
-# 9
-# 10
+#        3
+#        2
+#        4
+#        5
+#        6
+#        7
+#        8
+#        9
+#        10
 
 # l=[23,45,34,22,1]
 # for i in l:
 #     print(i)
 #     print("hello")
 # Output:23
-# hello
-# 45
-# hello
-# 34
-# hello
-# 22
-# hello
-# 1
-# hello
+#        hello
+#        45
+#        hello
+#        34
+#        hello
+#        22
+#        hello
+#        1
+#        hello
 
 # s="hello world"
 # for i in s:
 #     print(i)
 # Output:h
-# e
-# l
-# l
-# o
+#        e
+#        l
+#        l
+#        o
  
-# w
-# o
-# r
-# l
-# d
+#        w
+#        o
+#        r
+#        l
+#        d
 
 # for i in 28:
 #     print(i)    
@@ -2970,7 +3643,43 @@ year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 
 #     print(f'{n} is a prime number')    
 # Output:
 # 8 is not prime number    
-    
+
+# iterable 1
+# n=8  i=2  end=8-1=7   c=0
+# 2<7->True
+# if(8%2==0)->remainder0->True   
+# c+=1   c=0+1=1
+# i+=1   i=2+1=3
+
+# iterable 2
+# 3<7->True
+# if(8%3==0)->remainder2->False
+# i+=1   i=3+1=4 
+
+# iterable 3
+# 4<7->True
+# if(8%4==0)->remainder0->True
+# c+=1   c=1+1=2
+# i+=1   i=4+1=5
+
+# iterable 4
+# 5<7->True
+# if(8%5==0)->remainder3->False
+# i+=1   i=5+1=6
+
+# iterable 5
+# 6<7->True
+# if(8%6==0)->remainder2->False
+# i+=1   i=6+1=7
+
+# iterable 6
+# 7<7->False
+
+# iterable 7
+# if(2>0)->True
+# print(8 is not prime number)    
+
+# using ternary operator prime number program
 # result=f'{n} is not prime number'  if(c>0) else f'{n} is a prime number'
 # print(result)
 # print(c)
@@ -2978,7 +3687,7 @@ year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 
 # 8 is not prime number
 # 2
     
-# for loop
+# prime number using for loop
 # n=7
 # c=0
 # for i in range(2,n):
@@ -2992,34 +3701,59 @@ year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 
 # 7 is a prime number
 # 0
 
-# iterable
+# iterable 1(# prime number using for loop)
 # n=7  c=0
+# for i in range(2,7)
+# for i in 2
+# if(7%2==0)->remainder1->False
+
+# iterable 2
+# for i in 3
+# if(7%3==0)->remainder1->False
+
+# iterable 3
+# for i in 4
+# if(7%4==0)->remainder3->False
+
+# iterable 4
+# for i in 5
+# if(7%5==0)->remainder2->False
+
+# iterable 5
+# for i in 6
+# if(7%6==0)->remainder1->False
+
+# iterable 6
+# result=f'{n} is not prime number'  if(c>0) else f'{n} is a prime number'
+# result=f'{n} is not prime number'  if(0>0)->False else 7 is a prime number'
+# result=7 is a prime number
+# print(7 is a prime number)
+# print(0)
 
 # print 1 to 100 prime numbers using for loop and also count total prime numbers
-
 # Initialize variables
-total_primes = 0
+# total_primes = 0
 
-# Loop to print and count prime numbers from 1 to 100
-for number in range(2, 101):
-    c = 0
+# # Loop to print and count prime numbers from 1 to 100
+# for number in range(2, 101):
+#     c = 0
     # Loop to check for factors of number
-    for i in range(2, number):
-        if number % i == 0:
-            c += 1
+    # for i in range(2, number):
+    #     if number % i == 0:
+    #         c += 1
 
     # Determine if the current number is prime based on the value of c
-    result = f'{number} is not a prime number' if c > 0 else f'{number} is a prime number'
+    # result = f'{number} is not a prime number' if c > 0 else f'{number} is a prime number'
     
     # Print the result
-    print(result)
+    # print(result)
 
     # Increment the total_primes count if the current number is prime
-    if c == 0:
-        total_primes += 1
+    # if c == 0:
+        # total_primes += 1
 
 # Print the total count of prime numbers
-print(f"Total prime numbers from 1 to 100: {total_primes}")
+# print(f"Total prime numbers from 1 to 100: {total_primes}")
 # Output:
 # 2 is a prime number
 # 3 is a prime number     
@@ -3121,3 +3855,45 @@ print(f"Total prime numbers from 1 to 100: {total_primes}")
 # 99 is not a prime number
 # 100 is not a prime number
 # Total prime numbers from 1 to 100: 25
+
+# iterable 1
+# total_primes = 0
+# for number in range(2, 101):
+# for number in 2
+# c=0
+# for i in range(2,2):
+# result = f'{number} is not a prime number' if c > 0 else f'{number} is a prime number'
+# result = f'{number} is not a prime number' if 0 > 0->False else 2 is a prime number
+# result=2 is a prime number
+# print(2 is a prime number)
+# if c == 0:->0==0->True
+# total_primes += 1   total_primes=0+1=1
+
+# iterable 2
+# total_primes = 1
+# for number in range(2, 101):
+# for number in 3
+# c=0
+# for i in range(2,3):
+# for i in 2
+# if number % i == 0:
+# c += 1
+# if 3 % 2 == 0:->remainder1->False
+# result = f'{number} is not a prime number' if c > 0 else f'{number} is a prime number'
+# result = f'{number} is not a prime number' if 0 > 0->False else 3 is a prime number
+# result=3 is a prime number
+# print(3 is a prime number)
+# if c == 0:->0==0->True
+# total_primes += 1  total_primes=1+1=2
+
+# iterable 3
+# total_primes = 2
+# for number in range(2, 101):
+# for number in 4
+# c=0
+# for i in range(2,4):
+# for i in 2
+# if 4 % 2 == 0:->remainder0->True
+# c += 1
+
+
