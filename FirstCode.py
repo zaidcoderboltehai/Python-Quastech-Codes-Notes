@@ -3323,7 +3323,8 @@ x=10
 # n=0  rev=121  temp=0
 # 0>0->False
 
-# print(121)
+# if 121==121
+# print(121 is a palindrome number)
 
 # sum program
 
@@ -3363,7 +3364,7 @@ x=10
 # n=0  sum=6  temp=0
 # 0>0->False
 
-# print(6)
+# print(sum of 123 is 6)
 
 # hw
 # Reverse the digits of each number in the list using while loop
@@ -3897,3 +3898,376 @@ x=10
 # c += 1
 
 
+# fibonacci series
+#  1
+#  2
+#  3               0   1    1   2   3   5
+#  4               a   b    c
+#  5                   a    b   c
+#  6                        a   b   c
+#                               a   b   c
+
+# a=0
+# b=1
+# for i in range(1,11):
+#     print(a)
+#     c=a+b
+#     a=b
+#     b=c
+# Output:
+# 0
+# 1
+# 1
+# 2
+# 3
+# 5
+# 8
+# 13
+# 21
+# 34    
+    
+# iterbale 1
+# i=1 True
+# print(0)   
+# c=0+1
+    
+# Nested for loop
+
+# for i in range(1,6):
+#     for j in range(11,16):
+#         print(i,j) 
+
+# for i in range(1,6):
+#     for j in range(11,16):
+#         print(i,j)
+
+#     for k in range(21,26):
+#         print(i,k)
+#         for x in range(31,36):
+#             print(i,k,x)        
+
+# Output:
+# 1 11
+# 1 12
+# 1 13
+# 1 14
+# 1 15
+# 2 11
+# 2 12
+# 2 13
+# 2 14
+# 2 15
+# 3 11
+# 3 12
+# 3 13
+# 3 14
+# 3 15
+# 4 11
+# 4 12
+# 4 13
+# 4 14
+# 4 15
+# 5 11
+# 5 12
+# 5 13
+# 5 14
+# 5 15
+# 1 11
+# 1 12
+# 1 13
+# 1 14
+# 1 15
+# 1 21
+# 1 21 31
+# 1 21 32
+# 1 21 33
+# 1 21 34
+# 1 21 35
+# 1 22
+# 1 22 31
+# 1 22 32
+# 1 22 33
+# 1 22 34
+# 1 22 35
+# 1 23
+# 1 23 31
+# 1 23 32
+# 1 23 33
+# 1 23 34
+# 1 23 35
+# 1 24
+# 1 24 31
+# 1 24 32
+# 1 24 33
+# 1 24 34
+# 1 24 35
+# 1 25
+# 1 25 31
+# 1 25 32
+# 1 25 33
+# 1 25 34
+# 1 25 35
+# 2 11
+# 2 12
+# 2 13
+# 2 14
+# 2 15
+# 2 21
+# 2 21 31
+# 2 21 32
+# 2 21 33
+# 2 21 34
+# 2 21 35
+# 2 22
+# 2 22 31
+# 2 22 32
+# 2 22 33
+# 2 22 34
+# 2 22 35
+# 2 23
+# 2 23 31
+# 2 23 32
+# 2 23 33
+# 2 23 34
+# 2 23 35
+# 2 24
+# 2 24 31
+# 2 24 32
+# 2 24 33
+# 2 24 34
+# 2 24 35
+# 2 25
+# 2 25 31
+# 2 25 32
+# 2 25 33
+# 2 25 34
+# 2 25 35
+# 3 11
+# 3 12
+# 3 13
+# 3 14
+# 3 15
+# 3 21
+# 3 21 31
+# 3 21 32
+# 3 21 33
+# 3 21 34
+# 3 21 35
+# 3 22
+# 3 22 31
+# 3 22 32
+# 3 22 33
+# 3 22 34
+# 3 22 35
+# 3 23
+# 3 23 31
+# 3 23 32
+# 3 23 33
+# 3 23 34
+# 3 23 35
+# 3 24
+# 3 24 31
+# 3 24 32
+# 3 24 33
+# 3 24 34
+# 3 24 35
+# 3 25
+# 3 25 31
+# 3 25 32
+# 3 25 33
+# 3 25 34
+# 3 25 35
+# 4 11
+# 4 12
+# 4 13
+# 4 14
+# 4 15
+# 4 21
+# 4 21 31
+# 4 21 32
+# 4 21 33
+# 4 21 34
+# 4 21 35
+# 4 22
+# 4 22 31
+# 4 22 32
+# 4 22 33
+# 4 22 34
+# 4 22 35
+# 4 23
+# 4 23 31
+# 4 23 32
+# 4 23 33
+# 4 23 34
+# 4 23 35
+# 4 24
+# 4 24 31
+# 4 24 32
+# 4 24 33
+# 4 24 34
+# 4 24 35
+# 4 25
+# 4 25 31
+# 4 25 32
+# 4 25 33
+# 4 25 34
+# 4 25 35
+# 5 11
+# 5 12
+# 5 13
+# 5 14
+# 5 15
+# 5 21
+# 5 21 31
+# 5 21 32
+# 5 21 33
+# 5 21 34
+# 5 21 35
+# 5 22
+# 5 22 31
+# 5 22 32
+# 5 22 33
+# 5 22 34
+# 5 22 35
+# 5 23
+# 5 23 31
+# 5 23 32
+# 5 23 33
+# 5 23 34
+# 5 23 35
+# 5 24
+# 5 24 31
+# 5 24 32
+# 5 24 33
+# 5 24 34
+# 5 24 35
+# 5 25
+# 5 25 31
+# 5 25 32
+# 5 25 33
+# 5 25 34
+# 5 25 35            
+            
+# Calculate the sum using a while loop
+# my_list = [1, 2, 14, 9, 6]
+
+# Initialize variables
+# list_sum = 0
+# index = 0
+
+# while index < len(my_list):
+#     list_sum += my_list[index]
+#     index += 1
+
+# print(f"The sum of the list is: {list_sum}")
+
+# Output:
+# The sum of the list is: 32
+
+# Calculate the sum using a for loop
+
+# my_list = [1, 2, 14, 9, 6]
+
+# Initialize variable
+# list_sum = 0
+
+# for element in my_list:
+#     list_sum += element
+
+# Print the result
+# print(f"The sum of the list is: {list_sum}")
+# Output:
+# The sum of the list is: 32
+
+# Calculate the sum using a for loop
+
+# sn=[3,4,56,7,8]
+# s=0
+# for i in sn:
+#     s=s+1
+# print(s)
+
+# sum [1,20]->21 program 
+# sn=[[1,20],[23,7],[87,3]]
+# snl=[]
+# for i in sn:
+#     print(i)
+#     s=0
+#     for j in i:
+#         s=s+j
+#     print(s)
+#     snl.append(s)
+
+# print(snl)    
+# Output:
+# [1, 20]
+# 21
+# [23, 7]
+# 30
+# [87, 3]
+# 90
+# [21, 30, 90]
+
+# print greater number from list
+# my_list = [1, 2, 14, 9, 6]
+
+# Initialize variables
+# index = 0
+# max_number = my_list[0]  # Assume the first element is the maximum
+
+# Iterate through the list using a while loop
+# while index < len(my_list):
+#     if my_list[index] > max_number:
+#         max_number = my_list[index]
+#     index += 1
+
+# Print the result
+# print(f"The greatest number in the list is: {max_number}")
+
+# print maximum number from list
+# data=[1, 2, 14, 9, 6]
+# max=data[0]
+# for i in data:
+#     if i>max:
+#         max=i
+# print(max)    
+
+# Output:14
+
+# print minimum number from list
+# data = [1, 2, 14, 9, 6]
+
+# Assume the first element is the minimum
+# min_number = data[0]
+
+# Iterate through the list using a for loop
+# for i in data:
+#     if i < min_number:
+#         min_number = i
+
+# Print the result
+# print(f"The minimum number in the list is: {min_number}")
+
+# Output:The minimum number in the list is: 1
+
+# print all number which is not divisible by 3 and 7 but if any number occur which is divisible by 3 and 7 then loop should be stopped
+# data = [1, 2, 9,21, 6]
+# for i in data:
+#     if(i%3==0 and i%7==0):
+#         break
+#     print(i)
+# Output:
+# 1
+# 2
+# 9    
+    
+# data = [1, 2, 9,21, 6]
+# for i in data:
+#         print(i)
+#         if(i%3==0 and i%7==0):
+#              break
+# Output:
+# 1
+# 2 
+# 9 
+# 21        
