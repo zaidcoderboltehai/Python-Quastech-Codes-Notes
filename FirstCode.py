@@ -4250,7 +4250,7 @@ x=10
 
 # Output:The minimum number in the list is: 1
 
-# print all number which is not divisible by 3 and 7 but if any number occur which is divisible by 3 and 7 then loop should be stopped
+# print all number which is not divisible by 3 and 7 but if any number occur which is divisible by 3 and 7 then loop should be stopped(break used)
 # data = [1, 2, 9,21, 6]
 # for i in data:
 #     if(i%3==0 and i%7==0):
@@ -4270,4 +4270,300 @@ x=10
 # 1
 # 2 
 # 9 
-# 21        
+# 21 
+       
+# break loop ko terminate karne ka kaam karta hai
+# continue is used to revaluate means ghumata hai 
+# for i in range(1,11):
+#     print(i)
+#     break
+# Output:1 
+
+# continue used
+# for i in range(1,11):
+#     if(i==5):
+#         continue
+#     print(i)
+# Output:
+# 1
+# 2
+# 3
+# 4
+# 6
+# 7
+# 8
+# 9
+# 10
+
+# for i in range(1,11):
+#     print(i)
+#     continue
+# Output:
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+# 10
+
+# for i in range(1,11):
+#     continue
+#     print(i)
+# Output:"
+
+# for i in range(1,6):
+#     for j in range(1,6):
+#         print(i)
+# Output:
+# 1
+# 1
+# 1
+# 1
+# 1
+# 2
+# 2
+# 2
+# 2
+# 2
+# 3
+# 3
+# 3
+# 3
+# 3
+# 4
+# 4
+# 4
+# 4
+# 4
+# 5
+# 5
+# 5
+# 5
+# 5
+
+# for i in range(1,5):
+#     for j in range(1,5):
+#         print(i,end="")
+#     print()
+# Output:
+# 1111
+# 2222
+# 3333
+# 4444
+
+# for i in range(1, 5):
+#     for j in range(1, 5):
+#         print(j, end="")
+#     print()
+# Output:
+# 1234
+# 1234
+# 1234
+# 1234
+    
+# for i in range(1, 5):
+#     for j in range(1, 5):
+#         print("*", end="")
+#     print()
+# Output:
+# ****
+# ****
+# ****
+# **** 
+
+# n=1
+# for i in range(1, 5):
+#     for j in range(1, 5):
+#         print(n, end=" ")
+#         n+=1
+#     print()
+# Output:
+# 1 2 3 4 
+# 5 6 7 8 
+# 9 10 11 12 
+# 13 14 15 16
+    
+# for i in range(3):
+#     for j in range(4):
+#         print("*", end=" ")
+#     print()
+# Output:
+# * * * * 
+# * * * * 
+# * * * *
+
+# print(ord("A"))  #->return ascii value of character
+# Output:65
+
+# print(chr(65))   #->return character of ascii
+# Output:A
+
+# for i in range(10001):
+#     print(chr(i),end=" ")
+# Output:
+
+# ascii=65
+# for i in range(1,5):
+#     for j in range(1,5):
+#         print(chr(ascii),end="")
+#         ascii+=1
+#     print()    
+# Output:
+# ABCD
+# EFGH
+# IJKL
+# MNOP
+
+
+# ascii_value = 65
+
+# for i in range(1, 5):
+#     for j in range(1, 5):
+#         print(chr(ascii_value), end="")
+#     ascii_value += 1
+#     print()
+# Output:
+# AAAA
+# BBBB
+# CCCC
+# DDDD
+    
+# ascii_value = 65
+
+# for i in range(4):
+#     for j in range(4):
+#         print(chr(ascii_value), end="")
+#     ascii_value += 1
+#     print()
+# Output:
+# AAAA
+# BBBB
+# CCCC
+# DDDD
+
+# for i in range(4):
+#     for j in range(4):
+#         print(chr(65 + j), end="")
+#     print()
+# Output:
+# ABCD
+# ABCD
+# ABCD
+# ABCD
+
+# ascii=65
+# for i in range(1,5):
+#     for j in range(1,5):
+#         print(chr(ascii),end="")
+#     ascii+=1
+#     print()    
+# Output:
+# AAAA
+# BBBB
+# CCCC
+# DDDD
+
+# for i in range(65,69):
+#     for j in range(1,5):
+#         print(chr(i),end="")
+#     print()    
+# Output:
+# AAAA
+# BBBB
+# CCCC
+# DDDD
+
+# for i in range(1,5):
+#     for j in range(65,69):
+#         print(chr(j),end="")
+#     print()
+# Output:
+# ABCD
+# ABCD
+# ABCD
+# ABCD
+
+
+# for i in range(1,5):
+#     for j in range(65,69):
+#         if(i%2==0):
+#             print("*",end="")
+#         else:
+#             print(chr(j),end="")
+#     print()
+# Output:
+# ABCD
+# ****
+# ABCD
+# ****
+    
+# asci=65
+# for i in range(1,5):
+#     for j in range(1,5):
+#         if j%2==0:
+#             print("*",end="")
+
+#         else:
+#             print(chr(asci),end="")
+#         asci+=1
+#     print()
+# Output:
+# A*C*
+# E*G*
+# I*K*
+# M*O*
+
+# asci = 65
+# for i in range(1, 5):
+#     for j in range(1, 5):
+#         if j % 2 == 0:
+#             print("*", end="")
+#         else:
+#             print(chr(asci), end="")
+#             asci += 1
+#     print()
+# Output:
+# A*B*
+# C*D*
+# E*F*
+# G*H*
+
+# for i in range(1,5):
+#     for j in range(1,i+1):
+#         print("*",end="")
+#     print() 
+# Output:
+# *
+# **
+# ***
+# ****
+
+# iterable 1
+# i=1    1<5->True
+# j=1    1<2->True(1,1+1)
+# *
+# j=2    2<2->False
+
+# iterable 2
+# i=2     2<5->True
+# j=1    1<3->True
+# *
+# j=2    2<3->True
+# *(baajo mai print hoga)
+# j=3    3<3->False
+
+# iterable 3
+# 1=3     3<5->True
+# j=1     1<4->True
+# *
+# j=2     2<4->True
+# *(baajo mai print hoga)
+# j=3     3<4->True
+# *(baajo mai print hoga)
+# j=4     4<4->False
+
+
