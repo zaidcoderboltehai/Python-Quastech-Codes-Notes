@@ -5049,12 +5049,43 @@ x=10
 #     for k in range(4,i-1,-1):
 #         print("*",end="")
 
-    # print()
+#     print()
 # Output:
 # ****
 #  ***
 #   **
 #    *
+
+# iterable 1
+# for i in range(1,5):->for i in 1
+#     for j in range(2,i+1):->for j in range(2,1+1)->for j in range(2,2)
+#         print(" ",end="")
+
+#    for k in range(4,i-1,-1):->for k in range(4,1-1,-1)->for k in range(4,0,-1)->for k in 4
+#        print("*",end=""):->print(*)
+
+#    print()
+
+# iterable 2
+
+#    for k in range(4,i-1,-1):->for k in range(4,1-1,-1)->for k in range(4,0,-1)->for k in 3
+#        print("*",end=""):->print(*)
+
+#    print()
+
+# iterable 3
+
+#    for k in range(4,i-1,-1):->for k in range(4,1-1,-1)->for k in range(4,0,-1)->for k in 2
+#        print("*",end=""):->print(*)
+
+#    print()
+
+# iterable 4
+
+#    for k in range(4,i-1,-1):->for k in range(4,1-1,-1)->for k in range(4,0,-1)->for k in 1
+#        print("*",end=""):->print(*)->****
+
+#    print()
 
 # for i in range(1,5):
 #     for j in range(3,i-1,-1):
@@ -5069,3 +5100,25 @@ x=10
 #  ***
 # ****
 
+# for i in range(1,5):
+#     for j in range(3,i-1,-1):
+#         print(" ",end="")
+#     for k in range(1,i+1):
+#         print("* ",end="")
+#     print()
+# Output:
+#    * 
+#   * * 
+#  * * * 
+# * * * * 
+
+# x=[2,8,5,6,10,3]
+
+# for i in range(0,len(x)):
+#     for j in range(i+1,len(x)):
+#         if(x[j]<x[i]):
+#             x[i],x[j]=x[j],x[i]
+
+# print(x)
+# Output:
+# [2, 3, 5, 6, 8, 10]
