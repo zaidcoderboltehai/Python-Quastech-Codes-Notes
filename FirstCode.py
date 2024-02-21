@@ -4899,4 +4899,173 @@ x=10
 # *(baajo mai print hoga)
 # j=4     4<4->False
 
+# same program
+# for i in range(1,5):
+#     for j in range(1,i+1):
+#         print("*",end="")
+#     print() 
+# Output:
+# *
+# **
+# ***
+# ****
+    
+# for i in range(1, 5):
+#     for j in range(i):
+#         print(i, end=" ")
+#     print()
+# Output:
+# 1 
+# 2 2 
+# 3 3 3 
+# 4 4 4 4 
+
+# for i in range(1, 5):
+#     for j in range(i):
+#         print(chr(65 + j), end=" ")
+#     print()
+# Output:
+# A 
+# A B 
+# A B C 
+# A B C D 
+
+# for i in range(1,5):
+#     for j in range(4,i-1,-1):
+#         print("*",end="")
+#     print()
+# Output:
+# ****
+# ***
+# **
+# *
+
+# for i in range(1,5):
+#     for j in range(4,i-1,-1):
+#         if(j==i):
+#             print("*",end="")
+#         else:
+#             print(" ",end="")
+#     print()
+# Output:
+#    *
+#   *
+#  *
+# *
+
+# for i in range(1,5):
+#     for j in range(1,i+1):
+#         if(j==i):
+#             print("*",end="")
+#         else:
+#             print(" ",end="")
+#     print()
+# Output:
+# *   
+#  *  
+#   * 
+#    *
+
+# for i in range(1, 5):
+#     for j in range(1, 5):
+#         if j == i:
+#             print("*", end="")
+#         else:
+#             print(" ", end="")
+#     print()
+# Output:
+# *
+#  *
+#   *
+#    *
+
+# for i in range(1,5):
+#     for j in range(4,i-1,-1):
+#         if(j==i):
+#             print("*",end="")
+#         else:
+#             print(" ",end="")
+#     print()
+
+# for i in range(2,5):
+#     for j in range(1,i+1):
+#         if(j==i):
+#             print("*",end="")
+#         else:
+#             print(" ",end="")
+#     print()
+# Output:
+
+#    *
+#   *
+#  *
+# *
+#  *
+#   *
+#    *
+
+
+# for i in range(1, 5):
+#     for j in range(1, i + 1):
+#         print("*", end=" ")
+#     print()
+
+# for i in range(3, 0, -1):
+#     for j in range(1, i + 1):
+#         print("*", end=" ")
+#     print()
+# Output:
+# * 
+# * *
+# * * *
+# * * * *
+# * * *
+# * *
+# *
+
+
+# for i in range(1, 5):
+#     for j in range(1, i + 1):
+#         print("*", end=" ")
+#     print()
+
+# for i in range(1,4):
+#     for j in range(3,i-1,-1):
+#         print("*", end=" ")
+#     print()
+# Output:
+# * 
+# * *
+# * * *
+# * * * *
+# * * *
+# * *
+# *
+
+# for i in range(1,5):
+#     for j in range(2,i+1):
+#         print(" ",end="")
+
+#     for k in range(4,i-1,-1):
+#         print("*",end="")
+
+    # print()
+# Output:
+# ****
+#  ***
+#   **
+#    *
+
+# for i in range(1,5):
+#     for j in range(3,i-1,-1):
+#         print(" ",end="")
+
+#     for k in range(1,i+1):
+#         print("*",end="")
+#     print()
+# Output:
+#    *
+#   **
+#  ***
+# ****
 
