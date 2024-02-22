@@ -3927,15 +3927,87 @@ x=10
 # 34    
     
 # iterbale 1
-# i=1 True
-# print(0)   
-# c=0+1
-    
+# a=0:->a=0
+# b=1:->b=1
+# for i in range(1,11):->for i in 1
+#     print(a):->print(0)
+#     c=a+b:->0+1->c=1
+#     a=b:->a=1
+#     b=c:->b=1
+
+# iterable 2
+# for i in range(1,11):->for i in 2
+#     print(a):->print(1)
+#     c=a+b:->1+1->c=2
+#     a=b:->a=1
+#     b=c:->b=2
+
+# iterable 3
+# for i in range(1,11):->for i in 3
+#     print(a):->print(1)
+#     c=a+b:->1+2->c=3
+#     a=b:->a=2
+#     b=c:->b=3
+
+ 
 # Nested for loop
 
 # for i in range(1,6):
 #     for j in range(11,16):
 #         print(i,j) 
+
+# for i in range(1,6):
+#     for j in range(11,16):
+#         print(i,j)
+
+#     for k in range(21,26):
+#         print(i,k)
+#         for x in range(31,36):
+#             print(i,k,x)        
+
+# iterable 1
+
+# for i in range(1,6):->for i in 1
+#     for j in range(11,16):->for j in 11
+#         print(i,j):->print(1,11)
+
+# iterable 2
+#     for j in range(11,16):->for j in 12
+#         print(i,j):->print(1,12)
+
+# iterable 3
+#     for j in range(11,16):->for j in 13
+#         print(i,j):->print(1,13)
+
+# iterable 4
+#     for j in range(11,16):->for j in 14
+#         print(i,j):->print(1,14)
+
+# iterable 5
+#     for j in range(11,16):->for j in 15
+#         print(i,j):->print(1,15)
+
+# iterable 6
+# for i in range(1,6):->for i in 2
+#     for j in range(11,16):->for j in 11
+#         print(i,j):->print(2,11)
+
+# iterable 7
+#     for j in range(11,16):->for j in 12
+#         print(i,j):->print(2,12)
+
+# iterable 8
+#      for j in range(11,16):->for j in 13
+#         print(i,j):->print(2,13)
+
+# iterable 9
+#      for j in range(11,16):->for j in 14
+#         print(i,j):->print(2,14)
+
+# iterable 10
+#      for j in range(11,16):->for j in 15
+#         print(i,j):->print(2,15)
+
 
 # for i in range(1,6):
 #     for j in range(11,16):
@@ -4164,20 +4236,57 @@ x=10
 # Output:
 # The sum of the list is: 32
 
+# iterable 1
+# my_list = [1, 2, 14, 9, 6]
+# list_sum = 0
+# index = 0
+# while index < len(my_list):->while 0<5->True
+#     list_sum += my_list[index]:->list_sum =[1,2,14,9,6][0]->1
+#     index += 1    index=0+1=1
+
+# iterable 2
+# while index < len(my_list):->while 1<5->True
+#     list_sum += my_list[index]:->list_sum =[1,2,14,9,6][1]->2
+#     index += 1    index=1+1=2
+
 # Calculate the sum using a for loop
 
 # my_list = [1, 2, 14, 9, 6]
 
-# Initialize variable
+#  Initialize variable
 # list_sum = 0
 
 # for element in my_list:
 #     list_sum += element
 
-# Print the result
+#  Print the result
 # print(f"The sum of the list is: {list_sum}")
 # Output:
 # The sum of the list is: 32
+
+# iterable 1
+# my_list = [1, 2, 14, 9, 6]
+
+# list_sum = 0
+
+# for element in my_list:->for element in 1
+#     list_sum += element:->list_sum +=0+1=1
+
+# iterable 2
+# for element in my_list:->for element in 2
+#     list_sum += element:->list_sum +=1+2=3
+
+# iterable 3
+# for element in my_list:->for element in 14
+#     list_sum += element:->list_sum +=3+14=17
+
+# iterable 4
+# for element in my_list:->for element in 9
+#     list_sum += element:->list_sum +=17+9=26
+
+# iterable 5
+# for element in my_list:->for element in 6
+#     list_sum += element:->list_sum +=26+6=32
 
 # Calculate the sum using a for loop
 
@@ -4207,6 +4316,19 @@ x=10
 # [87, 3]
 # 90
 # [21, 30, 90]
+
+# iterable 1
+# sn=[[1,20],[23,7],[87,3]]
+# snl=[]
+# for i in sn:->for i in [1,20]
+#     print(i):->print([1,20])
+#     s=0
+#    for j in i:->for j in [1,20]->for j in 1
+#        s=s+j:->0+1->s=1
+
+# iterable 2
+#    for j in i:->for j in 20
+#        s=s+j:->0+1->s=1
 
 # print greater number from list
 # my_list = [1, 2, 14, 9, 6]
@@ -4909,7 +5031,8 @@ x=10
 # **
 # ***
 # ****
-    
+
+
 # for i in range(1, 5):
 #     for j in range(i):
 #         print(i, end=" ")
@@ -4919,6 +5042,58 @@ x=10
 # 2 2 
 # 3 3 3 
 # 4 4 4 4 
+
+# iterable 1
+# for i in range(1, 5):->for i in 1
+#     for j in range(i):->for j in range(1)->for j in range(0,1)->for j in 0
+#         print(i, end=" "):->print(1)
+#     print()
+# Output:1
+
+# iterable 2
+# for i in range(1, 5):->for i in 2
+#     for j in range(i):->for j in range(2)->for j in range(0,2)->for j in 0
+#         print(i, end=" "):->print(2)
+#     print()
+# Output:1
+#        2
+
+# iterable 3
+# for i in range(1, 5):->for i in 2
+#     for j in range(i):->for j in range(2)->for j in range(0,2)->for j in 1
+#         print(i, end=" "):->print(2)
+#     print()
+# Output:1
+#        2 2
+
+# iterable 4
+# for i in range(1, 5):->for i in 3
+#     for j in range(i):->for j in range(3)->for j in range(0,3)->for j in 0
+#         print(i, end=" "):->print(3)
+#     print()
+# Output:1
+#        2 2
+#        3
+
+# iterable 5
+# for i in range(1, 5):->for i in 3
+#     for j in range(i):->for j in range(3)->for j in range(0,3)->for j in 1
+#         print(i, end=" "):->print(3)
+#     print()
+# Output:1
+#        2 2
+#        3 3
+
+# iterable 6
+# for i in range(1, 5):->for i in 3
+#     for j in range(i):->for j in range(3)->for j in range(0,3)->for j in 2
+#         print(i, end=" "):->print(3)
+#     print()
+# Output:1
+#        2 2
+#        3 3 3
+
+
 
 # for i in range(1, 5):
 #     for j in range(i):
@@ -4930,6 +5105,32 @@ x=10
 # A B C 
 # A B C D 
 
+# iterable 1
+# for i in range(1, 5):->for i in 1
+#     for j in range(i):->for j in range(1)->for j in range(0,1)->for j in 0
+#         print(chr(65 + j), end=" "):->print(chr(65 + 0), end=" ")->print(65)->print(A)
+#     print()->yeh execute hoga because j ka loop khatam hogaya
+# Output:
+# A 
+
+# iterable 2
+# for i in range(1, 5):->for i in 2
+#     for j in range(i):->for j in range(2)->for j in range(0,2)->for j in 0
+#         print(chr(65 + j), end=" "):->print(chr(65 + 0), end=" ")->print(65)->print(A)
+#     print()
+# Output:
+# A 
+# A
+
+# iterable 3
+# for i in range(1, 5):->for i in 2
+#     for j in range(i):->for j in range(2)->for j in range(0,2)->for j in 1
+#         print(chr(65 + j), end=" "):->print(chr(65 + 1), end=" ")->print(66)->print(B)
+#     print()->yeh execute hoga because j ka loop khatam hogaya
+# Output:
+# A 
+# A B
+
 # for i in range(1,5):
 #     for j in range(4,i-1,-1):
 #         print("*",end="")
@@ -4939,6 +5140,23 @@ x=10
 # ***
 # **
 # *
+
+# iterable 1
+# for i in range(1,5):->for i in 1
+#     for j in range(4,i-1,-1):->for j in range(4,1-1,-1)->for j in range(4,0,-1)->for j in 4
+#         print("*",end=""):->priint(*)
+#     print()
+# Output:
+# *
+
+# iterable 2
+#     for j in range(4,i-1,-1):->for j in range(4,1-1,-1)->for j in range(4,0,-1)->for j in 3
+#         print("*",end=""):->priint(*)
+#     print()
+# Output:
+# **
+
+
 
 # for i in range(1,5):
 #     for j in range(4,i-1,-1):
