@@ -5340,3 +5340,46 @@ x=10
 # print(x)
 # Output:
 # [2, 3, 5, 6, 8, 10]
+
+##a = [1001, 1002, 1003, 1004, 1005]
+## reversed_a = a[::-1]
+## print(reversed_a)
+
+# #a = [1001, 1002, 1003, 1004, 1005]
+# #reversed_a = []
+
+## while a:
+##     element = a.pop()
+##     reversed_a.append(element)
+
+## print(reversed_a)
+
+## deep copy means same location refer karna 
+## shallow copy means different location refer karna
+# a=[1001,1002.1003,1004,1005]
+
+# for i in range(0,len(a)//2):
+#     start=i
+#     end=len(a)-(i+1)
+#     a[start],a[end]=a[end],a[start]
+# print(a)
+# Output:
+# [1005, 1004, 1002.1003, 1001]
+# interview question:-
+# find max key value pair
+# find min key value pair
+
+# d={'a':10,'b':20,'c':30}
+
+# for k,v in d.items():
+#     print(k,v)
+
+# interview question
+# a=["Hello","Hi","Hello","Hey","Bye"]
+# d={ }
+
+# for i in a:
+#     d[i]=d.get(i,0)+1
+# print(d)    
+# Output:
+# {'Hello': 2, 'Hi': 1, 'Hey': 1, 'Bye': 1}
