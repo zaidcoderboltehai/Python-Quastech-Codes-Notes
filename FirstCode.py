@@ -5356,7 +5356,8 @@ x=10
 
 ## deep copy means same location refer karna 
 ## shallow copy means different location refer karna
-# a=[1001,1002.1003,1004,1005]
+
+# a=[1001,1002,1003,1004,1005]
 
 # for i in range(0,len(a)//2):
 #     start=i
@@ -5364,7 +5365,7 @@ x=10
 #     a[start],a[end]=a[end],a[start]
 # print(a)
 # Output:
-# [1005, 1004, 1002.1003, 1001]
+# [1005, 1004, 1003, 1002, 1001]
 # interview question:-
 # find max key value pair
 # find min key value pair
@@ -5383,3 +5384,472 @@ x=10
 # print(d)    
 # Output:
 # {'Hello': 2, 'Hi': 1, 'Hey': 1, 'Bye': 1}
+
+# ----------------------------------------------------------Basic questions------------------------------------------------------
+# HW 
+# take input from user and print its inputvalue using input function
+
+# user_input = input("Enter a value: ")
+# print("You entered:", user_input)
+
+# Output:
+# Enter a value: zaid
+# You entered: zaid
+
+# create a string and print the last element
+
+# my_string = "Hello, World!"
+# last_element = my_string[-1]
+# print("Last element:", last_element)
+
+# Output: 
+# Last element: !
+
+# create a string and print second last element
+
+# my_string = "Hello, World!"
+# second_last_element = my_string[-2]
+# print("Second-to-last element:", second_last_element)
+
+# Output:
+# Second-to-last element: d
+
+# create a string as eg:"hellohellohellohello" and print it
+
+# my_string = "hello" * 4
+# print(my_string)
+
+# Output:
+# hellohellohellohello
+
+# create  two string like "hello" and "world" and print "helloworld"
+
+# string1 = "hello"
+# string2 = "world"
+# result_string = string1 + string2
+# print(result_string)
+
+# Output:
+# helloworld
+
+# create two variable and swap its value eg a=10,b=20 afer swapping there output is a=20,b=10
+
+# a=10 
+# b=20
+# a,b=b,a
+# print(a)
+# print(b)
+
+# Output:
+# 20
+# 10
+
+# create a tuple like(1,2,3,4,3,2) and count number of  occurrences  of 3
+
+# my_tuple = (1, 2, 3, 4, 3, 2)
+# count_of_3 = my_tuple.count(3)
+
+# print("Number of occurrences of 3:", count_of_3)
+
+# Output:
+# Number of occurrences of 3: 2
+
+# create a tuple like(1,2,3,4,3,2) and print the index number of 3
+
+# my_tuple = (1, 2, 3, 4, 3, 2)
+# index_of_3 = my_tuple.index(3)
+
+# print("Index of the first occurrence of 3:", index_of_3)
+
+# Output:
+# Index of the first occurrence of 3: 2
+
+# create a tuple like(1,2,3,4,3,2) and print (2,3,4) only
+
+# my_tuple = (1, 2, 3, 4, 3, 2)
+# selected_elements = my_tuple[1:4]
+
+# print(selected_elements)
+
+# Output:
+# (2, 3, 4)
+
+# # create tuple like(1,2,3,4,3,2) and remove 3 in this tuple
+# original_tuple = (1, 2, 3, 4, 3, 2)
+# element_to_remove = 3
+
+# # Convert tuple to list
+# tuple_list = list(original_tuple)
+
+# # Remove all occurrences of the specified element from the list
+# while element_to_remove in tuple_list:
+#     tuple_list.remove(element_to_remove)
+
+# # Convert the list back to a tuple
+# original_tuple = tuple(tuple_list)
+
+# print(original_tuple)
+# Output:
+# (1, 2, 4, 2)
+
+# # create a list like[1,2,3,4] and change the elements like[1,2,4,3] without using list methods
+# original_list = [1, 2, 3, 4]
+
+# # Change the order of elements
+# original_list[2], original_list[3] = original_list[3], original_list[2]
+
+# print(original_list)
+# Output:
+# [1, 2, 4, 3]
+
+# # create a list like[1,2,3,4] and delete all the elements in list and print empty list without using any method 
+# original_list = [1, 2, 3, 4]
+
+# # Delete all elements in the list without using list methods
+# original_list = []
+
+# print(original_list)
+# # Output:
+# # []
+
+# create single value tuple
+# single_value_tuple = (42,)
+# print(type(single_value_tuple))
+# Output:
+# <class 'tuple'>
+
+# Without the comma, it's not a tuple
+# not_a_tuple = (42)
+# print(type(not_a_tuple))  # <class 'int'>
+# Output:
+# <class 'int'>
+
+# create empty set
+# empty_set = set()
+# Output:"
+
+# # create a dictionery like {"a":10,"b":20} and print the value of "a" without using methods
+# my_dict = {"a": 10, "b": 20}
+
+# # Access the value associated with the key "a" without using methods
+# value_of_a = my_dict["a"]
+
+# print(value_of_a)
+# Output:10
+
+# # create a dictionery like {"a":10,"b":20} and change the value of "b" is 30 and print it without using methods
+# my_dict = {"a": 10, "b": 20}
+
+# # Change the value associated with the key "b" without using methods
+# my_dict["b"] = 30
+
+# # Print the updated dictionary
+# print(my_dict)
+# Output:{'a': 10, 'b': 30}
+
+
+# # create a dictionary like {"a":10,"b":20} and insert the key value pair which the key is "c" and the value is 30 and print it
+# my_dict = {"a": 10, "b": 20}
+
+# # Insert a new key-value pair "c": 30 without using methods
+# my_dict["c"] = 30
+
+# # Print the updated dictionary
+# print(my_dict)
+# Output:{'a': 10, 'b': 20, 'c': 30}
+
+# # create two sets like {1,2,3,4} and {3,4,5,6} and find the union without using union method
+# set1 = {1, 2, 3, 4}
+# set2 = {3, 4, 5, 6}
+
+# # Find the union of the two sets without using union method
+# union_result = set1 | set2
+
+# # Print the union
+# print(union_result)
+# Output:{1, 2, 3, 4, 5, 6}
+
+# # create two sets like {1,2,3,4} and {3,4,5,6} and find the intersection without using intersection method
+# set1 = {1, 2, 3, 4}
+# set2 = {3, 4, 5, 6}
+
+# # Find the intersection of the two sets without using intersection method
+# intersection_result = set1 & set2
+
+# # Print the intersection
+# print(intersection_result)
+# Output:{3, 4}
+
+# # create two sets like {1,2,3,4} and {3,4,5,6} and find there difference without using difference method
+# set1 = {1, 2, 3, 4}
+# set2 = {3, 4, 5, 6}
+
+# # Find the difference of the two sets without using difference method
+# difference_result = set1 - set2
+
+# # Print the difference
+# print(difference_result)
+# Output:{1, 2}
+
+# # create a set like {1,2,3,4} and remove 3
+# my_set = {1, 2, 3, 4}
+
+# # Remove the element 3 without using the remove method
+# my_set = my_set - {3}
+
+# # Print the updated set
+# print(my_set)
+# Output:{1, 2, 4}
+
+# create a set like {1,2,3,4} and remove 3 using discard method and undrstand what's the difference between remove and pop
+# To remove an element from a set using the discard method and explain the difference between remove and discard, you can use the following example:
+
+# my_set = {1, 2, 3, 4}
+
+# # Remove the element 3 using the discard method
+# my_set.discard(3)
+
+# # Print the updated set
+# print(my_set)
+# Output:{1, 2, 4}
+
+# The discard method removes the specified element from the set if it exists. If the element is not present in the set, discard does nothing and does not raise an error.
+
+# Now, let's discuss the difference between remove and discard:
+
+# remove: Removes the specified element from the set. If the element is not present, it raises a KeyError.
+# discard: Removes the specified element from the set if it exists. If the element is not present, it does nothing and does not raise an error.
+# In summary, the main difference is in how they handle the case when the element to be removed is not present in the set. remove raises an error,
+# while discard does not.
+
+# create a set like {1,2,3,4} and remove 3 using discard method and undrstand what's the difference between remove and pop
+# To remove an element from a set using the discard method, you can do the following:
+
+# my_set = {1, 2, 3, 4}
+
+# # Remove the element 3 using the discard method
+# my_set.discard(3)
+
+# # Print the updated set
+# print(my_set)
+# Output:{1, 2, 4}
+
+# The discard method removes the specified element from the set if it is present. If the element is not present, it does nothing (no error is raised).
+# Now, let's discuss the difference between the remove and discard methods:
+
+# remove: Removes the specified element from the set. If the element is not present, it raises a KeyError. Use remove when you want to ensure that the element
+# is in the set before removing it.
+
+# discard: Removes the specified element from the set if it is present. If the element is not present, it does nothing and does not raise an error. 
+# Use discard when you want to remove an element if it exists, but don't want to raise an error if it doesn't.
+
+# In summary, remove raises an error if the element is not found, while discard does not raise an error in such cases.
+
+# create a string like "hello world" and count "o"
+
+# my_string = "hello world"
+
+# # Count the occurrences of "o" in the string
+# count_of_o = my_string.count("o")
+
+# # Print the count
+# print(count_of_o)
+# Output:2
+
+# create a string like "hello world" and find "z" or index "z" and understand difference between index and count
+
+# To find the index of a character, such as "z," in the string "hello world," you can use the find method. If the character is not present, 
+# the find method will return -1. 
+# Here's an example:
+
+# my_string = "hello world"
+
+# # Find the index of "z" in the string
+# index_of_z = my_string.find("z")
+
+# # Print the index
+# print(index_of_z)
+# Output:-1
+
+# In this example, since "z" is not present in the string, the find method returns -1.
+
+# Now, let's discuss the difference between count and find:
+
+# count: Counts the occurrences of a substring or character in the string. Returns the number of occurrences.
+# find: Finds the first occurrence of a substring or character in the string. Returns the index of the first occurrence or -1 if not found.
+# In summary, count provides the number of occurrences, while find provides the index of the first occurrence or -1 if not found.
+
+# create a list like ["p","y","t","h","o","n"] and print "python"
+
+# my_list = ["p", "y", "t", "h", "o", "n"]
+
+# # Print "python" using list indexing
+# word_python = "".join(my_list)
+# print(word_python)
+# Output:python
+
+# create a string "python" and print ["p","y","t","h","o","n"]
+
+# my_string = "python"
+
+# # Initialize an empty list
+# char_list = []
+
+# # Use a while loop to iterate over each character in the string
+# index = 0
+# while index < len(my_string):
+#     # Append each character to the list
+#     char_list.append(my_string[index])
+#     index += 1
+
+# # Print the list
+# print(char_list)
+
+# Output:
+# ['p', 'y', 't', 'h', 'o', 'n']
+
+# create a string like"     python" and print "python"
+
+# my_string = "     python"
+
+# # Remove leading spaces using strip method
+# result_string = my_string.strip()
+
+# # Print the result
+# print(result_string)
+# Output:python
+
+# create a list [1,2,3,4] and print it like [1,2,3,4,5]
+
+# my_list = [1, 2, 3, 4]
+
+# # Add 5 to the list using the append method
+# my_list.append(5)
+
+# # Print the updated list
+# print(my_list)
+# Output:[1, 2, 3, 4, 5]
+
+# create a list [1,2,3,4] and print [1,2,3,4,1,2,3,4] using extend function
+
+# my_list = [1, 2, 3, 4]
+
+# # Extend the list with its own elements
+# my_list.extend(my_list)
+
+# # Print the updated list
+# print(my_list)
+# Output:[1, 2, 3, 4, 1, 2, 3, 4]
+
+# create a list [1,2,3,4] and print [1,2,3,4,"p","y","t","h","o","n"] using extend function
+
+# my_list = [1, 2, 3, 4]
+
+# # Extend the list with the elements of the string "python"
+# my_list.extend("python")
+
+# # Print the updated list
+# print(my_list)
+# Output:[1, 2, 3, 4, 'p', 'y', 't', 'h', 'o', 'n']
+
+# create a list [1,2,3,4] and remove 2 using pop function
+
+# my_list = [1, 2, 3, 4]
+
+# # Remove the element "2" using the pop method with the value
+# my_list.pop(my_list.index(2))
+
+# # Print the updated list
+# print(my_list)
+# Output:[1, 3, 4]
+
+# create a list [1,2,3,4] and print [1,5,3,4] using insert function
+
+# my_list = [1, 2, 3, 4]
+
+# # Replace the element "2" with "5" using the insert method
+# index_to_replace = my_list.index(2)
+# my_list.insert(index_to_replace, 5)
+# my_list.pop(index_to_replace + 1)
+
+# # Print the updated list
+# print(my_list)
+# Output:[1, 5, 3, 4]
+
+# create a list [1,2,3,4] and print [1,5,3,4] using negative indexing in insert function
+
+# my_list = [1, 2, 3, 4]
+
+# # Replace the element at index -2 (second-to-last) with "5"
+# my_list[-2] = 5
+
+# # Print the updated list
+# print(my_list)
+# Output:[1, 2, 5, 4]
+
+# create a list [1,2,3,4] and print [4,3,2,1]
+
+# my_list = [1, 2, 3, 4]
+
+# # Reverse the list using the reverse method
+# my_list.reverse()
+
+# # Print the reversed list
+# print(my_list)
+# Output:[4, 3, 2, 1]
+
+# create a list [1,4,3,2] and print [1,2,3,4] using function
+# my_list = [1, 4, 3, 2]
+
+# # Sort the list using the sorted function
+# sorted_list = sorted(my_list)
+
+# # Print the sorted list
+# print(sorted_list)
+# Output:[1, 2, 3, 4]
+
+# create a dict {"a":10,"b":12,"c":14} and clear it{}
+# my_dict = {"a": 10, "b": 12, "c": 14}
+
+# # Clear the dictionary using the clear method
+# my_dict.clear()
+
+# # Print the empty dictionary
+# print(my_dict)
+# Output:{}
+
+# create a empty set{}
+
+# my_set = set()
+
+# # Print the empty set
+# print(my_set)
+# Output:set()
+
+# create empty dict{}
+
+# my_dict = {}
+
+# # Print the empty dictionary
+# print(my_dict)
+
+# Output:{}
+
+# create a dict{"a":10,"b":20,"c":30} and print {"b":20,"c":30}
+
+# my_dict = {"a": 10, "b": 20, "c": 30}
+
+# # Print a subset of the dictionary
+# subset_dict = {"b": my_dict["b"], "c": my_dict["c"]}
+# print(subset_dict)
+# Output:{'b': 20, 'c': 30}
+
+# create a set {1,2,3,4} and remove 2
+# my_set = {1, 2, 3, 4}
+
+# # Remove element 2 from the set
+# my_set.remove(2)
+
+# # Print the modified set
+# print(my_set)
+# Output:{1, 3, 4}
