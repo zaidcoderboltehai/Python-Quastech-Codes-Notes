@@ -5853,3 +5853,128 @@ x=10
 # # Print the modified set
 # print(my_set)
 # Output:{1, 3, 4}
+
+# interview qs
+
+# car->arc program
+
+# original_string = "car"
+
+# # Reverse the string to get "arc"
+# reversed_string = original_string[1] + original_string[2] + original_string[0]
+
+# # Print the result
+# print(reversed_string)
+# Output:arc
+
+
+# silent->listen program
+# original_string = "silent"
+
+# # Reverse the string to get "arc"
+# reversed_string = original_string[2] + original_string[1] + original_string[0]+ original_string[5]+original_string[3]+original_string[4]
+
+# # Print the result
+# print(reversed_string)
+# Output:listen
+
+# Function:->A function is a block of code or set of instruction which performs a specific task when we call it and it is also provide reusabilty of code.
+# main feature hai function ka reusability
+
+# Three types of function are:
+# in-built function:->print(),id():->baney banaye function hote hai through python.
+# user defined function:->joh user create karta hai:->with the help of def
+# def add():
+#     return 10+20  #return yeh value return karne ka kaam karega means 10+20=30 toh 30 return karega.
+# print(add())
+# Output:30
+# val=add()
+# print(val)
+# Output:30
+
+# def add(n1,n2):
+#     return n1+n2
+
+# val=add(10,20)
+# print(val)
+# # Output:30
+# val2=add(23,46)
+# print(val2)
+# # Output:69
+# val3=add(33,67)
+# print(val3)
+# # Output:100
+
+# def add(n1,n2):
+#     return n1-n2
+
+# val=add(30,20)
+# print(val)
+# # Output:10
+# val2=add(63,46)
+# print(val2)
+# # Output:17
+# val3=add(83,67)
+# print(val3)
+# # Output:16
+
+# def add(n1,n2):
+#     return n1*n2
+
+# val=add(30,20)
+# print(val)
+# # Output:600
+# val2=add(63,46)
+# print(val2)
+# # Output:2898
+# val3=add(83,67)
+# print(val3)
+# # Output:5561
+
+# def checkPrime(n):
+#     c=0
+#     for i in range(2,n):
+#         if(n%i==0):
+#             c+=1
+#             break
+#     if(c==0):
+#         return True
+#     return False
+
+# print(checkPrime(2))
+# Output:True
+
+# if checkPrime(24):
+#     print("hello")
+# else:
+#     print("hi")
+# Output:hi
+
+# data=[23,45,66,54]
+
+# def reverseList(l):
+#     for i in range(0,len(l)//2):
+#         start=i
+#         end=len(l)-(i+1)
+#         l[start],l[end]=l[end],l[start]
+
+# def reverseList(l):
+#     for i in range(0,len(l)//2):
+#         start=i
+#         end=len(l)-i-1
+#         l[start],l[end]=l[end],l[start]
+
+# reverseList(data)
+# print(data)
+# Output:[54, 66, 45, 23]
+
+# anonymous function:->
+
+# paramter:means joh user pass karra hai
+# argument:joh function banate waqt user set karta hai
+# types of parameter or argument are:
+# default
+# required
+# variable length
+# 
+
