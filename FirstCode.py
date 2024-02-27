@@ -5883,7 +5883,9 @@ x=10
 
 # Three types of function are:
 # in-built function:->print(),id():->baney banaye function hote hai through python.
-# user defined function:->joh user create karta hai:->with the help of def
+# user defined function:->joh user create karta hai:->with the help of def.
+# anonymous function:->function jiska koi naam nahi ho,ek he expression de sakte hai bas,argument multiple de sakte hai,lamba used karke banate hai anonymous function.
+
 # def add():
 #     return 10+20  #return yeh value return karne ka kaam karega means 10+20=30 toh 30 return karega.
 # print(add())
@@ -5968,13 +5970,183 @@ x=10
 # print(data)
 # Output:[54, 66, 45, 23]
 
-# anonymous function:->
+
+# value get karni hai toh return use karegai
+# value get nahi karni hai toh retrun use nahi karegai
+# return ke baad kuch bhi likho fark nahi padta hai 
+
+# def show():
+#     print("hello")
+
+# show()
+# Output:hello
+
+# def show():
+#     print("hello")
+
+# print(show())
+# Output:hello
+#        None
+
+# def show():
+#     print("hello")
+#     return "hello"
+# show()
+
+# def show():
+#     print("hello")
+#     return"hii"
+#     print("bye")
+# show()
+
+# def show():
+#     a=10
+#     if(a>0):
+#         return True
+#     return False
+# print(show())
 
 # paramter:means joh user pass karra hai
 # argument:joh function banate waqt user set karta hai
 # types of parameter or argument are:
-# default
-# required
-# variable length
-# 
+# default argument
+# required argument
+# variable length argument
+# keyword variable length argument
 
+# default argument
+
+# def sum(n1,n2=0):
+#     return n1+n2
+
+# print(sum(10))
+# Output:10
+# print(sum(10,20))
+# Output:30
+
+# def sum(n1=10,n2=0):
+#     return n1+n2
+
+# print(sum())
+# Output:10
+# print(sum(10,30))
+# Output:40
+# print(sum(10))
+# Output:10
+
+# def selfprint(val="",myend="\n"):
+#     print(val,end=myend)
+
+# selfprint("hello")
+# # Output:hello
+# selfprint("hi")
+# # Output:hi
+# selfprint("hey")
+# # Output:hey
+
+# selfprint("hello",myend="")
+# selfprint("hi")
+# # Output:hellohi
+# selfprint("hey")
+# # Output:hey
+
+# def show(a,b,c=10):
+#     return a+b+c
+# print(show(10,2))
+# Output:22
+
+# def show(a,b,c=10,d): # default argument ke baad required argument nahi daal sakte hai
+#     return a+b+c
+# print(show(10,20,30))
+# Output:
+# def show(a,b,c=10,d):
+#                   ^
+# SyntaxError: non-default argument follows default argument
+
+# required argument
+# def sum(n1,n2):
+#     return n1+n2
+
+# print(sum(10,20))
+# Output:30
+
+# variable length argument(multiple argument le sakte hai ismey)(yeh * se hamesha start hota hai)(tuple mai output dega)(args)
+# def show(*n):
+#     print(n)
+
+# show(10)
+# show(10,20)
+# show(10,20,30)
+
+# Output:
+# (10,)
+# (10, 20)
+# (10, 20, 30)
+
+# n number of sum program
+# def show(*n):
+#     print(sum(n))
+
+# show(10)
+# show(10,20)
+# show(10,20,30)
+
+# Output:
+# 10
+# 30
+# 60
+
+# n number of sum program
+# def show(*n):
+#     # print(sum(n))
+#     s=0
+#     for i in n:
+#         s+=i
+#     print(s)
+
+# show(10)
+# show(10,20)
+# show(10,20,30)
+
+# Output:
+# 10
+# 30
+# 60
+
+# keyword variable length argument(multiple argument le sakte hai key aur value ke based pai)(yeh ** se hamesha start hota hai)(dictionary mai output dega)(kwargs)
+# def show(**n):
+#     print(n)
+# show(a=10,b=20,c=30)
+# Output:{'a': 10, 'b': 20, 'c': 30}
+
+# generator:apne ko ek se zyaada value return karna hai toh generator used karte hai
+# yield:yeh generator object banata hai,par iska koi structure nahi hota hai,display karna parta hai output using typecasting
+
+# def calculate(n1,n2):
+#     yield n1+n2
+#     yield n1-n2
+#     yield n1*n2
+#     yield n1/n2
+#     yield n1//n2
+#     yield n1%n2
+#     yield n1**n2
+
+# print(list(calculate(3,2)))  #type casting kiye edhar
+# Output:[5, 1, 6, 1.5, 1, 1, 9]
+
+# anonymous function:function jiska koi naam nahi ho,ek he expression de sakte hai bas,argument multiple de sakte hai,lamba used karke banate hai anonymous function
+# lambda:-> It is used to create anonymous function
+# lambda arguments: expression
+# Here:
+
+# lambda is the keyword indicating the creation of a lambda function.
+# arguments are the input parameters for the function.
+# expression is a single expression that the lambda function evaluates and returns.
+
+# Lambda functions are useful when you need a quick function for a short period and don't want to formally define a full
+#  function using the def keyword. They are commonly used in places where a function is required as an argument to a higher-order function,
+# like in functions such as map(), filter(), and sorted().
+
+# sum=lambda a,b:a+b   #ek he expression de sakte hai bas
+# print(sum(10,20))
+# Output:30
