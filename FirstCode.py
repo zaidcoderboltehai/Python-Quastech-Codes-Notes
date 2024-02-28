@@ -6150,3 +6150,5 @@ x=10
 # sum=lambda a,b:a+b   #ek he expression de sakte hai bas
 # print(sum(10,20))
 # Output:30
+
+
