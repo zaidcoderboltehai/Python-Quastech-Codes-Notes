@@ -6151,4 +6151,44 @@ x=10
 # print(sum(10,20))
 # Output:30
 
+# filter():iska return type iterable object hota hai,yeh used hota hai filter out karne ke liye
+# (function,iterable object):->True rahega tabb naye collection mai add karega nahi toh false aane pai add nahi karega
+# def checkeven(n):
+#     if n%2==0:
+#         return True
+#     else:
+#         return False
+# # ==============================================================================================================================   
+#     return n%2==0
 
+# data=[23,45,6,78,9]
+# # even=list((filter(checkeven,data)))
+# even=list(filter(lambda n:n%2==0,data))
+# print(even)
+# # Output:[6, 78]
+
+# filter:yeh tumse function mai expect karta hai boolean values(alternatives of loops)
+# map:yeh ek ek value get karega aur pucchega ki mujhe karna kya hai(alternatives of loops)
+
+# map():
+# salaries=[23000,34000,50000,2100]
+# def addBonus(amt):
+#     return amt+100
+
+# salaries_bonus=list(map(lambda amt:amt+100,salaries))
+# print(salaries_bonus)
+# Output:[23100, 34100, 50100, 2200]
+
+# def addBonus(amt):
+# salaries=[23000,34000,50000,2100]
+# salaries_bonus=[]
+# for i in salaries:
+#     salaries_bonus.append(addBonus(i))
+# print(salaries_bonus)
+#  Output:[23100, 34100, 50100, 2200]
+
+# reduce():
+
+# list comprehension:->
+# dictionary comprehension:->
+# set comprehension:->
