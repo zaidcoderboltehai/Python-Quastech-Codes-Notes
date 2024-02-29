@@ -6180,13 +6180,13 @@ x=10
 # Output:[23100, 34100, 50100, 2200]
 
 # def addBonus(amt):
-# salaries=[23000,34000,50000,2100]
-# salaries_bonus=[]
-# for i in salaries:
-#     salaries_bonus.append(addBonus(i))
+#     return amt + 100
+# salaries = [23000, 34000, 50000,2100]
+# salaries_bonus = list(map(addBonus, salaries))
 # print(salaries_bonus)
-#  Output:[23100, 34100, 50100, 2200]
+# Output:[23100, 34100, 50100, 2200]
 
+            
 # reduce():
 
 # list comprehension:->
