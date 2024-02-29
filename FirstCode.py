@@ -6153,6 +6153,11 @@ x=10
 
 # filter():iska return type iterable object hota hai,yeh used hota hai filter out karne ke liye
 # (function,iterable object):->True rahega tabb naye collection mai add karega nahi toh false aane pai add nahi karega
+# Certainly! In simple terms, filter() is a built-in function in Python that is used to filter elements from an iterable (like a list) based on a specified function 
+# or condition. The function takes two arguments: the filtering function and the iterable. The filtering function is applied to each element of the iterable, 
+# and only the elements for which the function returns True are included in the result.
+
+
 # def checkeven(n):
 #     if n%2==0:
 #         return True
@@ -6171,6 +6176,10 @@ x=10
 # map:yeh ek ek value get karega aur pucchega ki mujhe karna kya hai(alternatives of loops)
 
 # map():
+# Certainly! In simple terms, map() is a built-in function in Python that is used to apply a specific function to each element of an iterable (like a list) and 
+# return an iterable of the results. The function takes two arguments: the mapping function and the iterable. The mapping function is applied to 
+# each element of the iterable, and the results are collected in a new iterable.
+
 # salaries=[23000,34000,50000,2100]
 # def addBonus(amt):
 #     return amt+100
@@ -6187,8 +6196,109 @@ x=10
 # Output:[23100, 34100, 50100, 2200]
 
             
-# reduce():
+# reduce():single value deta hai
+# Certainly! In simple terms, reduce() is a function provided by the functools module in Python. It is used to successively apply a binary function to the
+# items of an iterable, reducing the iterable to a single accumulated result.
 
-# list comprehension:->
+
+# from functools import reduce #yeh import karna parega reduce use karne ke liye
+
+# salaries  =[23000,34000,50000,34000]
+# s=reduce(lambda x,y:x+y,salaries)
+# print(s)
+# # Output:141000
+# f=reduce(lambda x,y:x*y,salaries)
+# print(f)
+# Output:1329400000000000000
+
+# list comprehension
+
+# import time
+
+# start_time=time.time()
+# a=[]
+# for i in range(1,1000000):
+#     if i%2==0:
+#         a.append(i)
+
+# end_time=time.time()
+# elapsed_time=end_time-start_time
+# print(f"Execution:  {elapsed_time*1000} seconds")
+# Output:Execution:  110.94117164611816 seconds
+# print("===============================================================================")
+
+# list comprehension:->It is a shortest way to create a new list
+# yeh time kam leta hai compare to traditional loops
+# Certainly! In simple terms, list comprehension is a concise and readable way to create lists in Python. It allows you to define a list by specifying its elements 
+# using a single line of code. The syntax involves specifying an expression followed by one or more 'for' or 'if' clauses to filter or modify the elements.
+
+# s=[i for i in range(1,101)]
+# print(s)
+# Output:
+# [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85,
+#   86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]
+
+# start_time=time.time()
+# s=[i for i in range(1,1000000)if i%2==0]
+# end_time=time.time()
+# elapsed_time=end_time-start_time
+# print(f"Execution:  {elapsed_time*1000} seconds")
+# Output:Execution:  94.0237045288086 seconds
+
 # dictionary comprehension:->
+# In simple terms, dictionary comprehension is a concise and readable way to create dictionaries in Python. Similar to list comprehension, 
+# it allows you to define a dictionary by specifying key-value pairs using a single line of code. The syntax involves expressing both the keys and
+# values using an expression, along with one or more 'for' or 'if' clauses to filter or modify the items.
+
+# s=[23,45,34,67,8]
+# d={}
+# for i in s:
+#     d[i]=i*i
+# print(d)
+# Output:{23: 529, 45: 2025, 34: 1156, 67: 4489, 8: 64}
+
+# s=[23,45,34,67,8]
+# d={i:i*i  for i in s}
+# print(d)
+# Output:{23: 529, 45: 2025, 34: 1156, 67: 4489, 8: 64}
+
+
 # set comprehension:->
+
+
+# interview question
+
+# string="Rohit Khandekar Zaid Ansari"
+# new_list= string[0]+" "+ string[6]+" "+ string[16]+" "+ string[21]
+# print(new_list)
+# Output:R K Z A
+
+# =============================================================================================================
+# string = "Rohit Khandekar Zaid Ansari"
+
+# # Initialize an empty string to store the result
+# result = ""
+
+# # Iterate over each word in the string and append the first letter to the result
+# for word in string.split():
+#     result += word[0] + " "
+
+# # Remove the trailing space
+# result = result.rstrip()
+
+# print(result)
+# Output:R K Z A
+
+# =================================================================================================
+# string="Rohit Khandekar Zaid Ansari"
+# for i in range (0,len(string)):
+#     if i==" " or i==0:
+#         print(string[i+0],string[i+6],string[i+16],string[i+21])
+# Output:R K Z A
+
+# HW
+# def show():
+#     print("Hi")
+#     return "Hi"
+# Output:"
+
