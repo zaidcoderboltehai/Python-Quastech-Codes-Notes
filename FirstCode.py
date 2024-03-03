@@ -5387,7 +5387,7 @@ x=10
 
 # ----------------------------------------------------------Basic questions------------------------------------------------------
 # HW 
-# take input from user and print its inputvalue using input function
+# 1.take input from user and print its inputvalue using input function
 
 # user_input = input("Enter a value: ")
 # print("You entered:", user_input)
@@ -5396,7 +5396,7 @@ x=10
 # Enter a value: zaid
 # You entered: zaid
 
-# create a string and print the last element
+# 2.create a string and print the last element
 
 # my_string = "Hello, World!"
 # last_element = my_string[-1]
@@ -5405,7 +5405,7 @@ x=10
 # Output: 
 # Last element: !
 
-# create a string and print second last element
+# 3.create a string and print second last element
 
 # my_string = "Hello, World!"
 # second_last_element = my_string[-2]
@@ -5414,7 +5414,7 @@ x=10
 # Output:
 # Second-to-last element: d
 
-# create a string as eg:"hellohellohellohello" and print it
+# 4.create a string as eg:"hellohellohellohello" and print it
 
 # my_string = "hello" * 4
 # print(my_string)
@@ -5422,7 +5422,7 @@ x=10
 # Output:
 # hellohellohellohello
 
-# create  two string like "hello" and "world" and print "helloworld"
+# 5.create  two string like "hello" and "world" and print "helloworld"
 
 # string1 = "hello"
 # string2 = "world"
@@ -5432,7 +5432,7 @@ x=10
 # Output:
 # helloworld
 
-# create two variable and swap its value eg a=10,b=20 afer swapping there output is a=20,b=10
+# 6.create two variable and swap its value eg a=10,b=20 afer swapping there output is a=20,b=10
 
 # a=10 
 # b=20
@@ -5444,7 +5444,7 @@ x=10
 # 20
 # 10
 
-# create a tuple like(1,2,3,4,3,2) and count number of  occurrences  of 3
+# 7.create a tuple like(1,2,3,4,3,2) and count number of  occurrences  of 3
 
 # my_tuple = (1, 2, 3, 4, 3, 2)
 # count_of_3 = my_tuple.count(3)
@@ -5454,7 +5454,7 @@ x=10
 # Output:
 # Number of occurrences of 3: 2
 
-# create a tuple like(1,2,3,4,3,2) and print the index number of 3
+# 8.create a tuple like(1,2,3,4,3,2) and print the index number of 3
 
 # my_tuple = (1, 2, 3, 4, 3, 2)
 # index_of_3 = my_tuple.index(3)
@@ -5464,7 +5464,7 @@ x=10
 # Output:
 # Index of the first occurrence of 3: 2
 
-# create a tuple like(1,2,3,4,3,2) and print (2,3,4) only
+# 9.create a tuple like(1,2,3,4,3,2) and print (2,3,4) only
 
 # my_tuple = (1, 2, 3, 4, 3, 2)
 # selected_elements = my_tuple[1:4]
@@ -5474,7 +5474,7 @@ x=10
 # Output:
 # (2, 3, 4)
 
-# # create tuple like(1,2,3,4,3,2) and remove 3 in this tuple
+# 10.create tuple like(1,2,3,4,3,2) and remove 3 in this tuple
 # original_tuple = (1, 2, 3, 4, 3, 2)
 # element_to_remove = 3
 
@@ -5492,7 +5492,7 @@ x=10
 # Output:
 # (1, 2, 4, 2)
 
-# # create a list like[1,2,3,4] and change the elements like[1,2,4,3] without using list methods
+# 11.create a list like[1,2,3,4] and change the elements like[1,2,4,3] without using list methods
 # original_list = [1, 2, 3, 4]
 
 # # Change the order of elements
@@ -5502,7 +5502,7 @@ x=10
 # Output:
 # [1, 2, 4, 3]
 
-# # create a list like[1,2,3,4] and delete all the elements in list and print empty list without using any method 
+# 12.create a list like[1,2,3,4] and delete all the elements in list and print empty list without using any method 
 # original_list = [1, 2, 3, 4]
 
 # # Delete all elements in the list without using list methods
@@ -5512,7 +5512,7 @@ x=10
 # # Output:
 # # []
 
-# create single value tuple
+# 13.create single value tuple
 # single_value_tuple = (42,)
 # print(type(single_value_tuple))
 # Output:
@@ -5524,11 +5524,11 @@ x=10
 # Output:
 # <class 'int'>
 
-# create empty set
+# 14.create empty set
 # empty_set = set()
 # Output:"
 
-# # create a dictionery like {"a":10,"b":20} and print the value of "a" without using methods
+# 15.create a dictionery like {"a":10,"b":20} and print the value of "a" without using methods
 # my_dict = {"a": 10, "b": 20}
 
 # # Access the value associated with the key "a" without using methods
@@ -5537,7 +5537,7 @@ x=10
 # print(value_of_a)
 # Output:10
 
-# # create a dictionery like {"a":10,"b":20} and change the value of "b" is 30 and print it without using methods
+# 16.create a dictionery like {"a":10,"b":20} and change the value of "b" is 30 and print it without using methods
 # my_dict = {"a": 10, "b": 20}
 
 # # Change the value associated with the key "b" without using methods
@@ -5548,7 +5548,7 @@ x=10
 # Output:{'a': 10, 'b': 30}
 
 
-# # create a dictionary like {"a":10,"b":20} and insert the key value pair which the key is "c" and the value is 30 and print it
+# 17.create a dictionary like {"a":10,"b":20} and insert the key value pair which the key is "c" and the value is 30 and print it
 # my_dict = {"a": 10, "b": 20}
 
 # # Insert a new key-value pair "c": 30 without using methods
@@ -5558,7 +5558,7 @@ x=10
 # print(my_dict)
 # Output:{'a': 10, 'b': 20, 'c': 30}
 
-# # create two sets like {1,2,3,4} and {3,4,5,6} and find the union without using union method
+# 18.create two sets like {1,2,3,4} and {3,4,5,6} and find the union without using union method
 # set1 = {1, 2, 3, 4}
 # set2 = {3, 4, 5, 6}
 
@@ -5569,18 +5569,18 @@ x=10
 # print(union_result)
 # Output:{1, 2, 3, 4, 5, 6}
 
-# # create two sets like {1,2,3,4} and {3,4,5,6} and find the intersection without using intersection method
+# 19.create two sets like {1,2,3,4} and {3,4,5,6} and find the intersection without using intersection method
 # set1 = {1, 2, 3, 4}
 # set2 = {3, 4, 5, 6}
 
-# # Find the intersection of the two sets without using intersection method
+# Find the intersection of the two sets without using intersection method
 # intersection_result = set1 & set2
 
 # # Print the intersection
 # print(intersection_result)
 # Output:{3, 4}
 
-# # create two sets like {1,2,3,4} and {3,4,5,6} and find there difference without using difference method
+# 20.create two sets like {1,2,3,4} and {3,4,5,6} and find there difference without using difference method
 # set1 = {1, 2, 3, 4}
 # set2 = {3, 4, 5, 6}
 
@@ -5591,7 +5591,7 @@ x=10
 # print(difference_result)
 # Output:{1, 2}
 
-# # create a set like {1,2,3,4} and remove 3
+# 21.create a set like {1,2,3,4} and remove 3
 # my_set = {1, 2, 3, 4}
 
 # # Remove the element 3 without using the remove method
@@ -5601,7 +5601,7 @@ x=10
 # print(my_set)
 # Output:{1, 2, 4}
 
-# create a set like {1,2,3,4} and remove 3 using discard method and undrstand what's the difference between remove and pop
+# 21.create a set like {1,2,3,4} and remove 3 using discard method and undrstand what's the difference between remove and pop
 # To remove an element from a set using the discard method and explain the difference between remove and discard, you can use the following example:
 
 # my_set = {1, 2, 3, 4}
@@ -5622,7 +5622,7 @@ x=10
 # In summary, the main difference is in how they handle the case when the element to be removed is not present in the set. remove raises an error,
 # while discard does not.
 
-# create a set like {1,2,3,4} and remove 3 using discard method and undrstand what's the difference between remove and pop
+# 22.create a set like {1,2,3,4} and remove 3 using discard method and undrstand what's the difference between remove and pop
 # To remove an element from a set using the discard method, you can do the following:
 
 # my_set = {1, 2, 3, 4}
@@ -5645,7 +5645,7 @@ x=10
 
 # In summary, remove raises an error if the element is not found, while discard does not raise an error in such cases.
 
-# create a string like "hello world" and count "o"
+# 23.create a string like "hello world" and count "o"
 
 # my_string = "hello world"
 
@@ -5656,7 +5656,7 @@ x=10
 # print(count_of_o)
 # Output:2
 
-# create a string like "hello world" and find "z" or index "z" and understand difference between index and count
+# 24.create a string like "hello world" and find "z" or index "z" and understand difference between index and count
 
 # To find the index of a character, such as "z," in the string "hello world," you can use the find method. If the character is not present, 
 # the find method will return -1. 
@@ -5679,7 +5679,7 @@ x=10
 # find: Finds the first occurrence of a substring or character in the string. Returns the index of the first occurrence or -1 if not found.
 # In summary, count provides the number of occurrences, while find provides the index of the first occurrence or -1 if not found.
 
-# create a list like ["p","y","t","h","o","n"] and print "python"
+# 25.create a list like ["p","y","t","h","o","n"] and print "python"
 
 # my_list = ["p", "y", "t", "h", "o", "n"]
 
@@ -5688,7 +5688,7 @@ x=10
 # print(word_python)
 # Output:python
 
-# create a string "python" and print ["p","y","t","h","o","n"]
+# 26.create a string "python" and print ["p","y","t","h","o","n"]
 
 # my_string = "python"
 
@@ -5708,7 +5708,7 @@ x=10
 # Output:
 # ['p', 'y', 't', 'h', 'o', 'n']
 
-# create a string like"     python" and print "python"
+# 27.create a string like"     python" and print "python"
 
 # my_string = "     python"
 
@@ -5719,7 +5719,7 @@ x=10
 # print(result_string)
 # Output:python
 
-# create a list [1,2,3,4] and print it like [1,2,3,4,5]
+# 28.create a list [1,2,3,4] and print it like [1,2,3,4,5]
 
 # my_list = [1, 2, 3, 4]
 
@@ -5730,7 +5730,7 @@ x=10
 # print(my_list)
 # Output:[1, 2, 3, 4, 5]
 
-# create a list [1,2,3,4] and print [1,2,3,4,1,2,3,4] using extend function
+# 29.create a list [1,2,3,4] and print [1,2,3,4,1,2,3,4] using extend function
 
 # my_list = [1, 2, 3, 4]
 
@@ -5741,7 +5741,7 @@ x=10
 # print(my_list)
 # Output:[1, 2, 3, 4, 1, 2, 3, 4]
 
-# create a list [1,2,3,4] and print [1,2,3,4,"p","y","t","h","o","n"] using extend function
+# 30.create a list [1,2,3,4] and print [1,2,3,4,"p","y","t","h","o","n"] using extend function
 
 # my_list = [1, 2, 3, 4]
 
@@ -5752,7 +5752,7 @@ x=10
 # print(my_list)
 # Output:[1, 2, 3, 4, 'p', 'y', 't', 'h', 'o', 'n']
 
-# create a list [1,2,3,4] and remove 2 using pop function
+# 31.create a list [1,2,3,4] and remove 2 using pop function
 
 # my_list = [1, 2, 3, 4]
 
@@ -5763,7 +5763,7 @@ x=10
 # print(my_list)
 # Output:[1, 3, 4]
 
-# create a list [1,2,3,4] and print [1,5,3,4] using insert function
+# 32.create a list [1,2,3,4] and print [1,5,3,4] using insert function
 
 # my_list = [1, 2, 3, 4]
 
@@ -5776,7 +5776,7 @@ x=10
 # print(my_list)
 # Output:[1, 5, 3, 4]
 
-# create a list [1,2,3,4] and print [1,5,3,4] using negative indexing in insert function
+# 33.create a list [1,2,3,4] and print [1,5,3,4] using negative indexing in insert function
 
 # my_list = [1, 2, 3, 4]
 
@@ -5787,7 +5787,7 @@ x=10
 # print(my_list)
 # Output:[1, 2, 5, 4]
 
-# create a list [1,2,3,4] and print [4,3,2,1]
+# 34.create a list [1,2,3,4] and print [4,3,2,1]
 
 # my_list = [1, 2, 3, 4]
 
@@ -5798,7 +5798,7 @@ x=10
 # print(my_list)
 # Output:[4, 3, 2, 1]
 
-# create a list [1,4,3,2] and print [1,2,3,4] using function
+# 35.create a list [1,4,3,2] and print [1,2,3,4] using function
 # my_list = [1, 4, 3, 2]
 
 # # Sort the list using the sorted function
@@ -5808,7 +5808,7 @@ x=10
 # print(sorted_list)
 # Output:[1, 2, 3, 4]
 
-# create a dict {"a":10,"b":12,"c":14} and clear it{}
+# 36.create a dict {"a":10,"b":12,"c":14} and clear it{}
 # my_dict = {"a": 10, "b": 12, "c": 14}
 
 # # Clear the dictionary using the clear method
@@ -5818,7 +5818,7 @@ x=10
 # print(my_dict)
 # Output:{}
 
-# create a empty set{}
+# 37.create a empty set{}
 
 # my_set = set()
 
@@ -5826,7 +5826,7 @@ x=10
 # print(my_set)
 # Output:set()
 
-# create empty dict{}
+# 38.create empty dict{}
 
 # my_dict = {}
 
@@ -5835,7 +5835,7 @@ x=10
 
 # Output:{}
 
-# create a dict{"a":10,"b":20,"c":30} and print {"b":20,"c":30}
+# 39.create a dict{"a":10,"b":20,"c":30} and print {"b":20,"c":30}
 
 # my_dict = {"a": 10, "b": 20, "c": 30}
 
@@ -5844,7 +5844,7 @@ x=10
 # print(subset_dict)
 # Output:{'b': 20, 'c': 30}
 
-# create a set {1,2,3,4} and remove 2
+# 40.create a set {1,2,3,4} and remove 2
 # my_set = {1, 2, 3, 4}
 
 # # Remove element 2 from the set
@@ -5853,6 +5853,910 @@ x=10
 # # Print the modified set
 # print(my_set)
 # Output:{1, 3, 4}
+
+# ------------------------------------------------------moderate question--------------------------------------------------------
+# 1)create a string "hello" and print >> ll:2 times without using count method
+
+# # Define the string
+# my_string = "hello"
+
+# # Specify the character to count
+# char_to_count = 'l'
+
+# # Initialize a counter
+# count = 0
+
+# # Iterate through the string and count occurrences of the specified character
+# for char in my_string:
+#     if char == char_to_count:
+#         count += 1
+
+# # Print the result
+# print(f"The character '{char_to_count}' appears {count} times in the string.")
+# Output:The character 'l' appears 2 times in the string.
+
+# 2)create a string "hello" and sort it 
+
+# # Define the string
+# my_string = "hello"
+
+# # Convert the string to a list of characters
+# char_list = list(my_string)
+
+# # Sort the list of characters
+# char_list.sort()
+
+# # Convert the sorted list back to a string
+# sorted_string = ''.join(char_list)
+
+# # Print the sorted string
+# print(sorted_string)
+# Output:ehllo
+
+# 3)Take input string from user and find vowels
+
+# # Get input string from the user
+# user_input = input("Enter a string: ")
+
+# # Define a function to find vowels
+# def find_vowels(input_string):
+#     vowels = "aeiouAEIOU"
+#     vowel_list = [char for char in input_string if char in vowels]
+#     return vowel_list
+
+# # Find and print vowels in the input string
+# result = find_vowels(user_input)
+# print("Vowels in the string:", result)
+# Output:
+# Enter a string: zaid
+# Vowels in the string: ['a', 'i']
+
+# 4) create a list [(1,2),{"A":10},"abc",[1,2,3,4]] and find the data type of each element 
+
+# # Create the list
+# my_list = [(1, 2), {"A": 10}, "abc", [1, 2, 3, 4]]
+
+# # Iterate through the list and print the data type of each element
+# for element in my_list:
+#     print(f"Element: {element}, Type: {type(element)}")
+# Output:
+# Element: (1, 2), Type: <class 'tuple'>
+# Element: {'A': 10}, Type: <class 'dict'>
+# Element: abc, Type: <class 'str'>
+# Element: [1, 2, 3, 4], Type: <class 'list'>
+
+# 5) print A to Z in sequence like A B C D E........XYZ.
+
+# # Iterate through the alphabet from 'A' to 'Z'
+# for char in range(ord('A'), ord('Z') + 1):
+#     print(chr(char), end=" ")
+# Output:A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
+    
+# 6)print ten time "hii" 
+
+# count = 0
+# while count < 10:
+#     print("hii")
+#     count += 1
+# Output:
+# hii
+# hii
+# hii
+# hii
+# hii
+# hii
+# hii
+# hii
+# hii
+# hii
+
+# for i in range(1,11):
+#     print("hii")
+# Output:
+# hii
+# hii
+# hii
+# hii
+# hii
+# hii
+# hii
+# hii
+# hii
+# hii
+
+# 7)print right angle triangle using while loop 
+
+# rows = 5
+# i = 1
+
+# while i <= rows:
+#     j = 1
+#     while j <= i:
+#         print("*", end=" ")
+#         j += 1
+#     print()
+#     i += 1
+# Output:
+# * 
+# * * 
+# * * * 
+# * * * * 
+# * * * * * 
+
+# 8)print right angle triangle using for loop 
+
+# rows = 5
+
+# for i in range(1, rows + 1):
+#     for j in range(1, i + 1):
+#         print("*", end=" ")
+#     print()
+# Output:
+# * 
+# * * 
+# * * * 
+# * * * * 
+# * * * * *
+
+# 9)take input from user and check its even or odd
+
+# # Get input from the user
+# number = int(input("Enter a number: "))
+
+# # Check if the number is even or odd
+# if number % 2 == 0:
+#     print(f"{number} is an even number.")
+# else:
+#     print(f"{number} is an odd number.")
+# Output:
+# Enter a number: 26
+# 26 is an even number.
+# Output:
+# Enter a number: 21
+# 21 is an odd number.
+    
+# 10)take input from user and check the number is divisible by 5 or not
+
+# Get input from the user
+# number = int(input("Enter a number: "))
+
+# # Check if the number is divisible by 5
+# if number % 5 == 0:
+#     print(f"{number} is divisible by 5.")
+# else:
+#     print(f"{number} is not divisible by 5.")
+# Output:
+# Enter a number: 25
+# 25 is divisible by 5.
+# Output:
+# Enter a number: 24
+# 24 is not divisible by 5.
+    
+# 11)write a program to check whether a person is eligible for voting or not(accept age from user)
+
+# # Get age input from the user
+# age = int(input("Enter your age: "))
+
+# # Check eligibility for voting
+# if age >= 18:
+#     print("You are eligible to vote!")
+# else:
+#     print("Sorry, you are not eligible to vote.")
+# Output:
+# Enter your age: 18
+# You are eligible to vote!
+# Output:
+# Enter your age: 17
+# Sorry, you are not eligible to vote.
+    
+# 12)print 1 to 10 using for loop
+
+# Using for loop to print numbers from 1 to 10
+# for i in range(1, 11):
+#     print(i)
+#  Output:
+# 1
+# 2 
+# 3 
+# 4 
+# 5 
+# 6 
+# 7 
+# 8 
+# 9 
+# 10
+    
+# 13)write a programme to check whether a number is divisible by 7 or not
+
+# Get input from the user
+# number = int(input("Enter a number: "))
+
+# # Check if the number is divisible by 7
+# if number % 7 == 0:
+#     print(f"{number} is divisible by 7.")
+# else:
+#     print(f"{number} is not divisible by 7.")
+# Output:
+# Enter a number: 49
+# 49 is divisible by 7.
+# Output:
+# Enter a number: 48
+# 48 is not divisible by 7.
+    
+# 14)write a program to display "hello" if number entered by user is even , otherwise print "bye"
+
+# # Get input from the user
+# number = int(input("Enter a number: "))
+
+# # Check if the number is even
+# if number % 2 == 0:
+#     print("hello")
+# else:
+#     print("bye")
+# Output:
+# Enter a number: 24
+# hello
+# Output:
+# Enter a number: 23
+# bye
+    
+# 15)take input from user and check its data type 
+
+# # Get input from the user
+# user_input = input("Enter something: ")
+
+# # Check the data type
+# data_type = type(user_input)
+
+# # Display the data type
+# print(f"The data type of '{user_input}' is {data_type}")
+# Output:
+# Enter something: zaid
+# The data type of 'zaid' is <class 'str'>
+
+# 16)create set like {1,2,3,4,5} and update it {1,2,3,4,5,6,7,8,9}
+
+# # Create a set
+# my_set = {1, 2, 3, 4, 5}
+
+# # Display the original set
+# print("Original Set:", my_set)
+
+# # Update the set
+# my_set.update({6, 7, 8, 9})
+
+# # Display the updated set
+# print("Updated Set:", my_set)
+# Output:
+# Original Set: {1, 2, 3, 4, 5}
+# Updated Set: {1, 2, 3, 4, 5, 6, 7, 8, 9}
+
+# 17)create a set like {1,2,3,4,5} and add the element like {1,2,3,4,5,6,7,8,9}
+
+# # Create a set
+# my_set = {1, 2, 3, 4, 5}
+
+# # Display the original set
+# print("Original Set:", my_set)
+
+# # Add elements to the set
+# my_set |= {6, 7, 8, 9}
+
+# # Display the set after adding elements
+# print("Updated Set:", my_set)
+# Output:
+# Original Set: {1, 2, 3, 4, 5}
+# Updated Set: {1, 2, 3, 4, 5, 6, 7, 8, 9}
+
+# 18)take string from user like "python" and print ["p","y","t","h","o","n"]
+
+# # Take input from the user
+# user_input = input("Enter a string: ")
+
+# # Create a list of individual characters
+# char_list = list(user_input)
+
+# # Display the list
+# print("List of characters:", char_list)
+# Output:
+# Enter a string: python
+# List of characters: ['p', 'y', 't', 'h', 'o', 'n']   
+
+# 19)take input from user in int data type without using int() function
+
+# # Take input from the user
+# user_input = input("Enter an integer: ")
+
+# # Convert the input to an integer
+# user_integer = int(user_input)
+
+# # Display the integer
+# print("Entered integer:", user_integer)
+# Output:
+# Enter an integer: 24
+# Entered integer: 24
+
+# 20)create a string like " 7 apple 8 mango 9 banana" and print the int values only which dynamic state
+
+# # Given string
+# input_string = "7 apple 8 mango 9 banana"
+
+# # Split the string into words
+# words = input_string.split()
+
+# # Iterate through the words and print integers
+# for word in words:
+#     if word.isdigit():  # Check if the word is a digit
+#         print(int(word))
+# Output:
+# 7
+# 8
+# 9
+        
+# 21)take input from user like 1234 and print the every second element 0 eg,1020
+
+# # Get input from the user
+# user_input = input("Enter a number: ")
+
+# # Initialize an empty string to store the result
+# result = ""
+
+# # Iterate through every second character and append it to the result with 0
+# for i in range(len(user_input)):
+#     if i % 2 == 1:
+#         result += "0"
+#     else:
+#         result += user_input[i]
+
+# # Print the result
+# print(result)
+# Output:
+# Enter a number: 1234
+# 1030
+
+# 22)take gmail from user like "abc@gmail.com" and print its name only "abc"
+
+# # Get input from the user
+# gmail_address = input("Enter your Gmail address: ")
+
+# # Extract the name part before '@'
+# name = gmail_address.split('@')[0]
+
+# # Print the name
+# print(f"The name part of the Gmail address is: {name}")
+#  Output:
+# Enter your Gmail address: abc@gmail.com
+# The name part of the Gmail address is: abc
+
+# 23) Write a program to calculate the electricity bill (accept number of unit from user) according to the following criteria :
+#     Unit                          Price  
+#   First 100 units                 no charge
+#   Next 100 units                 Rs 5 per unit
+#   After 200 units                Rs 10 per unit
+#   (For example if input unit is 350 than total bill amount is Rs2000)
+
+# # Get input for the number of units
+# units = int(input("Enter the number of units consumed: "))
+
+# # Initialize variables
+# total_price = 0
+
+# # Determine the bill amount based on the criteria
+# if units <= 100:
+#     total_price = 0  # No charge for the first 100 units
+# elif units <= 200:
+#     total_price = (units - 100) * 5  # Rs 5 per unit for the next 100 units
+# else:
+#     total_price = 100 * 5 + (units - 200) * 10  # Rs 10 per unit after 200 units
+
+# # Display the total bill amount
+# print(f"The total electricity bill amount is: Rs {total_price}")
+# Output:
+# Enter the number of units consumed: 350
+# The total electricity bill amount is: Rs 2000
+
+# 24) Write a program to check whether the last digit of a number(entered by user ) is divisible by 3 or not.
+
+# # Get input for the number
+# number = int(input("Enter a number: "))
+
+# # Extract the last digit
+# last_digit = abs(number) % 10
+
+# # Check if the last digit is divisible by 3
+# if last_digit % 3 == 0:
+#     print(f"The last digit ({last_digit}) is divisible by 3.")
+# else:
+#     print(f"The last digit ({last_digit}) is not divisible by 3.")
+# Output:
+# Enter a number: 23
+# The last digit (3) is divisible by 3.
+# Output:
+# Enter a number: 24
+# The last digit (4) is not divisible by 3.
+    
+# 25) Write a program to determine whether a number (accepted from the user) is divisible by 2 and 3 both.
+
+# # Get input for the number
+# number = int(input("Enter a number: "))
+
+# # Check if the number is divisible by 2 and 3
+# if number % 2 == 0 and number % 3 == 0:
+#     print(f"{number} is divisible by both 2 and 3.")
+# else:
+#     print(f"{number} is not divisible by both 2 and 3.")
+# Output:
+# Enter a number: 6
+# 6 is divisible by both 2 and 3.
+# Output:
+# Enter a number: 16
+# 16 is not divisible by both 2 and 3.
+
+# 26)Accept the age of 4 people and display the youngest one?
+
+# # Get input for each person's age
+# age1 = int(input("Enter the age of person 1: "))
+# age2 = int(input("Enter the age of person 2: "))
+# age3 = int(input("Enter the age of person 3: "))
+# age4 = int(input("Enter the age of person 4: "))
+
+# # Determine the youngest age using if, elif, and else statements
+# if age1 <= age2 and age1 <= age3 and age1 <= age4:
+#     youngest_age = age1
+# elif age2 <= age1 and age2 <= age3 and age2 <= age4:
+#     youngest_age = age2
+# elif age3 <= age1 and age3 <= age2 and age3 <= age4:[]
+#     youngest_age = age3
+# else:
+#     youngest_age = age4
+
+# # Display the youngest age
+# print(f"The youngest person is {youngest_age} years old.")
+# Output:
+# Enter the age of person 1: 20
+# Enter the age of person 2: 21
+# Enter the age of person 3: 22
+# Enter the age of person 4: 23
+# The youngest person is 20 years old.
+
+# 27) Accept the age of 4 people and display the oldest one?
+
+# # Get input for each person's age
+# age1 = int(input("Enter the age of person 1: "))
+# age2 = int(input("Enter the age of person 2: "))
+# age3 = int(input("Enter the age of person 3: "))
+# age4 = int(input("Enter the age of person 4: "))
+
+# # Determine the oldest age using if, elif, and else statements
+# if age1 >= age2 and age1 >= age3 and age1 >= age4:
+#     oldest_age = age1
+# elif age2 >= age1 and age2 >= age3 and age2 >= age4:
+#     oldest_age = age2
+# elif age3 >= age1 and age3 >= age2 and age3 >= age4:
+#     oldest_age = age3
+# else:
+#     oldest_age = age4
+
+# # Display the oldest age
+# print(f"The oldest person is {oldest_age} years old.")
+# Output:
+# Enter the age of person 1: 20
+# Enter the age of person 2: 21
+# Enter the age of person 3: 22
+# Enter the age of person 4: 23
+# The oldest person is 23 years old.
+
+# 28) Write a program to check whether an years is leap year or not
+
+# # Get input for the year
+# year = int(input("Enter a year: "))
+
+# # Check if the year is a leap year
+# if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+#     print(f"{year} is a leap year.")
+# else:
+#     print(f"{year} is not a leap year.")
+# Output:
+# Enter a year: 2024
+# 2024 is a leap year.
+# Output:
+# Enter a year: 2014
+# 2014 is not a leap year.
+
+# 29) Write a program to check whether an years is leap year or not without using (or) keyword
+
+# # Get input for the year
+# year = int(input("Enter a year: "))
+
+# # Check if the year is a leap year
+# if (year % 4 == 0 and year % 100 != 0):
+#     print(f"{year} is a leap year.")
+# elif(year % 400 == 0):
+#     print(f"{year} is a leap year.")
+# else:
+#     print(f"{year} is not a leap year.")
+# Output:
+# Enter a year: 2024
+# 2024 is a leap year
+# Output:
+# Enter a year: 2014
+# 2014 is not a leap year.
+    
+# 30) Write a program to check whether an years is leap year or not , without using (and),(or) keywords
+
+# # Get input for the year
+# year = int(input("Enter a year: "))
+
+# # Check if the year is a leap year
+# if year % 4 == 0:
+#     if year % 100 != 0:
+#         print(f"{year} is a leap year.")
+#     else:
+#         if year % 400 == 0:
+#             print(f"{year} is a leap year.")
+#         else:
+#             print(f"{year} is not a leap year.")
+# else:
+#     print(f"{year} is not a leap year.")
+# Output:
+# Enter a year: 2024
+# 2024 is a leap year.
+# Output:
+# Enter a year: 2014
+# 2014 is not a leap year.
+
+# 31)Write a program to check whether a number entered is three digit number or not. 
+
+# # Get input from the user
+# number = int(input("Enter a number: "))
+
+# # Check if the number is three digits
+# if 100 <= number <= 999:
+#     print(f"{number} is a three-digit number.")
+# else:
+#     print(f"{number} is not a three-digit number.")
+# Output:
+# Enter a number: 111
+# 111 is a three-digit number.
+# Output:
+# Enter a number: 99
+# 99 is not a three-digit number.
+    
+# 32) Write a program to check whether a person is senior citizen or not.
+
+# # Get age input from the user
+# age = int(input("Enter your age: "))
+
+# # Check if the person is a senior citizen
+# if age >= 60:
+#     print("You are a senior citizen.")
+# else:
+#     print("You are not a senior citizen yet.")
+#  Output:
+# Enter your age: 60
+# You are a senior citizen.
+#  Output:
+# Enter your age: 59
+# You are not a senior citizen yet.
+    
+# 33)write a program which will add(sum) all the elements of list 
+
+# # Define a list of numbers
+# numbers = [5, 10, 15, 20, 25]
+
+# # Initialize a variable to store the sum
+# total_sum = 0
+
+# # Iterate through each element in the list and add it to the sum
+# for number in numbers:
+#     total_sum += number
+
+# # Print the total sum
+# print("The sum of the elements is:", total_sum)
+# Output: The sum of the elements is:75
+
+# 34)write a program to print maximum number without using max function
+
+# # Define a list of numbers
+# numbers = [12, 45, 23, 67, 89, 34, 56]
+
+# # Initialize a variable to store the maximum number
+# max_number = numbers[0]  # Assuming the first element is the maximum initially
+
+# # Iterate through each element in the list to find the maximum
+# for number in numbers:
+#     if number > max_number:
+#         max_number = number
+
+# # Print the maximum number
+# print("The maximum number is:", max_number)
+# Output: The maximum number is: 89
+
+# 35)write a program to print minimum number without using min function 
+
+# # Define a list of numbers
+# numbers = [12, 45, 23, 67, 89, 34, 56]
+
+# # Initialize a variable to store the minimum number
+# min_number = numbers[0]  # Assuming the first element is the minimum initially
+
+# # Iterate through each element in the list to find the minimum
+# for number in numbers:
+#     if number < min_number:
+#         min_number = number
+
+# # Print the minimum number
+# print("The minimum number is:", min_number)
+# Ouput: The minimum number is: 12
+
+# 36)write a program to square all the all elements of list note[1,5,3,9],>>[1,25,9,81]
+
+# # Define a list of numbers
+# numbers = [1, 5, 3, 9]
+
+# # Use list comprehension to square each element
+# squared_numbers = [num ** 2 for num in numbers]
+
+# # Print the squared list
+# print("Original list:", numbers)
+# print("Squared list:", squared_numbers)
+# Output:
+# Original list: [1, 5, 3, 9]
+# Squared list: [1, 25, 9, 81]
+
+# 37)write a program to print all the elements in list which are divisible by 3 
+
+# # Define a list of numbers
+# numbers = [12, 24, 9, 18, 7, 15, 30, 21]
+
+# # Initialize an empty list to store numbers divisible by 3
+# divisible_by_3 = []
+
+# # Use a for loop to iterate through the list
+# for num in numbers:
+#     # Check if the number is divisible by 3
+#     if num % 3 == 0:
+#         divisible_by_3.append(num)
+
+# # Print the list of numbers divisible by 3
+# print(divisible_by_3)
+# Output:[12, 24, 9, 18, 15, 30, 21]
+
+# 38)write a program to print all the elements which are greater than 100
+
+# # Define a list of numbers
+# numbers = [12, 150, 9, 200, 7, 15, 30, 21]
+
+# # Use a for loop to iterate through the list
+# for num in numbers:
+#     # Check if the number is greater than 100
+#     if num > 100:
+#         print(num)
+# Output: 
+# 150
+# 200
+
+# 39)write a program to find the total length of all string element in a list eg ["py","thon"],>>[2,4]
+
+# # Define a list of strings
+# strings_list = ["py", "thon", "hello", "world"]
+
+# # Initialize an empty list to store lengths
+# lengths = []
+
+# # Iterate through each string and append its length to the list
+# for s in strings_list:
+#     lengths.append(len(s))
+
+# # Print the resulting list of lengths
+# print(lengths)
+# Output:[2, 4, 5, 5]
+
+# 40)write a program to print all elements in dictionary
+
+# # Define a dictionary
+# my_dict = {"a": 10, "b": 20, "c": 30, "d": 40}
+
+# # Iterate through key-value pairs and print them
+# for key, value in my_dict.items():
+#     print(f"{key}: {value}")
+# Output:
+# a: 10
+# b: 20
+# c: 30
+# d: 40
+
+
+# ---------------------------------------------------high level question----------------------------------------------------------
+
+
+
+# 1)take a list and sort it without using sort function
+
+# # Bubble Sort function
+# def bubble_sort(arr):
+#     n = len(arr)
+
+#     for i in range(n):
+#         # Last i elements are already sorted, so we don't need to check them
+#         for j in range(0, n-i-1):
+#             # Swap if the element found is greater than the next element
+#             if arr[j] > arr[j+1]:
+#                 arr[j], arr[j+1] = arr[j+1], arr[j]
+
+# # Example usage
+# my_list = [64, 34, 25, 12, 22, 11, 90]
+
+# # Call the bubble_sort function
+# bubble_sort(my_list)
+
+# # Print the sorted list
+# print("Sorted list:", my_list)
+# Output:Sorted list: [11, 12, 22, 25, 34, 64, 90]
+
+# 2)take a list and sort it in descending order without using sort function
+
+# def bubble_sort_desc(arr):
+#     n = len(arr)
+
+#     while n > 0:
+#         for i in range(n - 1):
+#             if arr[i] < arr[i + 1]:
+#                 # Swap if the element found is smaller than the next element
+#                 arr[i], arr[i + 1] = arr[i + 1], arr[i]
+        
+#         n -= 1
+
+# # Example usage
+# my_list = [64, 34, 25, 12, 22, 11, 90]
+
+# # Call the bubble_sort_desc function
+# bubble_sort_desc(my_list)
+
+# # Print the sorted list in descending order
+# print("Sorted list (Descending):", my_list)
+# Output:Sorted list (Descending): [90, 64, 34, 25, 22, 12, 11]
+
+# 3)take a list and find the highest element without using max function
+
+# def find_highest_element(arr):
+#     # Check if the list is not empty
+#     if not arr:
+#         return None  # Return None for an empty list
+
+#     highest = arr[0]  # Assume the first element is the highest
+
+#     # Iterate through the list using a for loop
+#     for element in arr[1:]:
+#         # Update the highest element if a greater one is found
+#         if element > highest:
+#             highest = element
+
+#     return highest
+
+# # Example usage
+# my_list = [64, 34, 25, 12, 22, 11, 90]
+
+# # Call the find_highest_element function
+# highest_element = find_highest_element(my_list)
+
+# # Print the highest element
+# print("Highest element:", highest_element)
+# Output:Highest element: 90
+
+# 4)take a list and find the second highest element
+
+# def find_second_highest(arr):
+#     # Check if the list has at least two elements
+#     if len(arr) < 2:
+#         return None  # Return None if the list is too short
+
+#     highest = max(arr[0], arr[1])  # Initialize highest and second highest
+#     second_highest = min(arr[0], arr[1])
+
+#     # Iterate through the list starting from the third element
+#     for element in arr[2:]:
+#         if element > highest:
+#             second_highest = highest
+#             highest = element
+#         elif element > second_highest:
+#             second_highest = element
+
+#     return second_highest
+
+# # Example usage
+# my_list = [64, 34, 25, 12, 22, 11, 90]
+
+# # Call the find_second_highest function
+# second_highest_element = find_second_highest(my_list)
+
+# # Print the second highest element
+# print("Second highest element:", second_highest_element)
+# Output:Second highest element: 64
+
+# 5)take a list and find the lowest element with using min function
+
+# def find_lowest(arr):
+#     # Check if the list is not empty
+#     if not arr:
+#         return None  # Return None if the list is empty
+
+#     lowest = min(arr)  # Use the min function to find the lowest element
+
+#     return lowest
+
+# # Example usage
+# my_list = [64, 34, 25, 12, 22, 11, 90]
+
+# # Call the find_lowest function
+# lowest_element = find_lowest(my_list)
+
+# # Print the lowest element
+# print("Lowest element:", lowest_element)
+# Output:Lowest element: 11
+
+# 6)take a dictionary and print the highest key value pair 
+
+# def find_highest_key_value_pair(dictionary):
+#     # Check if the dictionary is not empty
+#     if not dictionary:
+#         return None  # Return None if the dictionary is empty
+
+#     # Find the key with the highest value using max function
+#     highest_key = max(dictionary, key=dictionary.get)
+    
+#     # Get the corresponding value
+#     highest_value = dictionary[highest_key]
+
+#     return highest_key, highest_value
+
+# # Example usage
+# my_dict = {'a': 10, 'b': 30, 'c': 15, 'd': 25}
+
+# # Call the find_highest_key_value_pair function
+# highest_pair = find_highest_key_value_pair(my_dict)
+
+# # Print the highest key-value pair
+# print("Highest key-value pair:", highest_pair)
+# Output:Highest key-value pair: ('b', 30)
+
+# 7)take a dictionary and print the lowest key value pair
+
+# # Example dictionary
+# my_dict = {'a': 10, 'b': 30, 'c': 15, 'd': 25}
+
+# # Initialize variables to store the lowest key-value pair
+# lowest_key = None
+# lowest_value = float('inf')  # Set to positive infinity initially
+
+# # Iterate through the dictionary to find the lowest value
+# for key, value in my_dict.items():
+#     if value < lowest_value:
+#         lowest_key = key
+#         lowest_value = value
+
+# # Print the lowest key-value pair
+# print("Lowest key-value pair:", {lowest_key: lowest_value})
+# Output:Lowest key-value pair: {'a': 10}
+
+# 8)create a list like [1,2,3,4] and print the elements without using loop
+
+# my_list = [1, 2, 3, 4]
+
+# # Concatenate elements into a string and print
+# print(' '.join(map(str, my_list)))
+# Output:1 2 3 4
+
+# 9)create a string "ABCD" and convert into "abcd" without using lower and upper method
+
+# uppercase_string = "ABCD"
+
+# # Convert to lowercase without using lower()
+# lowercase_string = ''.join(chr(ord(char) + 32) if 'A' <= char <= 'Z' else char for char in uppercase_string)
+
+# # Print the result
+# print(lowercase_string)
+# Output:abcd
 
 # interview qs
 
@@ -6006,6 +6910,93 @@ x=10
 #     return False
 # print(show())
 
+# based on Function homework
+
+# def show():
+#     print("Hi")
+#     return "Hi"
+# show()
+# Output:Hi
+
+# def show():
+#     print("Hi")
+#     return "Hi"
+# show()
+# print(show())
+# Output:
+# Hi
+# Hi
+# Hi
+
+# def show(self):
+#     print(self)
+# show(10)
+# print(show(20))
+# Output:
+# 10
+# 20
+# None  
+
+# def none():
+#     print("Hi")
+# none()
+# Output:Hi
+
+# def print():
+#     return("Hi")
+# print()
+# Output:"
+
+# def show(s):
+#     print("Hi")
+# a=show()
+# a()
+# Output:
+# a=show()
+#   ^^^^^^
+# TypeError: show() missing 1 required positional argument: 's'
+
+# def show(x,y=10):
+#     print(x+y)
+# show(10)
+# print(show(20))
+# Output:
+# 20
+# 30
+# None
+
+# def show(x=10,y):
+#     print(x+y)
+# show()
+# Output:
+# def show(x=10,y):
+#               ^
+# SyntaxError: non-default argument follows default argument
+
+# def show(*a):
+#     print(*a)
+# show(10,20,30)
+# Output:10 20 30
+
+# def show(*kwargs):
+#     print(kwargs)
+# show(10,20,30,40)
+# Output:(10, 20, 30, 40)
+
+# def show(**args):
+#     print(args)
+# show(a=10,b=20,c=30)
+# Output:{'a': 10, 'b': 20, 'c': 30}
+
+# def show(**args):
+#     print(args)
+# show({"a":10,"b":20})
+# Output:
+# show({"a":10,"b":20})
+# TypeError: show() takes 0 positional arguments but 1 was given
+
+
+# argument topic
 # paramter:means joh user pass karra hai
 # argument:joh function banate waqt user set karta hai
 # types of parameter or argument are:
@@ -6267,6 +7258,8 @@ x=10
 
 
 # interview question
+# string = "Rohit Khandekar Zaid Ansari"
+# Expected Output:R K Z A
 
 # string="Rohit Khandekar Zaid Ansari"
 # new_list= string[0]+" "+ string[6]+" "+ string[16]+" "+ string[21]
@@ -6296,9 +7289,125 @@ x=10
 #         print(string[i+0],string[i+6],string[i+16],string[i+21])
 # Output:R K Z A
 
-# HW
-# def show():
-#     print("Hi")
-#     return "Hi"
-# Output:"
+# write a program to check number is armstrong or not 
 
+# # Input a number
+# number = int(input("Enter a number to check if it's an Armstrong number: "))
+
+# # Convert the number to a string to find its length
+# num_str = str(number)
+# num_digits = len(num_str)
+
+# # Calculate the sum of each digit raised to the power of the number of digits
+# total = sum(int(digit) ** num_digits for digit in num_str)
+
+# # Check if the total is equal to the original number
+# if total == number:
+#     print(f"{number} is an Armstrong number.")
+# else:
+#     print(f"{number} is not an Armstrong number.")
+# Output:
+# Enter a number to check if it's an Armstrong number: 153
+# 153 is an Armstrong number.
+# Output:
+# Enter a number to check if it's an Armstrong number: 224
+# 224 is not an Armstrong number.
+
+# a=[12,52,90,20,25,45] 
+# reverse a number after that reverse number without using inbuilt function
+
+# # Given list of numbers
+# a = [12, 52, 90, 20, 25, 45]
+
+# # Function to reverse a number
+# def reverse_number(num):
+#     reversed_num = 0
+#     while num > 0:
+#         digit = num % 10
+#         reversed_num = reversed_num * 10 + digit
+#         num = num // 10
+#     return reversed_num
+
+# # Reverse each number in the list
+# reversed_numbers = [reverse_number(num) for num in a]
+
+# # Reverse the order of numbers in the list
+# reversed_numbers.reverse()
+
+# # Print the result
+# print("Original List:", a)
+# print("Reversed List:", reversed_numbers)
+# Output:
+# Original List: [12, 52, 90, 20, 25, 45]
+# Reversed List: [54, 52, 2, 9, 25, 21]
+
+# write a program to print this pattern 
+# * * * *
+#  * * *
+#   * *
+#    *
+
+# # Number of rows
+# n = 4
+
+# # Outer loop for each row
+# for i in range(n):
+#     # Inner loop for spaces
+#     for j in range(i):
+#         print(" ", end="")
+#     # Inner loop for asterisks
+#     for k in range(n - i):
+#         print("* ", end="")
+#     # Move to the next line after each row
+#     print()
+# Output:
+# * * * * 
+#  * * * 
+#   * * 
+#    * 
+
+# a=[50,20,11,90,15,16,20]
+# addition of even numbers of list 
+
+# # Given list
+# a = [50, 20, 11, 90, 15, 16, 20]
+
+# # Initialize sum to 0
+# even_sum = 0
+
+# # Loop through each element in the list
+# for num in a:
+#     # Check if the number is even
+#     if num % 2 == 0:
+#         # Add the even number to the sum
+#         even_sum += num
+
+# # Print the sum of even numbers
+# print("Sum of even numbers in the list:", even_sum)
+# # Output:Sum of even numbers in the list: 196
+
+# a=[5,7,9,8,15,20,61]
+# find second highest number in list 
+
+# #Given list
+# a = [5, 7, 9, 8, 15, 20, 61]
+
+# # Initialize variables to store the highest and second highest numbers
+# highest = second_highest = float('-inf')
+
+# # Loop through each element in the list
+# for num in a:
+#     # Check if the number is greater than the highest
+#     if num > highest:
+#         # Update both highest and second highest
+#         second_highest = highest
+#         highest = num
+#     # Check if the number is greater than the second highest but not equal to the highest
+#     elif num > second_highest and num != highest:
+#         # Update only second highest
+#         second_highest = num
+
+# # Print the second highest number
+# print("Second highest number in the list:", second_highest)
+# Output:
+# Second highest number in the list: 20
