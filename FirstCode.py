@@ -6193,7 +6193,7 @@ x=10
 # 8
 # 9
         
-# 21)take input from user like 1234 and print the every second element 0 eg,1020
+# 21)take input from user like 1234 and print the every second element 0 for eg:1020
 
 # # Get input from the user
 # user_input = input("Enter a number: ")
@@ -6566,6 +6566,27 @@ x=10
 # c: 30
 # d: 40
 
+# Write a program to make a table of any number but take a number from user input
+
+# # Take a number from the user input
+# number = int(input("Enter a number: "))
+
+# # Display the multiplication table for the entered number
+# for i in range(1, 11):
+#     result = number * i
+#     print(f"{number} x {i} = {result}")
+# Output:
+# Enter a number: 2
+# 2 x 1 = 2 
+# 2 x 2 = 4 
+# 2 x 3 = 6 
+# 2 x 4 = 8 
+# 2 x 5 = 10
+# 2 x 6 = 12
+# 2 x 7 = 14
+# 2 x 8 = 16
+# 2 x 9 = 18
+# 2 x 10 = 20
 
 # ---------------------------------------------------high level question----------------------------------------------------------
 
