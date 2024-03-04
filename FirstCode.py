@@ -8706,9 +8706,14 @@ x=10
 # Object Oriented Programming:It is working based on class and object.
 # Procedural Oriented Programming:yeh function banana provide karta hai.
 
-# class:It is a blueprint of an object and also it does not take any spaces.
-# object:It is an instance of a class and also it take spaces based on functionality and property(yeh class ko follow karke banta hai).
-# each object has state and behaviour occurs.
+# class aur object ko samajhne ke liye building banane ka example liye hai jaise building banane se pehle apne ko pehle structure banana parta hai fir structure 
+# follow karke building banate hai.
+# Toh structure class hota hai means woh blueprint hota hai aur object blueprint ko follow karke banta hai means class ke structure ko follow karke banta hai.
+
+# Class:It is a blueprint of an object and also it does not take any spaces.
+
+# Object:It is an instance of a class and also it take spaces based on functionality and property(yeh class ko follow karke banta hai).
+# Each object has state and behaviour occurs.
 
 # A Function which is created inside a class it is kwown as method.
 # Class ke andarr joh bhi method hai usme ek parameter pass karna parta hai means compulsory hota hai joh ki "self" parameter hai.
