@@ -7429,7 +7429,7 @@ x=10
 # Output:
 # Second highest number in the list: 20
 
-# recursive function:a function that call itself
+# recursive function:A function that call itself it is known as recursive function.
 
 # def show():
 #     print("hello")
@@ -8608,7 +8608,7 @@ x=10
 # 8
 # 10
 
-# make function that take input integer number from user and make table of that integer value without using for loop and while loop
+# Make function that take input integer number from user and make table of that integer value without using for loop and while loop
 
 # def table(n,c=1):
 #     if(c<=10):
@@ -8629,14 +8629,14 @@ x=10
 
 # what is the difference between local variable and global variable?
 
-# a variable which is created inside a function it is called local variable
-# andarr ke area ko local scope kehte hai(local scope is the body of function)
-# local scope mai variable joh banaye jaate hai usey kehte hai local variable
-# local scope means local area 
+# a variable which is created inside a function it is called as local variable.
+# andarr ke area ko local scope kehte hai(local scope is the body of function).
+# local scope mai variable joh banaye jaate hai usey kehte hai local variable.
+# local scope means local area.
 
-# a variable which is created outside a function it is called global variable
-# global scope mai variable joh banaye jaate hai usey kehte hai global variable
-# global scope means global area 
+# a variable which is created outside a function it is called as global variable.
+# global scope mai variable joh banaye jaate hai usey kehte hai global variable.
+# global scope means global area. 
 
 # a=10
 # print(a)
@@ -8715,7 +8715,7 @@ x=10
 # Object:It is an instance of a class and also it take spaces based on functionality and property(yeh class ko follow karke banta hai).
 # Each object has state and behaviour occurs.
 
-# A Function which is created inside a class it is kwown as method.
+# A Function which is created inside a class it is known as method.
 # Class ke andarr joh bhi method hai usme ek parameter pass karna parta hai means compulsory hota hai joh ki "self" parameter hai.
 # Class ka name hamesha capital words se start hota hai.
 
@@ -8762,7 +8762,7 @@ x=10
 # AttributeError: 'Human' object has no attribute 'intro'
 
 
-# Human state
+# # Human state
 # class Human:
 #     name = "xyz"
 #     color = "white"
@@ -8781,7 +8781,7 @@ x=10
 #     def intro(self):
 #         return f"hello my name is {self.name}"
 
-# Human Behaviour
+# # Human Behaviour
 # obj = Human()
 # print(id(obj))
 # print(obj.name)
@@ -8803,3 +8803,4 @@ x=10
 # xyz
 # hello my name is xyz
 # jumping
+
