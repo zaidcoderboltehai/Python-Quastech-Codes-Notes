@@ -8735,6 +8735,7 @@ x=10
 
 # Object:It is an instance of a class and also it take spaces based on functionality and property(yeh class ko follow karke banta hai).
 # Each object has state and behaviour occurs.
+# state means variable and behaviour means method.
 
 # A Function which is created inside a class it is known as method.
 # Class ke andarr joh bhi method hai usme ek parameter pass karna parta hai means compulsory hota hai joh ki "self" parameter hai.
@@ -8782,6 +8783,14 @@ x=10
 #           ^^^^^^^^^
 # AttributeError: 'Human' object has no attribute 'intro'
 
+# OOP:isme instance variable and local variable hote hai bas
+# POP:isme local variable and global variable hote hai
+# self:It is a paramter which refer current object
+# instance variable:yeh state hai inside a class or outside a method joh ki object ke states hote hai inhe self se call kiya jaata hai
+# (object ke states ko instance variable kehte hai).
+# local varaible:A varaible which is created inside a method it is known as local variable.
+# method:method created inside a class,method required one positional argument which is self,method ko call karne ke liye object banana parta hai.
+# function:function created a outside a class,function does not required any parameter,function ko direct call kar sakte hai
 
 # # Human state
 # class Human:
@@ -8824,4 +8833,192 @@ x=10
 # xyz
 # hello my name is xyz
 # jumping
+
+# Static value based class
+
+# class User:
+#     name="zaid"
+#     city="Thane"
+#     email="azaid@gmail.com"
+#     password="1122"
+
+#     def intro(self):
+#         return f'hello my name is {self.name} i am from  {self.city}'
+    
+# obj=User()
+# print(obj.name)
+# print(obj.city)
+# print(obj.email)
+# print(obj.password)
+# print(obj.intro())
+
+# obj2=User()
+# print(obj2.name)
+# print(obj2.city)
+# print(obj2.email)
+# print(obj2.password)
+# print(obj2.intro())
+
+# Output:
+# zaid
+# Thane
+# azaid@gmail.com
+# 1122
+# hello my name is zaid i am from  Thane
+# zaid
+# Thane
+# azaid@gmail.com
+# 1122
+# hello my name is zaid i am from  Thane
+
+# Dynamic value based class
+
+# class User:
+#     name=""
+#     city=""
+#     email=""
+#     password=""
+
+#     def intro(self):
+#         return f' hello my name is {self.name} i am from {self.city}'
+    
+#     def setDetails(self,name,city,email,password):
+#         self.name=name
+#         self.city=city
+#         self.email=email
+#         self.password=password
+
+# obj=User()
+# obj.setDetails("Karan","Thane","karan@gmail.com","11ab")
+# print(obj.name)
+# print(obj.city)
+# print(obj.email)
+# print(obj.password)
+# print(obj.intro())
+
+# obj2=User()
+# obj2.setDetails("zaid","mumbra","azaid@gmail.com","11abcb")
+# print(obj2.name)
+# print(obj2.city)
+# print(obj2.email)
+# print(obj2.password)
+# print(obj2.intro())
+# Output:
+# Karan
+# Thane
+# karan@gmail.com
+# 11ab
+#  hello my name is Karan i am from Thane
+# zaid
+# mumbra
+# azaid@gmail.com
+# 11abcb
+#  hello my name is zaid i am from mumbra
+
+# Topic: constructor
+# implicit means internally and explicit means externally.
+# A constructor is used initiliaze the instance variable of a class.
+# we does not need to call constructor explicitly.
+# It is start with ___init___.
+# It is implicitly call whenever we create an object.
+# constructor ke through instance variable ko initialize karwa sakte class ke.
+# method ko call karna parta hai but constructor ko call karne ki zaroorat nhi parti haiwoh automatically call hota hai.
+# jab bhi humlog object create karte hai uss waqt constructor khud ba khud call hojata hai.
+# object ko create karte waqt constructor call hota hai automatically.
+# isme values daalna compulsory hai tabb he object banega nahi toh nahi banega. 
+ 
+# method:iska naam kuch bhi ho sakta hai,multiple times call kar sakte hai method ko,isme kuch bhi operation perform kar sakte hai,isko empty rakh sakte hai means
+#  bina values daaley.
+
+# constructor:yeh init se start hoga,yeh ek time he create hoga harr ek object ke liye jab apon uss object ko create karte hai tabb,yeh specially instance variable ko 
+# initialize karne ke kaam aata hai,isko empty nahi rakh sakte hai means values daalna he parta hai.
+
+# class User:
+#     name=""
+#     city=""
+#     email=""
+#     password=""
+
+#     def intro(self):
+#         return f' hello my name is {self.name} i am from {self.city}'
+    
+#     def __init__(self,name,city,email,password):
+#         self.name=name
+#         self.city=city
+#         self.email=email
+#         self.password=password
+
+# obj=User("Karan","Thane","karan@gmail.com","11ab")
+# print(obj.name)
+# print(obj.city)
+# print(obj.email)
+# print(obj.password)
+# print(obj.intro())
+
+# obj2=User("zaid","mumbra","azaid@gmail.com","11abcb")
+# print(obj2.name)
+# print(obj2.city)
+# print(obj2.email)
+# print(obj2.password)
+# print(obj2.intro())
+# Output:
+# Karan
+# Thane
+# karan@gmail.com
+# 11ab
+#  hello my name is Karan i am from Thane
+# zaid
+# mumbra
+# azaid@gmail.com
+# 11abcb
+#  hello my name is zaid i am from mumbra
+
+# To count how much times object occurs inside a class
+
+# class User:
+#     name=""
+#     city=""
+#     email=""
+#     password=""
+#     objectcount=0
+
+#     def intro(self):
+#         return f' hello my name is {self.name} i am from {self.city}'
+    
+#     def __init__(self,name,city,email,password):
+#         self.name=name
+#         self.city=city
+#         self.email=email
+#         self.password=password
+#        User.objectcount+=1   #edhar yeh isko as static variable treat karra hai because humlog ne object ko call kiya using class name that's why yeh isko as 
+                              #a static variable treat karra hai aur agar humlog yeh object ko self ke saath call kiye hote toh instance variable jaisa treat karta 
+                              #fir apne ko objectcount '2' ki jagah '1' milta because woh sirf initialize instance variable ko count karta jis wajah se '1' aata fir.
+          
+# obj=User("Karan","Thane","karan@gmail.com","11ab")
+# print(obj.name)
+# print(obj.city)
+# print(obj.email)
+# print(obj.password)
+# print(obj.intro())
+
+# obj2=User("zaid","mumbra","azaid@gmail.com","11abcb")
+# print(obj2.name)
+# print(obj2.city)
+# print(obj2.email)
+# print(obj2.password)
+# print(obj2.intro())
+# print(User.objectcount)
+
+# Output:
+# Karan
+# Thane
+# karan@gmail.com
+# 11ab
+#  hello my name is Karan i am from Thane
+# zaid
+# mumbra
+# azaid@gmail.com
+# 11abcb
+#  hello my name is zaid i am from mumbra
+# 2
 
