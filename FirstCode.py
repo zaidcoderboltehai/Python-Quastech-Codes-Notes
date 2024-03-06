@@ -7184,8 +7184,8 @@ x=10
 # print(even)
 # # Output:[6, 78]
 
-# filter:yeh tumse function mai expect karta hai boolean values(alternatives of loops)
-# map:yeh ek ek value get karega aur pucchega ki mujhe karna kya hai(alternatives of loops)
+# filter:yeh tumse function mai expect karta hai boolean values
+# map:yeh ek ek value get karega aur pucchega ki mujhe karna kya hai(alternatives of for loops)
 
 # map():
 # Certainly! In simple terms, map() is a built-in function in Python that is used to apply a specific function to each element of an iterable (like a list) and 
@@ -9022,5 +9022,176 @@ x=10
 #  hello my name is zaid i am from mumbra
 # 2
 
+# instance variable class ke andarr banana hai toh direct declare kardo variable name daalke aur agar constructor ke andarr banana hai instance variable toh self 
+# ka use karna parega instance variable banane ke liye nahi toh nhi banega fir
 
+# There are two types access specifiers are in python are :-
+# 1)Public:by default apna variable public access specifier he rehta hai
+# 2)Private:yeh start hota hai ____(underscore se ) aur yeh used hota hai variable ko secured rakhne ke liye
+# private variable ko set karne ke liye setter ka use karte hai means kuch condition detai hai aur get karne ke liye getter ka use karte hai direct get ya set nahi kar
+# sakte hai private variable ko
+
+# class Human:
+#     def __init__(self,name,email):
+#         self.name=name
+#         if("@" in email):
+#             self._email = email
+#         else:
+#             self._email="not valid"    
+
+#     def intro(self):
+#         return f" hello my name is {self.name}  and my email id is {self._email}"
+    
+#     def setEmail(self,email):
+#         if("@" in email):
+#             self._email=email
+#         else:
+#             self._email="not valid"
+    
+#     def  getEmail(self):
+#         return self._email
+    
+    
+# obj=Human("karan","ka@gmail.com")
+# obj.setEmail("kaa@gmail.com")
+# print(obj.getEmail())
+# print(obj.intro())
+
+# obj2=Human("kunal","ku@gmail.com")
+# print(obj2.intro())
+# Output:
+# kaa@gmail.com
+#  hello my name is karan  and my email id is kaa@gmail.com 
+#  hello my name is kunal  and my email id is ku@gmail.com  
+
+# Create a class name it as Character, and use following methods and attribute.
+
+# -> create a constructor which can initialise the name of character
+
+# -> create a two private attributes name it as life and score -> set life = 3 and score = 0
+
+# -> create a methods name it as kicked, punched, stabbed which does the following action
+
+# when kicked is called, it should increment the score atrribute by 10
+
+# - when punched is called, it should increment the score attribute by 5
+
+# when stabbed is called, it should decrement the life attribute by 1
+
+# -> create two more method name it as, displaylife and displayscore which does the follwoing action
+
+# - when displaylife is called, it return current life attribute value
+
+# - when displayscore is called, it return current score attribute value
+
+# Perform the following operations with Character class
+
+# -> create 1 object for Character class and initialise the name as Mario
+
+# -> call the kicked method
+
+# -> call the stabbed method
+
+# -> call punched method
+
+# -> call stabbed method
+
+# class Character:
+#     def  __init__(self,name):
+#         self.name=name
+#         self.__life=3
+#         self.__score=0
+
+#     def kick(self):
+#         self.__score+=10
+
+#     def punch(self):
+#         self.__score+=5
+
+#     def stabbed(self):
+#         self.__life-=1
+    
+#     def  displaylife(self):
+#         if(self.__life<1):
+#             return "game over"
+#         return self.__life
+    
+#     def displayscore(self):
+#         return self.__score
+
+#    def __str__(self):                                                       #__str__ return type hamesha string he hoga aur print(obj) karne pai yeh 
+#        return f'name: {self.name} score: {self.__score} life: {self.__life}'#automatically call hoga isko alag se call nahi karna parta hai like a constructor
+                                                                              #woh bhi object create hone pai apne aap call hojata hai automatically call hojata hai
+                                                                              #alag se call nahi karna parta hai aur __str__ ka used esliye kiya jaata hai
+                                                                              #taaki humko generator object ki value string mai mil sakai aur hum read kar sakai.
+# obj=Character("mario")
+# obj.kick()
+# obj.stabbed()
+# obj.punch()
+# obj.stabbed()
+# obj.stabbed()
+# print(obj.displaylife())
+# print(obj.displayscore())
+# print(obj)
+# Output:
+# game over
+# 15
+# name: mario score: 15 life: 0
+
+# obj=Character("mario")
+# obj.kick()
+# obj.stabbed()
+# obj.punch()
+# obj.stabbed()
+# print(obj.displaylife())
+# print(obj.displayscore())
+# Output:
+# 1
+# 15
+
+# four pillars of OOP are:-
+# 1)encapsulation:-Data ko bind aur wrap karke rakhna single unit mai for security purpose,private access specifier ko support karta aur public toh by .
+# 2)inheritance
+# 3)polymorphism
+# 4)abstraction
+
+# OOP Questions:
+# 1)what is OOPS?
+# 2)what is an object oriented programming?
+# 3)what is class?
+# 4)give real world example of a class?
+# 5)what is an object?
+# 6)give real world example of an object?
+# 7)what is the difference between class and object?
+# 8)what are the four pillars of object oriented programming?
+# 9)what is encapsulation?
+# 10)what is inheritance?
+# 11)what is polymorphism?
+# 12)what is abstraction?
+# 13)what is method?
+# 14)what is the difference between class and method?
+# 15)what is the difference between function and method?
+# 16)what is constructor?
+# 17)what is __init__?
+# 18)what is the difference normal method and constructor?
+# 19)what is the difference between instance variable and local variable?
+# 20)what is self parameter?
+# 21)what is access modifier?
+# 22)what is the difference between private and public access modifier?
+# 23)how to create a private method?
+# 24)what is __str__ method?
+
+# interview questions
+# data=[1,2,3,(33,56,7,[{"a":3000, "b":6000},90]),23]
+# output:"b":6000
+
+# data = [1, 2, 3, (33, 56, 7, [{"a": 3000, "b": 6000}, 90]), 23]
+
+# # Access the value associated with the key "b"
+# result = data[3][3][0]["b"]
+
+# print(result)
+
+# Output:
+# 6000
 
