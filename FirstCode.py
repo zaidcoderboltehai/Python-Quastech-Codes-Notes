@@ -8921,7 +8921,7 @@ x=10
 # we does not need to call constructor explicitly.
 # It is start with ___init___.
 # It is implicitly call whenever we create an object.
-# constructor ke through instance variable ko initialize karwa sakte class ke.
+# constructor ke through instance variable ko initialize karwa sakte hai class ke.
 # method ko call karna parta hai but constructor ko call karne ki zaroorat nhi parti haiwoh automatically call hota hai.
 # jab bhi humlog object create karte hai uss waqt constructor khud ba khud call hojata hai.
 # object ko create karte waqt constructor call hota hai automatically.
@@ -8985,11 +8985,11 @@ x=10
 #     def intro(self):
 #         return f' hello my name is {self.name} i am from {self.city}'
     
-#     def __init__(self,name,city,email,password):
-#         self.name=name
-#         self.city=city
-#         self.email=email
-#         self.password=password
+#    def __init__(self,name,city,email,password):
+#        self.name=name
+#        self.city=city
+#        self.email=email
+#        self.password=password
 #        User.objectcount+=1   #edhar yeh isko as static variable treat karra hai because humlog ne object ko call kiya using class name that's why yeh isko as 
                               #a static variable treat karra hai aur agar humlog yeh object ko self ke saath call kiye hote toh instance variable jaisa treat karta 
                               #fir apne ko objectcount '2' ki jagah '1' milta because woh sirf initialize instance variable ko count karta jis wajah se '1' aata fir.
@@ -9021,4 +9021,6 @@ x=10
 # 11abcb
 #  hello my name is zaid i am from mumbra
 # 2
+
+
 
