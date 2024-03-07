@@ -9150,10 +9150,10 @@ x=10
 # 15
 
 # four pillars of OOP are:-
-# 1)encapsulation:-Data ko bind aur wrap karke rakhna single unit mai for security purpose,private access specifier ko support karta aur public toh by .
-# 2)inheritance
-# 3)polymorphism
-# 4)abstraction
+# 1)encapsulation(security):-Data ko bind aur wrap karke rakhna single unit mai for security purpose,private access specifier ko support karta aur public toh by .
+# 2)inheritance(data reusability):
+# 3)polymorphism(data reusability):
+# 4)abstraction(security):
 
 # OOP Questions:
 # 1)what is OOPS?
@@ -9186,12 +9186,213 @@ x=10
 # output:"b":6000
 
 # data = [1, 2, 3, (33, 56, 7, [{"a": 3000, "b": 6000}, 90]), 23]
+# output_value = data[3][3][0]["b"]
 
-# # Access the value associated with the key "b"
-# result = data[3][3][0]["b"]
-
-# print(result)
-
+# output = f'b:{output_value}'
+# print(output)
 # Output:
-# 6000
+# b:6000
 
+# Single level inheritance
+
+# class User:
+#     def  __init__(s,name,email,password):
+#         s.name= name
+#         s.email= email
+#         s.password= password
+
+#     def introuser(s):
+#         return "my name is  "+s.name
+    
+# class Address(User):
+#     def __init__(s,name,email,password,city,zipcode,state):
+#         super().__init__(name,email,password)     #super ka use huwa parent class ke variable ko refer karne ke liye aur __init__use karna para because humne parent 
+#         s.city= city                              #class mai constructor use kiya tha otherwise nahi use kiya hota constructor toh direct(.)dot daalke parent ke      
+#         s.zipcode= zipcode                        #variable name ko refer karte.
+#         s.state= state
+
+#     def addressinfo(s):
+#         return "i am from "+s.city
+    
+# obj=User("zaid","zaid@gmail.com","1as")
+# print(obj.name)
+# print(obj.email)
+# print(obj.password)
+# print(obj.introuser())
+
+# obj2=Address("zaid","zaid@gmail.com","1as","mumbra","400612", "Maharastra")
+# print(obj2.addressinfo())
+# print(obj2.name)
+# print(obj2.state)
+# Output:
+# zaid
+# zaid@gmail.com
+# 1as
+# my name is  zaid
+# i am from mumbra
+# zaid
+# Maharastra
+
+# simple program of Single level inheritance
+
+# class Parent:
+#     name="abc"
+#     age=30
+#     eyecolor="brown"
+#     height=5.2
+
+#     def introParent(s):
+#         print("this is parent class method")
+
+# class Child(Parent):
+#     name="xyz"
+#     age=15
+#     height=4.2
+
+#     def introChild(s):
+#         print("this is child class method")
+
+# parent=Parent()
+# print(parent.name)
+# print(parent.age)
+# print(parent.eyecolor)
+# print(parent.height)
+# parent.introParent()
+
+# child=Child()
+# print(child.name)
+# print(child.age)
+# print(child.eyecolor)
+# print(child.height)
+# child.introChild()
+# child.introParent()
+# Output:
+# abc
+# 30
+# brown
+# 5.2
+# this is parent class method
+# xyz
+# 15
+# brown
+# 4.2
+# this is child class method 
+# this is parent class method
+
+# Multilevel inheritance
+
+# class GrandParent:
+#     name="pqr"
+#     age=60
+#     eyecolor="yellow"
+#     height=7
+#     haircolor="green"
+
+#     def introGrandParent(s):
+#         print("this is grand parent class method")
+
+# class Parent(GrandParent):
+#     name="abc"
+#     age=30
+#     eyecolor="brown"
+#     height=5.2
+
+#     def introParent(s):
+#         print("this is parent class method")
+
+# class Child(Parent):
+#     name="xyz"
+#     age=15
+#     height=4.2
+
+#     def introChild(s):
+#         print("this is child class method")
+
+# grandparent=GrandParent()
+# print(grandparent.name)
+# print(grandparent.age)
+# print(grandparent.eyecolor)
+# print(grandparent.height)
+# print(grandparent.haircolor)
+# grandparent.introGrandParent()
+
+# parent=Parent()
+# print(parent.name)
+# print(parent.age)
+# print(parent.eyecolor)
+# print(parent.height)
+# print(parent.haircolor)
+# parent.introParent()
+
+# child=Child()
+# print(child.name)
+# print(child.age)
+# print(child.eyecolor)
+# print(child.height)
+# print(child.haircolor)
+# child.introChild()
+# child.introParent()
+# Output:
+# pqr
+# 60
+# yellow
+# 7
+# green
+# this is grand parent class method
+# abc
+# 30
+# brown
+# 5.2
+# green
+# this is parent class method
+# xyz
+# 15
+# brown
+# 4.2
+# green
+# this is child class method
+# this is parent class method
+
+# Multiple level inheritance
+
+# class Mother:
+#     name="jjj"
+#     eyecolor="red"
+#     haircolor="brown"
+
+#     def mothermethod(s):
+#         print("mother method called")
+
+# class Father:
+#     name="ooo"
+#     eyecolor="green"
+
+#     def fathermethod(s):
+#         print("father method called")
+
+# class Child(Father,Mother):
+#     name="xyz"
+#     age=15
+#     height=4.2
+
+#     def introChild(s):
+#         print("this is child class method")
+
+# child=Child()
+# print(child.name)
+# child.mothermethod()
+# child.fathermethod()
+# child.introChild()
+#print(child.eyecolor) #eyecolor abhi child ka nahi hai toh yeh ab kya karega pehle child class mai dekhega eyecolor kya hai udhar nahi milega toh 
+#print(child.haircolor)#class Child(Father,Mother):toh edhar dekhega pehle kya child class mai pass huwa hai toh pehle father pass huwa hai toh usme 
+                      #eyecolor dekhega aur eyecolor milne pai father ka eyecolor print kar dega aur usme bhi nahi mila toh mother class mai check karega aur eyecolor  
+                      #milne pai print kar dega aur nahi mila toh fir error show karega.
+# Output:'
+# xyz
+# mother method called
+# father method called
+# this is child class method
+# green
+# brown
+
+# hybrid level inheritance:combination of two or more than two types of inheritance
