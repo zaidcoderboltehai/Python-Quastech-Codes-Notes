@@ -10616,3 +10616,122 @@ x=10
 # brown
 
 # hybrid level inheritance:combination of two or more than two types of inheritance
+
+# HW #
+
+#create a class user
+    #- create a attribute that can count the number of object created with user class
+    #- initialise the class with three attributes name, gender, salary
+    #- create a method showdetails() which should print the name, gender, salary and unique account no for the user
+
+
+#create a class bank
+    #- create a private class variable and name it as balance
+    #- initialise the class with three attributes name, gender and salary
+    #- create a method deposite() which has amount parameter,
+            #it should add the given amount in balance variable
+
+    #- create a method withdraw(), which has amount paramter,
+        #and uses the following constraints to withdraw money
+            #1. withdraw > balance, it should return insuffient balance and display the current balance
+            #2. withdraw >= 100 and withdraw <=balance , it should return Thank you for visiting
+                    #and minus the withdraw amount from balance
+                    #and display the current balance
+            #3. withdraw < 100, it should return  you cannot withdraw less then 100 and display the current balance
+
+    #- create a method, viewbalance(), which will show the account details and balance
+    #- create a method, transfer(), which has two parameters amt, user
+	#- the specified amount should be transfered to mentioned user account
+	#- it should also minus the amount from balance and add the amount to mentioned users acount
+	#- amount transfer should be done by using following contraints
+	    #1. amt > balance, it should return insuffient balance and display the current balance
+            #2. amt >= 1 and withdraw <=balance , it should return amt transfered successfully
+                    #and minus the withdraw amount from balance & add the amt to specified user account
+                    #and display the current balance
+            #3. amt < 1, it should return  you cannot transfer less then 1 and display the current balance
+
+# Create some test cases to check the system.
+
+# Certainly! Below is an example implementation of the described classes (`User` and `Bank`) with methods and test cases:
+
+class User:
+    # Class attribute to count the number of objects
+    user_count = 0
+
+    def __init__(self, name, gender, salary):
+        # Instance attributes
+        self.name = name
+        self.gender = gender
+        self.salary = salary
+
+        # Increment the user count and assign a unique account number
+        User.user_count += 1
+        self.account_no = User.user_count
+
+    def show_details(self):
+        print(f"User Details - Name: {self.name}, Gender: {self.gender}, Salary: {self.salary}, Account No: {self.account_no}")
+
+class Bank:
+    # Private class variable
+    __balance = 0
+
+    def __init__(self, name, gender, salary):
+        # Instance attributes
+        self.name = name
+        self.gender = gender
+        self.salary = salary
+
+    def deposit(self, amount):
+        # Add the given amount to the balance
+        Bank.__balance += amount
+
+    def withdraw(self, amount):
+        if amount > Bank.__balance:
+            return f"Insufficient balance. Current Balance: {Bank.__balance}"
+        elif 100 <= amount <= Bank.__balance:
+            Bank.__balance -= amount
+            return f"Thank you for visiting. Current Balance: {Bank.__balance}"
+        else:
+            return f"You cannot withdraw less than 100. Current Balance: {Bank.__balance}"
+
+    def view_balance(self):
+        return f"Account Details - Name: {self.name}, Gender: {self.gender}, Salary: {self.salary}, Balance: {Bank.__balance}"
+
+    def transfer(self, amt, user):
+        if amt > Bank.__balance:
+            return f"Insufficient balance. Current Balance: {Bank.__balance}"
+        elif 1 <= amt <= Bank.__balance:
+            Bank.__balance -= amt
+            user.deposit(amt)
+            return f"Amount transferred successfully. Current Balance: {Bank.__balance}"
+        else:
+            return f"You cannot transfer less than 1. Current Balance: {Bank.__balance}"
+
+# Test cases
+user1 = User("Alice", "Female", 50000)
+user2 = User("Bob", "Male", 60000)
+
+bank = Bank("XYZ Bank", "Not Specified", 100000)
+
+bank.deposit(5000)
+print(bank.view_balance())
+
+user1.show_details()
+user2.show_details()
+
+print(bank.transfer(3000, user1))
+print(bank.view_balance())
+user1.show_details()
+# Output:
+# Account Details - Name: XYZ Bank, Gender: Not Specified, Salary: 100000, Balance: 5000
+# User Details - Name: Alice, Gender: Female, Salary: 50000, Account No: 1
+# User Details - Name: Bob, Gender: Male, Salary: 60000, Account No: 2
+# Traceback (most recent call last):
+#   File "c:\Users\Zaid Ansari\OneDrive\Desktop\Quastech Python\FirstCode.py", line 10722, in <module>
+#     print(bank.transfer(3000, user1))
+#           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+#   File "c:\Users\Zaid Ansari\OneDrive\Desktop\Quastech Python\FirstCode.py", line 10705, in transfer
+#     user.deposit(amt)
+#     ^^^^^^^^^^^^
+# AttributeError: 'User' object has no attribute 'deposit'
+# This example includes the implementation of the `User` and `Bank` classes along with some test cases to demonstrate their usage.
