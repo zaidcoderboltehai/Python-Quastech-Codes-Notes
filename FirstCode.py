@@ -6904,9 +6904,9 @@ x=10
 # Output:[54, 66, 45, 23]
 
 
-# value get karni hai toh return use karegai
-# value get nahi karni hai toh retrun use nahi karegai
-# return ke baad kuch bhi likho fark nahi padta hai 
+# value get karni hai toh return use karegai.
+# value get nahi karni hai toh return use nahi karegai.
+# return ke baad kuch bhi likho fark nahi padta hai.
 
 # def show():
 #     print("hello")
@@ -10909,6 +10909,76 @@ x=10
 # AttributeError: 'User' object has no attribute 'deposit'
 # This example includes the implementation of the `User` and `Bank` classes along with some test cases to demonstrate their usage.
 
+# class User:
+#     count=987654342
+#     def __init__(self,name,gender,salary):
+#         self.name=name 
+#         self.gender=gender
+#         self.salary=salary
+#         self.account_no=User.count
+#         User.count+=1
+    
+#     def showDetails(s):
+#         print(f"Name:{s.name} Gender:{s.gender} Salary:{s.salary} Account Number:{s.account_no}")
+
+# class Bank(User):
+#     def __init__(s,name,gender,salary):
+#         super().__init__(name,gender,salary)
+#         s.__balance=0
+
+#     def deposite(s,amt):
+#         s.__balance+=amt
+
+#     def withdraw(s,amt):
+#         if(amt>s.__balance):
+#             print(f"insufficient balance \n current balance-:{s.__balance}")
+#         elif(amt<=s.__balance and amt>=100):
+#             s.__balance-=amt
+#             print(f"your amt which is {amt} withdraw sucessfully from {s.account_no} \n your current balance is {s.__balance}")
+#         elif(amt<100):
+#             print(f"you cannot wihdraw less than 100 \n your current balance is {s.__balance}")
+#         else:
+#             print("invalid amount")
+
+#     def viewBalance(s):
+#         print(f"your current balance is {s.__balance}")
+    
+#     def transfer(s,amt,user):
+#         if(amt>s.__balance):
+#             print(f"insufficient balance \n current balance-:{s.__balance}")
+#         elif(amt<=s.__balance and amt>=100):
+#             s.__balance-=amt
+#             print(f"your amt which is {amt} withdraw sucessfully from {s.account_no} \n your current balance is {s.__balance}")
+#         elif(amt<100):
+#             print(f"you cannot wihdraw less than 100 \n your current balance is {s.__balance}")
+#         else:
+#             print("invalid amount")
+
+# obj1=Bank("Karan","male",23000)
+# obj1.showDetails()
+# obj1.viewBalance()
+# obj1.deposite(1000)
+# obj1.viewBalance()
+# obj1.withdraw(100)
+
+# obj2=Bank("priya","female",30000)
+# obj2.showDetails()
+# obj2.viewBalance()
+
+# obj1.transfer(200,obj2)
+# obj2.viewBalance()
+
+# Output:
+# Name:Karan Gender:male Salary:23000 Account Number:987654342
+# your current balance is 0
+# your current balance is 1000
+# your amt which is 100 withdraw sucessfully from 987654342     
+#  your current balance is 900
+# Name:priya Gender:female Salary:30000 Account Number:987654343
+# your current balance is 0
+# your amt which is 200 withdraw sucessfully from 987654342     
+#  your current balance is 700
+# your current balance is 0
 
 # Polymorphism:-
 # there are two types of polymorphism are:
