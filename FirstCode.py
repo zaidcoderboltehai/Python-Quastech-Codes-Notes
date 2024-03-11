@@ -9158,7 +9158,7 @@ x=10
 # 15
 
 # four pillars of OOP are:-
-# 1)encapsulation(security):-Data ko bind aur wrap karke rakhna single unit mai for security purpose,private access specifier ko support karta aur public toh by .
+# 1)encapsulation(security):-Data ko bind aur wrap karke rakhna single unit mai for security purpose,private access specifier ko support karta hai .
 # 2)inheritance(data reusability):
 # 3)polymorphism(data reusability):
 # 4)abstraction(security):
@@ -10421,6 +10421,82 @@ x=10
 # Output:
 # b:6000
 
+# Inheritance
+# In Python, inheritance is a mechanism that allows a class (subclass/derived class) to inherit properties and behaviors (attributes and methods) from another class 
+# (superclass/base class). There are several types of inheritance in Python:
+
+# Single Inheritance:
+
+# A subclass inherits from only one superclass.
+# Example:
+# class Animal:
+#     pass
+
+# class Dog(Animal):
+#     pass
+
+# Multiple Inheritance:
+
+# A subclass inherits from more than one superclass.
+# Example
+# class Bird:
+#     pass
+
+# class Mammal:
+#     pass
+
+# class Bat(Bird, Mammal):
+#     pass
+
+# Multilevel Inheritance:
+
+# In this type, a subclass is derived from another subclass, forming a chain of inheritance.
+# Example:
+# class Animal:
+#     pass
+
+# class Mammal(Animal):
+#     pass
+
+# class Dog(Mammal):
+#     pass
+
+# Hierarchical Inheritance:
+
+# Multiple subclasses inherit from a single superclass.
+# Example:
+# class Vehicle:
+#     pass
+
+# class Car(Vehicle):
+#     pass
+
+# class Bike(Vehicle):
+#     pass
+
+# Hybrid Inheritance:
+
+# This is a combination of multiple types of inheritance.
+# Example:
+# class A:
+#     pass
+
+# class B(A):
+#     pass
+
+# class C(A):
+#     pass
+
+# class D(B, C):
+#     pass
+
+# Cyclic (or Circular) Inheritance:
+
+# Involves a scenario where a class is derived from itself, either directly or indirectly through a chain of other classes.
+# Example:
+# class A(A):
+#     pass
+
 # Single level inheritance
 
 # class User:
@@ -10625,6 +10701,95 @@ x=10
 
 # hybrid level inheritance:combination of two or more than two types of inheritance
 
+# # Base class
+# class Animal:
+#     def __init__(self, name):
+#         self.name = name
+
+#     def speak(self):
+#         pass
+
+# # First-level derived classes (Single Inheritance)
+# class Mammal(Animal):
+#     def give_birth(self):
+#         print(f"{self.name} is giving birth to live young.")
+
+# class Bird(Animal):
+#     def lay_eggs(self):
+#         print(f"{self.name} is laying eggs.")
+
+# # Second-level derived class (Multiple Inheritance)
+# class Bat(Mammal, Bird):
+#     def fly(self):
+#         print(f"{self.name} can fly.")
+
+# # Third-level derived class (Hybrid Inheritance)
+# class FlyingFish(Bird):
+#     def swim(self):
+#         print(f"{self.name} can swim.")
+
+# # Create instances and demonstrate hybrid inheritance
+# bat = Bat("Batman")
+# bat.speak()  # Inherited from Animal
+# bat.give_birth()  # Inherited from Mammal
+# bat.lay_eggs()  # Inherited from Bird
+# bat.fly()  # Specific to Bat
+
+# flying_fish = FlyingFish("Nemo")
+# flying_fish.speak()  # Inherited from Animal
+# flying_fish.lay_eggs()  # Inherited from Bird
+# flying_fish.swim()  # Specific to FlyingFish
+# Output:
+# Batman is giving birth to live young.
+# Batman is laying eggs.
+# Batman can fly.
+# Nemo is laying eggs.
+# Nemo can swim.
+
+# hierarchical level inheritance:
+
+# # Base class
+# class Animal:
+#     def __init__(self, name):
+#         self.name = name
+
+#     def speak(self):
+#         print(f"{self.name} makes a sound.")
+
+# # Derived classes (Hierarchical Inheritance)
+# class Dog(Animal):
+#     def bark(self):
+#         print(f"{self.name} barks.")
+
+# class Cat(Animal):
+#     def meow(self):
+#         print(f"{self.name} meows.")
+
+# class Cow(Animal):
+#     def moo(self):
+#         print(f"{self.name} moos.")
+
+# # Create instances and demonstrate hierarchical inheritance
+# dog = Dog("Buddy")
+# dog.speak()  # Inherited from Animal
+# dog.bark()  # Specific to Dog
+
+# cat = Cat("Whiskers")
+# cat.speak()  # Inherited from Animal
+# cat.meow()  # Specific to Cat
+
+# cow = Cow("Bessie")
+# cow.speak()  # Inherited from Animal
+# cow.moo()   # Specific to Cow
+
+# Output:
+# Buddy makes a sound.
+# Buddy barks.
+# Whiskers makes a sound.
+# Whiskers meows.        
+# Bessie makes a sound.  
+# Bessie moos.
+
 # HW #
 
 #create a class user
@@ -10662,74 +10827,74 @@ x=10
 
 # Certainly! Below is an example implementation of the described classes (`User` and `Bank`) with methods and test cases:
 
-class User:
-    # Class attribute to count the number of objects
-    user_count = 0
+# class User:
+#     # Class attribute to count the number of objects
+#     user_count = 0
 
-    def __init__(self, name, gender, salary):
-        # Instance attributes
-        self.name = name
-        self.gender = gender
-        self.salary = salary
+#     def __init__(self, name, gender, salary):
+#         # Instance attributes
+#         self.name = name
+#         self.gender = gender
+#         self.salary = salary
 
-        # Increment the user count and assign a unique account number
-        User.user_count += 1
-        self.account_no = User.user_count
+#         # Increment the user count and assign a unique account number
+#         User.user_count += 1
+#         self.account_no = User.user_count
 
-    def show_details(self):
-        print(f"User Details - Name: {self.name}, Gender: {self.gender}, Salary: {self.salary}, Account No: {self.account_no}")
+#     def show_details(self):
+#         print(f"User Details - Name: {self.name}, Gender: {self.gender}, Salary: {self.salary}, Account No: {self.account_no}")
 
-class Bank:
-    # Private class variable
-    __balance = 0
+# class Bank:
+#     # Private class variable
+#     __balance = 0
 
-    def __init__(self, name, gender, salary):
-        # Instance attributes
-        self.name = name
-        self.gender = gender
-        self.salary = salary
+#     def __init__(self, name, gender, salary):
+#         # Instance attributes
+#         self.name = name
+#         self.gender = gender
+#         self.salary = salary
 
-    def deposit(self, amount):
-        # Add the given amount to the balance
-        Bank.__balance += amount
+#     def deposit(self, amount):
+#         # Add the given amount to the balance
+#         Bank.__balance += amount
 
-    def withdraw(self, amount):
-        if amount > Bank.__balance:
-            return f"Insufficient balance. Current Balance: {Bank.__balance}"
-        elif 100 <= amount <= Bank.__balance:
-            Bank.__balance -= amount
-            return f"Thank you for visiting. Current Balance: {Bank.__balance}"
-        else:
-            return f"You cannot withdraw less than 100. Current Balance: {Bank.__balance}"
+#     def withdraw(self, amount):
+#         if amount > Bank.__balance:
+#             return f"Insufficient balance. Current Balance: {Bank.__balance}"
+#         elif 100 <= amount <= Bank.__balance:
+#             Bank.__balance -= amount
+#             return f"Thank you for visiting. Current Balance: {Bank.__balance}"
+#         else:
+#             return f"You cannot withdraw less than 100. Current Balance: {Bank.__balance}"
 
-    def view_balance(self):
-        return f"Account Details - Name: {self.name}, Gender: {self.gender}, Salary: {self.salary}, Balance: {Bank.__balance}"
+#     def view_balance(self):
+#         return f"Account Details - Name: {self.name}, Gender: {self.gender}, Salary: {self.salary}, Balance: {Bank.__balance}"
 
-    def transfer(self, amt, user):
-        if amt > Bank.__balance:
-            return f"Insufficient balance. Current Balance: {Bank.__balance}"
-        elif 1 <= amt <= Bank.__balance:
-            Bank.__balance -= amt
-            user.deposit(amt)
-            return f"Amount transferred successfully. Current Balance: {Bank.__balance}"
-        else:
-            return f"You cannot transfer less than 1. Current Balance: {Bank.__balance}"
+#     def transfer(self, amt, user):
+#         if amt > Bank.__balance:
+#             return f"Insufficient balance. Current Balance: {Bank.__balance}"
+#         elif 1 <= amt <= Bank.__balance:
+#             Bank.__balance -= amt
+#             user.deposit(amt)
+#             return f"Amount transferred successfully. Current Balance: {Bank.__balance}"
+#         else:
+#             return f"You cannot transfer less than 1. Current Balance: {Bank.__balance}"
 
-# Test cases
-user1 = User("Alice", "Female", 50000)
-user2 = User("Bob", "Male", 60000)
+# # Test cases
+# user1 = User("Alice", "Female", 50000)
+# user2 = User("Bob", "Male", 60000)
 
-bank = Bank("XYZ Bank", "Not Specified", 100000)
+# bank = Bank("XYZ Bank", "Not Specified", 100000)
 
-bank.deposit(5000)
-print(bank.view_balance())
+# bank.deposit(5000)
+# print(bank.view_balance())
 
-user1.show_details()
-user2.show_details()
+# user1.show_details()
+# user2.show_details()
 
-print(bank.transfer(3000, user1))
-print(bank.view_balance())
-user1.show_details()
+# print(bank.transfer(3000, user1))
+# print(bank.view_balance())
+# user1.show_details()
 # Output:
 # Account Details - Name: XYZ Bank, Gender: Not Specified, Salary: 100000, Balance: 5000
 # User Details - Name: Alice, Gender: Female, Salary: 50000, Account No: 1
@@ -10743,3 +10908,246 @@ user1.show_details()
 #     ^^^^^^^^^^^^
 # AttributeError: 'User' object has no attribute 'deposit'
 # This example includes the implementation of the `User` and `Bank` classes along with some test cases to demonstrate their usage.
+
+
+# Polymorphism:-
+# there are two types of polymorphism are:
+# compile time(method overloading):method overloading ko python support nahi karta hai
+
+# run time(method overriding):
+
+
+# Object Class:it is a superclass of all python classes
+# In Python, the term "object class" is a bit ambiguous because all classes in Python inherently inherit from a common base class called `object`. 
+# This base class provides some fundamental methods and attributes that are available to all objects in Python.
+
+# Here's a simple explanation:
+
+# - **Object Class (object):**
+#   - In Python, every class implicitly inherits from the `object` class.
+#   - The `object` class is the root of the class hierarchy in Python.
+#   - It provides some basic functionalities that are common to all objects, such as the `__str__` method for string representation.
+#   - When you define a class without explicitly specifying a superclass, it automatically becomes a subclass of `object`.
+#   - Example:
+
+# class MyClass:  # This class implicitly inherits from 'object'
+#     def __init__(self, value):
+#         self.value = value
+
+# my_instance = MyClass(42)
+# print(my_instance)  # Outputs: <__main__.MyClass object at 0x...>
+
+# In summary, the `object` class is a foundational part of the Python class hierarchy, and every class you create is, by default, a subclass of this base class. 
+# It provides essential methods and attributes that contribute to the common behavior shared by all objects in Python.
+
+# In Python, polymorphism refers to the ability of different objects or functions to be used interchangeably, even though they may belong to different classes or 
+# have different implementations. It allows a single interface (like a method or function) to work with various types of objects.
+
+# There are two main types of polymorphism in Python:
+
+# 1. **Compile-time Polymorphism (Method Overloading):**
+#    - Involves defining multiple methods with the same name in the same class.
+#    - The method that gets executed is determined by the number and types of arguments during compile-time.
+#    - Example:
+
+# class Calculator:
+#     def add(self, a, b):
+#         return a + b
+
+#     def add(self, a, b, c):
+#         return a + b + c
+
+# calc = Calculator()
+# result1 = calc.add(2, 3)       # Calls the first add method
+# result2 = calc.add(2, 3, 5)    # Calls the second add method
+
+# Output:
+# Traceback (most recent call last):
+#   File "c:\Users\Zaid Ansari\OneDrive\Desktop\Quastech Python\FirstCode.py", line 10795, in <module>
+#     result1 = calc.add(2, 3)       # Calls the first add method
+#               ^^^^^^^^^^^^^^
+# TypeError: Calculator.add() missing 1 required positional argument: 'c'
+
+# 2. **Run-time Polymorphism (Method Overriding):**
+#    - Involves defining methods in the base class and allowing them to be overridden by the same-named methods in derived classes.
+#    - The method that gets executed is determined by the actual type of the object during runtime.
+#    - Example:
+
+# class Animal:
+#     def make_sound(self):
+#         pass
+
+# class Dog(Animal):
+#     def make_sound(self):
+#         return "Woof!"
+
+# class Cat(Animal):
+#     def make_sound(self):
+#         return "Meow!"
+
+# my_dog = Dog()
+# my_cat = Cat()
+
+# print(my_dog.make_sound())    # Outputs: Woof!
+# print(my_cat.make_sound())    # Outputs: Meow!
+
+# In simple terms, polymorphism allows you to use a common interface for different objects, making your code more flexible and easier to understand.
+
+# Method Overloading:
+
+# class Shape:
+#     def area(s,r):
+#         print(3.14*r*r)
+
+#     def area(s,l,b):
+#         print(l*b)
+
+# circle=Shape()
+# circle.area(5)
+        
+# rectangle=Shape()
+# rectangle.area(5,2)
+
+# Method overrding:
+         
+# class Animal:
+#     def make_sound(self):
+#         print("Generic  animal sound")
+
+# class Dog:
+#     def make_sound(self):
+#         print("Woof!")
+
+# dog=Dog()
+# dog.make_sound()
+
+# class Cat(Animal):
+#     def make_sound(self):
+#         print("Meow!")
+# Output:Woof!
+
+# Abstraction:
+# It is related to future implementation jiske help se child classes ya subclasses ko restrict kar detai hai kiske through abstarct method ke through agar tumko 
+# parent class ke saare asbstract method ko subclass mai inherit karana hai toh necessary hai parent class ke saare abstract metthod ko subclass mai implement karna
+# isko kehte hai Abstraction.
+# Abstarct class ka object nahi ban sakta hai.
+# yeh security provide karta hai.
+
+# **Abstraction in Python:**
+
+# Abstraction is a concept in Python programming that involves simplifying complex systems by modeling classes based on the essential features and hiding unnecessary 
+# details. It allows programmers to focus on the relevant aspects of an object while ignoring the non-essential complexities.
+
+# Here's a simple explanation:
+
+# - **Abstraction:**
+#   - In Python, abstraction is the process of hiding the implementation details and showing only the necessary features of an object.
+#   - It helps in managing complexity by providing a clear separation between what an object does and how it achieves its functionality.
+#   - Abstraction allows you to create abstract classes with abstract methods that define the interface without specifying the implementation.
+#   - Abstract classes cannot be instantiated, and their subclasses must provide concrete implementations for the abstract methods.
+#   - Example:
+
+# from abc import ABC, abstractmethod
+
+# # Abstract class with abstract method
+# class Shape(ABC):
+#     @abstractmethod
+#     def area(self):
+#         pass
+
+# # Concrete class implementing the abstract method
+# class Circle(Shape):
+#     def __init__(self, radius):
+#         self.radius = radius
+
+#     def area(self):
+#         return 3.14 * self.radius * self.radius
+
+# # Usage
+# circle = Circle(5)
+# print(circle.area())  # Outputs: 78.5
+
+# In summary, abstraction in Python allows you to create abstract classes and abstract methods, enabling you to focus on essential features and create a clear 
+# separation between the interface and the implementation details of your code.
+
+########################################################################
+# from abc  import ABC, abstractmethod
+# class Shape(ABC):
+#     @abstractmethod
+#     def area(s):
+#         pass
+#     def display(s):
+#         print("this is concrete method")
+# class  Circle(Shape):
+#     def area(s):
+#         print("hello")
+
+# obj=Circle()
+# obj.area()
+# obj.display()
+# Output:
+# hello
+# this is concrete method
+
+# obj2=Shape() ## Abstarct class ka object nahi ban sakta hai.
+# Output:
+# Traceback (most recent call last):
+#   File "c:\Users\Zaid Ansari\OneDrive\Desktop\Quastech Python\FirstCode.py", line 10888, in <module>
+#     obj2=Shape()
+#          ^^^^^^^
+# TypeError: Can't instantiate abstract class Shape with abstract method area
+
+# four pillars of OOP are:-
+# 1)encapsulation(security):-Data ko bind aur wrap karke rakhna single unit mai for security purpose,private access specifier ko support karta hai .
+# 2)inheritance(data reusability):
+# 3)polymorphism(data reusability):
+# 4)abstraction(security):
+
+# difference between encapsulation and abstraction in python with simple english words
+
+# In Python, encapsulation and abstraction are two related but distinct concepts.
+
+# 1. **Encapsulation:**
+#    - **Definition:** Encapsulation is the concept of bundling data (attributes) and the methods (functions) that operate on the data into a single unit known as a 
+#    class.
+#    - **Simple Explanation:** Think of encapsulation as putting related things together. In a class, you keep the data and the functions that work with that data 
+#    together.
+#    - **Example:** If you have a `Car` class, encapsulation means that the car's attributes (like color, model) and methods (like start, stop) are grouped together 
+#    within the class.
+
+# 2. **Abstraction:**
+#    - **Definition:** Abstraction is the concept of simplifying complex systems by modeling classes based on the essential features and ignoring unnecessary details.
+#    - **Simple Explanation:** Abstraction is about showing only what's necessary and hiding unnecessary details. You provide a simplified view of an object, focusing  
+#        on what is important.
+#    - **Example:** If you have a `Vehicle` class with methods like `start` and `stop`, you don't need to know the intricate details of how the engine works. 
+#       Abstraction allows you to focus on the essential actions without worrying about the internal complexities.
+
+# **In Summary:**
+# - **Encapsulation:** Putting related attributes and methods together in a class.
+# - **Abstraction:** Providing a simplified view of an object, focusing on essential features and hiding unnecessary details.
+
+# These concepts work together to create clean, modular, and maintainable code in object-oriented programming.
+
+# difference between inheritance and polymorphism in python with simple english words
+
+# **Inheritance and Polymorphism: A Simple Explanation**
+
+# 1. **Inheritance:**
+#    - **Definition:** Inheritance is the concept where a new class (called the subclass or derived class) can inherit attributes and methods from an existing class 
+#       (called the superclass or base class).
+#    - **Simple Explanation:** Think of inheritance as a way to reuse code. If you have a class (e.g., `Animal`), you can create a new class (e.g., `Dog`) that 
+#        automatically has all the characteristics of the original class.
+#    - **Example:** If `Animal` has a method `eat()`, a `Dog` (which inherits from `Animal`) automatically has that method without explicitly defining it.
+
+# 2. **Polymorphism:**
+#    - **Definition:** Polymorphism is the ability of a single function or method to work with objects of different types. It allows one interface to be used for a 
+#        general class of actions.
+#    - **Simple Explanation:** Think of polymorphism as "many forms." A function can behave differently based on the type of object it's working with.
+#    - **Example:** If you have a function `make_sound(animal)`, it can produce different sounds depending on whether the `animal` is a `Dog`, `Cat`, or any other class 
+#        that has a `make_sound` method.
+
+# **In Summary:**
+# - **Inheritance:** Allows a new class to inherit attributes and methods from an existing class, promoting code reuse.
+# - **Polymorphism:** Allows a single function or method to work with objects of different types, providing flexibility and a uniform interface.
+
+# These concepts are fundamental to object-oriented programming and contribute to creating flexible, extensible, and maintainable code.
