@@ -2160,7 +2160,7 @@ x=10
 #        8
 #        hello
 #        10 
-    
+
 # iterable(# print even number from 1 to 10 and if even number is not occur then print "hello")
     
 # n=1 n<=10->True
@@ -2505,7 +2505,15 @@ x=10
 # while index < len(my_list):
 #     print(my_list[index])
 #     index += 1  # Increment the index in each iteration
-
+# Output:
+# 12
+# 24
+# 25
+# 18
+# 19
+# 40
+# 55
+    
 # iterable
 # index=0
 # index=0<len(7)->True
@@ -2956,7 +2964,8 @@ x=10
 #     if a[index] % 2 == 0:
 #         print(a[index])
 #     index += 1  # Increment the index in each iteration
-# Output:12
+# Output:
+# 12
 # 4 
 # 8 
 # 18
@@ -3041,8 +3050,7 @@ x=10
 # if(2010%4==0->remainder2->False and 2010%100!=0->remainder10->True)->False or (2010%400==0)->remainder10->False
 # index +=1   index=1
 
-
-# Use a while loop to count and store leap years from the list
+# Use a while loop to count and store leap years in the list
 # Given list of years
 # year = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
 
@@ -6796,7 +6804,7 @@ x=10
 # silent->listen program
 # original_string = "silent"
 
-# # Reverse the string to get "arc"
+# # Reverse the string to get "listen"
 # reversed_string = original_string[2] + original_string[1] + original_string[0]+ original_string[5]+original_string[3]+original_string[4]
 
 # # Print the result
