@@ -10990,7 +10990,7 @@ x=10
 # there are two types of polymorphism are:
 # compile time(method overloading):method overloading ko python support nahi karta hai
 
-# run time(method overriding):
+# run time(method overriding):two different classes with same method and also with same attributes.
 
 
 # Object Class:it is a superclass of all python classes
@@ -11227,3 +11227,135 @@ x=10
 # - **Polymorphism:** Allows a single function or method to work with objects of different types, providing flexibility and a uniform interface.
 
 # These concepts are fundamental to object-oriented programming and contribute to creating flexible, extensible, and maintainable code.
+
+# Module:
+
+# In Python, a module is a way to organize code into separate files or components. Here's a simple explanation of modules:
+
+# 1. **Definition:**
+#    - A module in Python is a file containing Python code, typically functions, classes, and variables, that can be reused in other Python programs.
+
+# 2. **Purpose:**
+#    - Modules help organize code by breaking it into smaller, manageable pieces. They promote code reusability, making it easier to maintain and collaborate on larger 
+# projects.
+
+# 3. **Creation:**
+#    - To create a module, you simply write your Python code in a separate file with a `.py` extension. This file becomes a module that can be imported into other 
+# Python scripts.
+
+# 4. **Importing:**
+#    - You can use the `import` keyword to bring the functionality of a module into your current script. This allows you to access functions, classes, and variables 
+# defined in that module.
+
+#    # Example of importing a module
+# class MathOperations:
+#     def add(self, a, b):
+#         return a + b
+
+#     def add_three(self, a, b, c):
+#         return a + b + c
+
+# 5. **Organization:**
+#    - Modules help organize code logically, grouping related functionality together. For instance, you might have a module for handling database operations, another 
+# for mathematical functions, etc.
+
+# 6. **Standard Library:**
+#    - Python comes with a rich set of built-in modules known as the standard library. These modules provide a wide range of functionality, from working with files to 
+# handling network operations.
+
+# # Example of using a standard library module
+# import os
+
+# # Accessing a function from the os module
+# current_directory = os.getcwd()
+
+# In summary, modules in Python are a way to structure and reuse code, making it easier to manage, understand, and maintain larger programs.
+
+# yeh module1 mai rahega(file banake)
+# x=10
+# def greet():
+#     return "hello"
+
+# yeh module2 mai rahega(file banake)
+# import module
+
+# import m1
+# print(m1.greet())
+# print(m1.x)
+# Output:
+# hello
+# 10
+
+# import using alias
+
+# import m1 as m
+# print(m.greet())
+# print(m.x)
+# Output:
+# hello
+# 10
+
+# import specific items
+
+# from m1 import greet
+# print(greet())
+# Output:hello
+
+# from m1 import greet, x
+# print(greet())
+# print(x)
+# Output:
+# hello
+# 10
+
+# Package #
+# package:It is a collection of modules.
+
+# library:It is a collection of packages and modules.
+
+# pehle ek library banaye(folder) 
+# Aur library ke andarr package1(folder) aur package2(folder) banaye
+# package1 mai __init__.py(file) banega{empty rahega yeh}
+
+# package1 mai module1.py(file) banega 
+# def greet():
+#     return "hello"
+# x=23
+
+# package2 mai __init__.py(file) banega{empty rahega yeh}
+# package2 mai module2.py(file) banega 
+
+# def say():
+#     return "hi"
+
+# Aur library ke bahar banega mainscript.py(file) jisme joh import karna hai woh karegai aur output print karegai.
+
+# from package1 import module1
+# from package2 import module2
+# print(module1.greet())
+# print(module1.x)
+# print(module2.say())
+# Output:
+# hello
+# 23
+# hi
+
+# from package1 import module1 as m1
+# from package2 import module2 as m2
+# print(m1.greet())
+# print(m1.x)
+# print(m2.say())
+# Output:
+# hello
+# 23
+# hi
+
+# from package1.module1 import greet,x
+# from package2.module2 import say
+# print(greet())
+# print(x)
+# print(say())
+# Output:
+# hello
+# 23
+# hi
