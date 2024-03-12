@@ -6819,6 +6819,7 @@ x=10
 # user defined function:->joh user create karta hai:->with the help of def.
 # anonymous function:->function jiska koi naam nahi ho,ek he expression de sakte hai bas,argument multiple de sakte hai,lamba used karke banate hai anonymous function.
 
+# static function
 # def add():
 #     return 10+20  #return yeh value return karne ka kaam karega means 10+20=30 toh 30 return karega.
 # print(add())
@@ -6827,6 +6828,7 @@ x=10
 # print(val)
 # Output:30
 
+#  dynamic function
 # def add(n1,n2):
 #     return n1+n2
 
@@ -10923,7 +10925,11 @@ x=10
 
 # class Bank(User):
 #     def __init__(s,name,gender,salary):
-#         super().__init__(name,gender,salary)
+#         super().__init__(name,gender,salary) #super() is a built-in function in Python that is used to call a method from the parent class. It provides a way for a 
+                                               #subclass to invoke the methods or constructors of its parent class. In simple terms, super() allows you to access and 
+                                               #use the functionality of the superclass (parent class) in the subclass (child class).super().__init__(name) is used to 
+                                               #call the constructor of the Parent class, allowing the Child class to initialize the name attribute.
+
 #         s.__balance=0
 
 #     def deposite(s,amt):
