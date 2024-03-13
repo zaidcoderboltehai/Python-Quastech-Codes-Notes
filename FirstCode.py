@@ -10988,7 +10988,7 @@ x=10
 
 # Polymorphism:-
 # there are two types of polymorphism are:
-# compile time(method overloading):method overloading ko python support nahi karta hai
+# compile time(method overloading):method overloading ko python support nahi karta hai.
 
 # run time(method overriding):two different classes with same method and also with same attributes.
 
@@ -11067,7 +11067,8 @@ x=10
 # print(my_dog.make_sound())    # Outputs: Woof!
 # print(my_cat.make_sound())    # Outputs: Meow!
 
-# In simple terms, polymorphism allows you to use a common interface for different objects, making your code more flexible and easier to understand.
+# In simple terms, polymorphism allows you to use a common interface for different objects, making your code more flexible and easier to 
+# understand.
 
 # Method Overloading:
 
@@ -11143,8 +11144,8 @@ x=10
 # circle = Circle(5)
 # print(circle.area())  # Outputs: 78.5
 
-# In summary, abstraction in Python allows you to create abstract classes and abstract methods, enabling you to focus on essential features and create a clear 
-# separation between the interface and the implementation details of your code.
+# In summary, abstraction in Python allows you to create abstract classes and abstract methods, enabling you to focus on essential features and 
+# create a clear separation between the interface and the implementation details of your code.
 
 ########################################################################
 # from abc  import ABC, abstractmethod
@@ -11174,7 +11175,7 @@ x=10
 # TypeError: Can't instantiate abstract class Shape with abstract method area
 
 # four pillars of OOP are:-
-# 1)encapsulation(security):-Data ko bind aur wrap karke rakhna single unit mai for security purpose,private access specifier ko support karta hai .
+# 1)encapsulation(security):-Data ko bind aur wrap karke rakhna single unit mai for security purpose,private access specifier ko support karta hai.
 # 2)inheritance(data reusability):
 # 3)polymorphism(data reusability):
 # 4)abstraction(security):
@@ -11359,3 +11360,223 @@ x=10
 # hello
 # 23
 # hi
+
+# Exception Handling
+
+# Exception:logical error ko kehte hai exception,program ke flow ko terminate kar deta hai yeh,isko handle kar sakte hai using exception handling.
+
+# Error:syntax error ,hardware failure,environmental failure ko kehte hai error,isko handle nahi kar sakte hai.
+
+# try:try block ke andarr wahi code ko likhte hai jaha pai doubt lagta hai ki yaha pai logical exception raise(logical error aa sakta hai)ho 
+# sakta hai.
+
+# except:except block ke andarr message ko likhte hai ki woh logical error kya aara hai try block mai.
+
+# n1=int(input("Enter first number"))
+# n2=int(input("Enter second number"))
+# op=input("Enter operator")
+
+# match  op :
+#     case "+":
+#         print(n1+n2)
+#     case  "-" :
+#         print(n1-n2)
+#     case  "*" :
+#         print(n1*n2)
+#     case  "/" :
+#         try:
+#             print(n1/n2)
+#         except:
+#             print("zero division error")
+#     case _:
+#         print("invalid operator")
+
+# print("All works done!")
+# Output:
+# Enter first number2
+# Enter second number3
+# Enter operator+
+# 5
+# All works done!
+# Output:
+# Enter first number10
+# Enter second number0
+# Enter operator/
+# zero division error
+# All works done!
+
+
+# print("hey")
+# try:
+#     age=int(input("enter your age: "))
+#     print(age*10)
+# except:
+#     print("please enter numbers only")
+# print("bye")
+# Output:
+# hey
+# enter your age: 10
+# 100
+# bye
+# Output:
+# hey
+# enter your age: zaid
+# please enter numbers only
+# bye
+
+# try block mai error aaya toh except block chalega.
+# try block mai error nahi aaya toh else block chalega.
+# try block mai error aaye ya nahi aaye par finally block hamesha chalega.
+# except Exception as e:It can handle all types of exception(logical errors).
+# try block mai error aane ke baad yeh siddha except block pai jump karega and message print karega uske baad ka kuch bhi messgae{print("hello")}
+# print nahi hoga.
+
+# Single except block used program
+# print("hey")
+# try:
+#     age=int(input("enter age"))
+#     print(age*10)
+#     print(100/age)
+# except Exception as e:
+#     print(e)
+
+# print("bye")
+# Output:
+# hey
+# enter agech
+# invalid literal for int() with base 10: 'ch'
+# bye
+# Output:
+# hey
+# enter age0
+# 0
+# division by zero
+# bye
+# Output:
+# hey
+# enter age22
+# 220
+# 4.545454545454546
+# bye
+
+# Multiple except used program
+
+# print("hey")
+# try:
+#     age=int(input("Enter Your Age : "))
+#     print(age*10)
+#     print(100/age)
+# except ValueError as e:
+#     print("please enter numbers only")
+# except ZeroDivisionError as e:
+#     print("please enter numbers which is greater than 0 ")
+# except Exception as e:
+#     print("something went wrong")
+# print("bye")
+# Output:
+# hey
+# Enter Your Age : ch
+# please enter numbers only
+# bye
+# Output:
+# hey
+# Enter Your Age : 0
+# 0
+# please enter numbers which is greater than 0 
+# bye
+# Output:
+# hey
+# Enter Your Age : 26
+# 260
+# 3.8461538461538463
+# bye
+
+# print("hi")
+# try:
+#     print("hello")
+#     print(10/0)
+#     print("hey")
+# except:
+#     print("abc")
+# else:
+#     print("xyz")
+# finally:
+#     print("done")
+# Output:
+# hi
+# hello
+# abc
+# done
+
+# print("hi")
+# try:
+#     print("hello")
+#     print(10/10)
+#     print("hey")
+# except:
+#     print("abc")
+# else:
+#     print("xyz")
+# finally:
+#     print("done")
+# Output:
+# hi
+# hello
+# 1.0
+# hey
+# xyz
+# done
+    
+# print("hi")
+# try:
+#     print("hello")
+#     print(10/10)
+#     try:
+#         print("!!!")
+#         int("a")
+#     except:
+#         print("????")
+#     print("hey")
+# except:
+#     print("abc")
+# else:
+#     print("xyz")
+# finally:
+#     print("done")
+# Output:
+# hi
+# hello
+# 1.0
+# !!!
+# ????
+# hey
+# xyz
+# done
+
+
+
+# Exception class:It is a parent class of all exception.
+
+# Custom Exception:khudka exception bana sakte hai isme using raise.
+
+# class NegativeException(Exception):
+#     def __init__(s):
+#         super().__init__("negative exception occured")
+
+# n=int(input("enter number :"))
+# def check_negative(n):
+#     if n<0:
+#         raise NegativeException()
+#     return n
+
+# try:
+#     res=check_negative(n)
+#     print(res)
+# except NegativeException as e:
+#     print(e)
+# Output:
+# enter number :23
+# 23
+# Output:
+# enter number :-1
+# negative exception occured
