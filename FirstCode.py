@@ -3292,13 +3292,13 @@ x=10
 # rev = 0
 # temp = n
 
-# Reverse the digits of the number
+# # Reverse the digits of the number
 # while temp > 0:
 #     rem = temp % 10
 #     rev = rev * 10 + rem
 #     temp = temp // 10
 
-# Check if the original number is equal to its reversed version
+# # Check if the original number is equal to its reversed version
 # if n == rev:
 #     print(f"{n} is a palindrome.")
 # else:
@@ -7359,6 +7359,32 @@ x=10
 # 153 is an Armstrong number.
 # Output:
 # Enter a number to check if it's an Armstrong number: 224
+# 224 is not an Armstrong number.
+
+# write a program to check number is armstrong or not 
+# n =int(input("Enter a number :"))
+
+# # Initialize variables
+# armstrong_sum = 0
+# temp = n
+# num_digits = len(str(n))
+
+# # Calculate the sum of cubes of digits
+# while temp > 0:
+#     digit = temp % 10
+#     armstrong_sum += digit ** num_digits
+#     temp //= 10
+
+# # Check if the number is an Armstrong number
+# if n == armstrong_sum:
+#     print(f"{n} is an Armstrong number.")
+# else:
+#     print(f"{n} is not an Armstrong number.")
+# Output:
+# Enter a number :153
+# 153 is an Armstrong number.
+# Output:
+# Enter a number :224
 # 224 is not an Armstrong number.
 
 # a=[12,52,90,20,25,45] 
@@ -11553,8 +11579,6 @@ x=10
 # xyz
 # done
 
-
-
 # Exception class:It is a parent class of all exception.
 
 # Custom Exception:khudka exception bana sakte hai isme using raise.
@@ -11580,3 +11604,8 @@ x=10
 # Output:
 # enter number :-1
 # negative exception occured
+
+
+
+
+
