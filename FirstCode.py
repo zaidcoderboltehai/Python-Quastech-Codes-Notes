@@ -11725,3 +11725,5 @@ x=10
 # file.write("this is write mode text")
 # file.close()
 # Output:this is write mode textmy name is zaidthis is write mode text
+
+
