@@ -11727,3 +11727,14 @@ x=10
 # Output:this is write mode textmy name is zaidthis is write mode text
 
 
+
+
+
+
+
+
+
+
+
+
+
