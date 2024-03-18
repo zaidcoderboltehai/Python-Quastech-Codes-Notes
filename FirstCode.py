@@ -11726,6 +11726,236 @@ x=10
 # file.close()
 # Output:this is write mode textmy name is zaidthis is write mode text
 
+# Multhreading:It is used to perform mutiple task at a same time simultaneously.
+
+# import time
+# import threading
+# x="24"
+# def show():
+#     print("Loading....")
+#     time.sleep(5)
+#     global x 
+#     x=int(x)
+#     print("hello")
+# def display():
+#     print("hii")
+# t1=threading.Thread(target=show)
+# t2=threading.Thread(target=display)
+# t1.start()
+# t2.start()
+# t1.join()
+# print("square of x is ",x**2)
+# print("hey")
+# Output:
+# Loading....
+# hii
+# hello
+# square of x is  576
+# hey
+
+# Explanation:
+# ### 1. `import time`:
+# - This line imports the `time` module in Python, which provides functions for working with time-related tasks.
+
+# ### 2. `import threading`:
+# - This line imports the `threading` module, which enables multithreading support in Python by providing classes and functions for working with 
+# threads.
+
+# ### 3. `x="24"`:
+# - This line assigns the string value `"24"` to the variable `x`.
+
+# ### 4. `def show():`:
+# - This line defines a function named `show()`. This function will be executed by one of the threads.
+
+# ### 5. `print("Loading....")`:
+# - This line prints the message "Loading...." to the console.
+
+# ### 6. `time.sleep(5)`:
+# - This line pauses the execution of the current thread for 5 seconds using the `sleep()` function from the `time` module.
+
+# ### 7. `global x`:
+# - This line declares the variable `x` as global within the `show()` function, allowing it to be modified inside the function.
+
+# ### 8. `x=int(x)`:
+# - This line converts the string value of `x` to an integer using the `int()` function and updates the value of `x`.
+
+# ### 9. `print("hello")`:
+# - This line prints the message "hello" to the console.
+
+# ### 10. `def display():`:
+# - This line defines another function named `display()`, which will be executed by the second thread.
+
+# ### 11. `print("hii")`:
+# - This line prints the message "hii" to the console.
+
+# ### 12. `t1=threading.Thread(target=show)`:
+# - This line creates a new `Thread` object named `t1` with the `show()` function as its target. This means that when `t1` is started, it will 
+# execute the `show()` function.
+
+# ### 13. `t2=threading.Thread(target=display)`:
+# - This line creates another `Thread` object named `t2` with the `display()` function as its target.
+
+# ### 14. `t1.start()` and `t2.start()`:
+# - These lines start the execution of the threads `t1` and `t2`, respectively. Once started, each thread will execute its target function 
+# concurrently.
+
+# ### 15. `t1.join()`:
+# - This line blocks the main thread until `t1` has completed its execution.
+
+# ### 16. `print("square of x is ",x**2)`:
+# - This line calculates the square of the integer value of `x` and prints it along with the message "square of x is " to the console.
+
+# ### 17. `print("hey")`:
+# - This line prints the message "hey" to the console.
+
+# In summary, this program demonstrates the use of multithreading in Python to execute multiple tasks concurrently, allowing for improved 
+# efficiency and responsiveness in applications. It also showcases the synchronization of threads using the `join()` method to ensure that certain 
+# operations are completed before others proceed.
+
+# import time
+# import threading
+# def worker():
+#     print("worker starting")
+#     time.sleep(5)
+#     print("worker finishing")
+
+# #create threads
+# threads=[]
+# for _ in range(5):
+#     t=threading.Thread(target=worker)
+#     threads.append(t)
+#     t.start()
+
+# #wait for all threads to finish
+# for t in  threads:
+#     t.join()
+# print("All threads finished")
+# Output:
+# worker starting
+# worker starting
+# worker starting
+# worker starting
+# worker starting
+# worker finishing
+# worker finishing
+# worker finishing
+# worker finishing
+# worker finishing
+
+# Explanation:
+
+# ### 1. `import time`:
+# - This line imports the `time` module in Python, which provides functions for working with time-related tasks.
+
+# ### 2. `import threading`:
+# - This line imports the `threading` module, which enables multithreading support in Python by providing classes and functions for working with 
+# threads.
+
+# ### 3. `def worker():`:
+# - This line defines a function named `worker()`. This function will be executed by each thread.
+
+# ### 4. `print("worker starting")`:
+# - This line prints the message "worker starting" to the console when a thread starts executing the `worker()` function.
+
+# ### 5. `time.sleep(5)`:
+# - This line pauses the execution of each thread for 5 seconds using the `sleep()` function from the `time` module.
+
+# ### 6. `print("worker finishing")`:
+# - This line prints the message "worker finishing" to the console when a thread completes execution of the `worker()` function.
+
+# ### 7. `threads=[]`:
+# - This line initializes an empty list named `threads` to store the thread objects.
+
+# ### 8. `for _ in range(5):`:
+# - This line starts a loop that iterates 5 times.
+
+# ### 9. `t=threading.Thread(target=worker)`:
+# - This line creates a new `Thread` object `t` with the `worker()` function as its target. Each thread created will execute the `worker()` 
+# function.
+
+# ### 10. `threads.append(t)`:
+# - This line appends the newly created thread object `t` to the `threads` list.
+
+# ### 11. `t.start()`:
+# - This line starts the execution of the thread `t`. Once started, each thread will execute the `worker()` function concurrently.
+
+# ### 12. `for t in  threads:`:
+# - This line starts a loop that iterates over each thread object in the `threads` list.
+
+# ### 13. `t.join()`:
+# - This line blocks the main thread until each thread `t` has completed its execution.
+
+# ### 14. `print("All threads finished")`:
+# - This line prints the message "All threads finished" to the console after all threads have completed their execution.
+
+# In summary, this program demonstrates the use of multithreading in Python to execute multiple tasks concurrently. Each thread executes the 
+# `worker()` function, and the main thread waits for all threads to finish before printing a completion message.
+
+# Synchronous:isme jab tak pehla kaam nahi hoga tabb tak aagai ka kaam process nahi hoga.
+
+# Asynchronous:isme multiple kaam saath mai karega aur muthithreading asynchronous karne ke kaam aata hai.
+
+# import time
+# import threading
+# class File(threading.Thread):
+#     def run(s):
+#         print("download file start")
+#         print("Loading....file")
+#         time.sleep(2)
+#         print("download file completed")
+    
+#     def downloadfile(s):
+#         print("download file start")
+#         print("Loading....file")
+#         time.sleep(2)
+#         print("download file completed")
+
+# class Video(threading.Thread):
+#     def run(s):
+#         print("downlaod  video start")
+#         print("Loading....Video")
+#         time.sleep(5)
+#         print("downlaod  video completed")
+
+#     def downloadvideo(s):
+#         print("download video start")
+#         print("Loading....video")
+#         time.sleep(5)
+#         print("download video completed")
+
+# file=File()
+# video=Video()
+# start=time.time()
+# # file.downloadfile()
+# # video.downloadvideo()
+# file.start()
+# video.start()
+# file.join()
+# video.join()
+# end=time.time()
+# print(end-start)
+# print("All tasks completed")
+
+# Output:
+# download file start
+# Loading....file      
+# downlaod  video start
+# Loading....Video     
+# download file completed
+# downlaod  video completed
+# 5.004589319229126
+# All tasks completed
+
+
+
+
+
+
+
+
+
+
+
 
 
 
