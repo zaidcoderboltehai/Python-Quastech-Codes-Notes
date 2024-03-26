@@ -12245,14 +12245,83 @@ x=10
 # # Close connection
 # connection.close()
 
+# Output:
+# 1. Select all users
+# 2. Select user by ID
+# 3. Insert user      
+# 4. Update user      
+# 5. Delete user      
+# 6. Exit
+# Enter your choice: 1
+# ((1, 'Priya', 'Vikroli', 'pra@gmail.com', '1122abb'), (2, 'Zaid', 'Mumbra', 'za@gmail.com', '1122abb'), (3, 'Karan', 'Diva', 'ka@gmail.com',
+# '1122abb'), (4, 'Amol', 'Thane', 'am@gmail.com', '1122abb'), (5, 'Rohan', 'Kalva', 'ro@gmail.com', '1122abb'))
 
+# Output:
+# 1. Select all users
+# 2. Select user by ID
+# 3. Insert user
+# 4. Update user
+# 5. Delete user
+# 6. Exit
+# Enter your choice: 2
+# Enter user ID: 3
+# (3, 'Karan', 'Diva', 'ka@gmail.com', '1122abb')
 
+# Output:
+# 1. Select all users
+# 2. Select user by ID
+# 3. Insert user
+# 4. Update user
+# 5. Delete user
+# 6. Exit
+# Enter your choice: 3
+# Enter ID: 6
+# Enter name: "vaibhav"
+# Enter city: "sion"
+# Enter email: "vaibhav@gmail.com"
+# Enter password: "vaibhav1234"
+# ((1, 'Priya', 'Vikroli', 'pra@gmail.com', '1122abb'), (2, 'Zaid', 'Mumbra', 'za@gmail.com', '1122abb'), (3, 'Karan', 'Diva', 'ka@gmail.com',
+# '1122abb'), (4, 'Amol', 'Thane', 'am@gmail.com', '1122abb'), (5, 'Rohan', 'Kalva', 'ro@gmail.com', '1122abb'), (6, '"vaibhav"', '"sion"',
+# '"vaibhav@gmail.com"', '"vaibhav1234"'))
 
+# Output:
+# 1. Select all users
+# 2. Select user by ID
+# 3. Insert user      
+# 4. Update user      
+# 5. Delete user      
+# 6. Exit
+# Enter your choice: 4
+# Enter name: "VAIBHAV"
+# Enter city: "SION"
+# Enter email: "VAIBHAV@GMAIL.COM"
+# Enter password: "VAIBHAV1234"
+# Enter ID: 6
+# ((1, 'Priya', 'Vikroli', 'pra@gmail.com', '1122abb'), (2, 'Zaid', 'Mumbra', 'za@gmail.com', '1122abb'), (3, 'Karan', 'Diva', 'ka@gmail.com',
+# '1122abb'), (4, 'Amol', 'Thane', 'am@gmail.com', '1122abb'), (5, 'Rohan', 'Kalva', 'ro@gmail.com', '1122abb'), (6, '"VAIBHAV"', '"SION"',
+# '"VAIBHAV@GMAIL.COM"', '"VAIBHAV1234"'))
 
+# Output:
+# 1. Select all users
+# 2. Select user by ID
+# 3. Insert user      
+# 4. Update user      
+# 5. Delete user      
+# 6. Exit
+# Enter your choice: 5
+# Enter user ID to delete: 6
+# ((1, 'Priya', 'Vikroli', 'pra@gmail.com', '1122abb'), (2, 'Zaid', 'Mumbra', 'za@gmail.com', '1122abb'), (3, 'Karan', 'Diva', 'ka@gmail.com',
+# '1122abb'), (4, 'Amol', 'Thane', 'am@gmail.com', '1122abb'), (5, 'Rohan', 'Kalva', 'ro@gmail.com', '1122abb'))
 
-
-
-
+# Output:
+# 1. Select all users
+# 2. Select user by ID
+# 3. Insert user
+# 4. Update user
+# 5. Delete user
+# 6. Exit
+# Enter your choice: 6
+# Exiting...
 
 
 
