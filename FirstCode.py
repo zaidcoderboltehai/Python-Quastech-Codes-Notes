@@ -11955,15 +11955,15 @@ x=10
 # print("done...")
 # Output:done...
 
-import pymysql as p
-connection=p.connect(
-    user="root",
-    password="ansarizaid1234",
-    host="localhost",
-    port=3306,
-    database="my_cascade"
-)
-cursor = connection.cursor()
+# import pymysql as p
+# connection=p.connect(
+#     user="root",
+#     password="ansarizaid1234",
+#     host="localhost",
+#     port=3306,
+#     database="my_cascade"
+# )
+# cursor = connection.cursor()
 
 # select all users
 # sql="select * from user"
@@ -11976,6 +11976,18 @@ cursor = connection.cursor()
 # ((1, 'Priya', 'Vikroli', 'pra@gmail.com', '1122abb'), (2, 'Zaid', 'Mumbra', 'za@gmail.com', '1122abb'), (3, 'Karan', 'Diva', 'ka@gmail.com',
 # '1122abb'), (4, 'Amol', 'Thane', 'am@gmail.com', '1122abb'), (5, 'Rohan', 'Kalva', 'ro@gmail.com', '1122abb'))
 # done...
+
+# cursor = connection.cursor()
+# This statement creates a "cursor" object that allows Python to interact with the MySQL database through the established connection.
+#  Think of a cursor as a tool or a pointer that helps you navigate through the rows of data in a database. It's like having a finger that can 
+#  point to different rows in a table, allowing you to read or modify the data.
+
+# In other words, when you want to execute SQL queries and retrieve results from the database, you first need to create a cursor. This cursor acts 
+# as your intermediary or assistant, helping you send SQL commands to the database server and receive the results back.
+
+# Once you have a cursor, you can use it to execute SQL queries, fetch data from the database, and perform various operations like inserting,
+# updating, or deleting records. So, creating a cursor is the initial step in interacting with the database using Python.
+
 # sql="""select user.name,course.course_name from user inner join user_course on user.id=user_course.user_id 
 # inner join course on user_course.course_id=course.id"""
 # cursor.execute(sql)
@@ -12049,6 +12061,58 @@ cursor = connection.cursor()
 # connection.close()
 # Output:1
 
+# import pymysql as p
+# connection=p.connect(
+#     user="root",
+#     password="ansarizaid1234",
+#     host="localhost",
+#     port=3306,
+#     database="my_cascade"
+# )
+# cursor = connection.cursor()
+# # select all users
+# sql="select * from user"
+# cursor.execute(sql)
+# rows=cursor.fetchall()
+# print(rows)
+# for row in rows:
+#     print(row)
+# print("done...")
+# connection.close()
+
+# # select by id
+# id=3
+# sql="select * from user where id=%s"   #%s is placeholder
+# cursor.execute(sql,id)
+# rows=cursor.fetchone()
+# print(rows)
+# print("done...")
+# connection.close()
+
+# # insert user
+# t=(8,"prashant","ulhasnagar","prashant@gmail.com","1234a")
+# sql= "insert into user values(%s,%s,%s,%s,%s)"
+# res=cursor.execute(sql,t)
+# print(res)
+# connection.commit()
+# connection.close()
+
+# # Update user
+# t=("prashant","ulhasnagar","prashant88@gmail.com","1234ab",8)
+# sql = "update user set name=%s,city=%s,email=%s,password=%s where id=%s"
+# res=cursor.execute(sql,t)
+# print(res)
+# connection.commit()
+# connection.close()
+
+# #  delete user
+# id=8
+# sql="delete from user where id=%s"
+# res=cursor.execute(sql,id)
+# print(res)
+# connection.commit()
+# connection.close()
+
 # def select():
 #     cursor = connection.cursor()
 #     sql="select * from user"
@@ -12109,22 +12173,77 @@ cursor = connection.cursor()
 # (2, 'Zaid', 'Mumbra', 'za@gmail.com', '1122abb')
 # done...
 
+# import pymysql as p
 
+# # Establish connection
+# connection = p.connect(
+#     user="root",
+#     password="ansarizaid1234",
+#     host="localhost",
+#     port=3306,
+#     database="my_cascade"
+# )
+# cursor = connection.cursor()
 
+# # Function to select all users
+# def select_all():
+#     cursor.execute("SELECT * FROM user")
+#     rows = cursor.fetchall()
+#     print(rows)
 
+# # Function to select user by ID
+# def select_by_id(id):
+#     cursor.execute("SELECT * FROM user WHERE id=%s", (id,))
+#     row = cursor.fetchone()
+#     print(row)
 
+# # Function to insert user
+# def insert_user(values):
+#     cursor.execute("INSERT INTO user VALUES (%s, %s, %s, %s, %s)", values)
+#     connection.commit()
 
+# # Function to update user
+# def update_user(values):
+#     cursor.execute("UPDATE user SET name=%s, city=%s, email=%s, password=%s WHERE id=%s", values)
+#     connection.commit()
 
+# # Function to delete user
+# def delete_user(id):
+#     cursor.execute("DELETE FROM user WHERE id=%s", (id,))
+#     connection.commit()
 
+# while True:
+#     print("1. Select all users")
+#     print("2. Select user by ID")
+#     print("3. Insert user")
+#     print("4. Update user")
+#     print("5. Delete user")
+#     print("6. Exit")
 
+#     choice = input("Enter your choice: ")
 
+#     if choice == '1':
+#         select_all()
+#     elif choice == '2':
+#         id = input("Enter user ID: ")
+#         select_by_id(id)
+#     elif choice == '3':
+#         values = (input("Enter ID: "), input("Enter name: "), input("Enter city: "), input("Enter email: "), input("Enter password: "))
+#         insert_user(values)
+#     elif choice == '4':
+#         values = (input("Enter name: "), input("Enter city: "), input("Enter email: "), input("Enter password: "), input("Enter ID: "))
+#         update_user(values)
+#     elif choice == '5':
+#         id = input("Enter user ID to delete: ")
+#         delete_user(id)
+#     elif choice == '6':
+#         print("Exiting...")
+#         break
+#     else:
+#         print("Invalid choice. Please try again.")
 
-
-
-
-
-
-
+# # Close connection
+# connection.close()
 
 
 
