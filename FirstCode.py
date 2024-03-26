@@ -6447,7 +6447,7 @@ x=10
 # Enter your age: 59
 # You are not a senior citizen yet.
     
-# 33)write a program which will add(sum) all the elements of list 
+# 33)write a program which will add(sum) all the elements of list
 
 # # Define a list of numbers
 # numbers = [5, 10, 15, 20, 25]
@@ -11945,6 +11945,176 @@ x=10
 # downlaod  video completed
 # 5.004589319229126
 # All tasks completed
+
+# Database Connectivity
+# Terminal:python
+# Terminal:exit()
+# Terminal:pip install pymysql
+
+# import pymysql as p
+# print("done...")
+# Output:done...
+
+import pymysql as p
+connection=p.connect(
+    user="root",
+    password="ansarizaid1234",
+    host="localhost",
+    port=3306,
+    database="my_cascade"
+)
+cursor = connection.cursor()
+
+# select all users
+# sql="select * from user"
+# cursor.execute(sql)
+# rows=cursor.fetchall()
+# print(rows)
+# print("done...")
+# connection.close()
+# Output:
+# ((1, 'Priya', 'Vikroli', 'pra@gmail.com', '1122abb'), (2, 'Zaid', 'Mumbra', 'za@gmail.com', '1122abb'), (3, 'Karan', 'Diva', 'ka@gmail.com',
+# '1122abb'), (4, 'Amol', 'Thane', 'am@gmail.com', '1122abb'), (5, 'Rohan', 'Kalva', 'ro@gmail.com', '1122abb'))
+# done...
+# sql="""select user.name,course.course_name from user inner join user_course on user.id=user_course.user_id 
+# inner join course on user_course.course_id=course.id"""
+# cursor.execute(sql)
+# rows=cursor.fetchall()
+# print(rows)
+# print("done...")
+# connection.close()
+# Output:
+# (('Priya', 'Java'), ('Zaid', 'Java'), ('Zaid', 'Web Development'), ('Karan', 'Web Development'), ('Rohan', 'Python'), ('Rohan', 'Python'))
+# done...
+# rows=cursor.fetchone()
+# print(rows)
+# connection.close()
+# Output:
+# (1, 'Priya', 'Vikroli', 'pra@gmail.com', '1122abb')
+# done...
+# rows=cursor.fetchmany(3)
+# print(rows)
+# connection.close()
+# Output:
+# ((1, 'Priya', 'Vikroli', 'pra@gmail.com', '1122abb'), (2, 'Zaid', 'Mumbra', 'za@gmail.com', '1122abb'), (3, 'Karan', 'Diva', 'ka@gmail.com',
+#  '1122abb'))
+# done...
+# for row in rows:
+#     print(row)
+# Output:
+# (1, 'Priya', 'Vikroli', 'pra@gmail.com', '1122abb')       
+# (2, 'Zaid', 'Mumbra', 'za@gmail.com', '1122abb')
+# (3, 'Karan', 'Diva', 'ka@gmail.com', '1122abb')
+# (4, 'Amol', 'Thane', 'am@gmail.com', '1122abb')
+# (5, 'Rohan', 'Kalva', 'ro@gmail.com', '1122abb')
+# done...
+# print("done...")
+
+# select by id
+# id=3
+# sql="select * from user where id=%s"   #%s is placeholder
+# cursor.execute(sql,id)
+# rows=cursor.fetchone()
+# print(rows)
+# print("done...")
+# connection.close()
+# Output:
+# (3, 'Karan', 'Diva', 'ka@gmail.com', '1122abb')
+# done...
+
+# insert user
+# t=(8,"prashant","ulhasnagar","prashant@gmail.com","1234a")
+# sql= "insert into user values(%s,%s,%s,%s,%s)"
+# res=cursor.execute(sql,t)
+# print(res)
+# connection.commit()
+# connection.close()
+# Output:1
+
+# Update user
+# t=("prashant","ulhasnagar","prashant88@gmail.com","1234ab",8)
+# sql = "update user set name=%s,city=%s,email=%s,password=%s where id=%s"
+# res=cursor.execute(sql,t)
+# print(res)
+# connection.commit()
+# connection.close()
+# Output:1
+
+#  delete user
+# id=8
+# sql="delete from user where id=%s"
+# res=cursor.execute(sql,id)
+# print(res)
+# connection.commit()
+# connection.close()
+# Output:1
+
+# def select():
+#     cursor = connection.cursor()
+#     sql="select * from user"
+#     cursor.execute(sql)
+#     rows=cursor.fetchall()
+#     print(rows)
+#     for row in rows:
+#         print(row)
+#     print("done...")
+#     connection.close()
+
+# def selectById(id):
+#     cursor = connection.cursor()
+#     sql="select * from user where id=%s"   #%s is placeholder
+#     cursor.execute(sql,id)
+#     rows=cursor.fetchone()
+#     print(rows)
+#     print("done...")
+#     connection.close()
+
+# def insertUser(t):
+#     cursor = connection.cursor()
+#     sql= "insert into user values(%s,%s,%s,%s,%s)"
+#     res=cursor.execute(sql,t)
+#     print(res)
+#     connection.commit()
+#     connection.close()
+
+# def updateUser(t):
+#     cursor = connection.cursor()
+#     sql = "update user set name=%s,city=%s,email=%s,password=%s where id=%s"
+#     res=cursor.execute(sql,t)
+#     print(res)
+#     connection.commit()
+#     connection.close()
+
+# def deleteUser(id):
+#     cursor = connection.cursor()
+#     sql="delete from user where id=%s"
+#     res=cursor.execute(sql,id)
+#     print(res)
+#     connection.commit()
+#     connection.close()
+
+# select()
+# Output:
+# ((1, 'Priya', 'Vikroli', 'pra@gmail.com', '1122abb'), (2, 'Zaid', 'Mumbra', 'za@gmail.com', '1122abb'), (3, 'Karan', 'Diva', 'ka@gmail.com',
+# '1122abb'), (4, 'Amol', 'Thane', 'am@gmail.com', '1122abb'), (5, 'Rohan', 'Kalva', 'ro@gmail.com', '1122abb'))
+# (1, 'Priya', 'Vikroli', 'pra@gmail.com', '1122abb')       
+# (2, 'Zaid', 'Mumbra', 'za@gmail.com', '1122abb')
+# (3, 'Karan', 'Diva', 'ka@gmail.com', '1122abb')
+# (4, 'Amol', 'Thane', 'am@gmail.com', '1122abb')
+# (5, 'Rohan', 'Kalva', 'ro@gmail.com', '1122abb')
+# done...
+    
+# selectById(2)
+# Output:
+# (2, 'Zaid', 'Mumbra', 'za@gmail.com', '1122abb')
+# done...
+
+
+
+
+
+
+
 
 
 
