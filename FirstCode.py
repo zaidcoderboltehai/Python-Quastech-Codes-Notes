@@ -12323,6 +12323,77 @@ x=10
 # Enter your choice: 6
 # Exiting...
 
+# Regular Expression
 
+# Regular expressions, often abbreviated as regex or regexp, are powerful tools for pattern matching and text manipulation. In Python, the re 
+# module provides support for regular expressions.
 
+# import re
 
+# text="The quick  brown fox jumps over the lazy dog."
+# pattern = r'\bfox\b'
+# matches=re.findall(pattern, text)
+# print(matches)
+# Output:['fox']
+
+# text="My email is example@example.com"
+# pattern=r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b"
+# matches=re.findall(pattern, text)
+# print(matches)
+# Output:['example@example.com']
+
+# text="My phone numbers are 123-456-7890 and 987-654-3210"
+# pattern=r"\b\d{3}-\d{3}-\d{4}\b"
+# matches=re.findall(pattern,text)
+# print(matches)
+# Output:['123-456-7890', '987-654-3210']
+
+# text="Hello,my name is John"
+# pattern=r'John'
+# new_text=re.sub(pattern,'Alice',text)
+# print(new_text)
+# Output:Hello,my name is Alice
+
+# def is_valid_password(password):
+#     pattern = r'^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$'
+#     return bool(re.match(pattern,password))
+# print(is_valid_password('Password123'))
+# print(is_valid_password('pass'))
+# Output:
+# True
+# False
+
+# Django support mvt and api but not mvc
+
+# What is Django
+# Django is a high-level web framework written in Python that allows developers to quickly build web applications. It provides a 
+# set of tools, libraries, and patterns to help streamline the development process and encourages the use of clean, pragmatic design.
+
+# Difference between Django and Flask
+# Django->Framework hai,heavy weight web application ke liye used hota hai
+
+# Flask->Library hai,light weight web application ke liye used hota hai
+
+# Difference between mvt and mvc
+# In simple terms, both MVT (Model-View-Template) and MVC (Model-View-Controller) are architectural patterns used for designing web applications. 
+# Here's a brief explanation of each:
+
+# 1. **MVC (Model-View-Controller):**
+#    - **Model:** Represents the data and business logic of the application. It interacts with the database and handles data manipulation.
+#    - **View:** Represents the user interface (UI) of the application. It displays data to the user and captures user interactions.
+#    - **Controller:** Acts as an intermediary between the model and view. It receives input from the user via the view, processes it using the 
+# model, and updates the view with the results.
+
+# 2. **MVT (Model-View-Template):**
+#    - **Model:** Similar to MVC, the model represents the data and business logic of the application.
+#    - **View:** In MVT, the view is responsible for rendering the user interface. It defines how data is presented to the user but doesn't handle 
+# user interactions.
+#    - **Template:** This is unique to MVT. Templates are used to generate dynamic HTML pages by inserting data into predefined placeholders. 
+# Templates encapsulate the presentation logic but are simpler than views in MVC.
+
+# The key difference between MVT and MVC lies in the role of the view/template component:
+# - In MVC, the view is responsible for both rendering the UI and handling user interactions.
+# - In MVT, the view is only responsible for rendering the UI, while the template is used for generating dynamic content based on data.
+
+# Overall, both patterns aim to separate concerns and promote a more organized and maintainable codebase. MVT, as used in Django, simplifies the 
+# presentation layer by introducing templates, which can be advantageous for developers working with HTML and frontend technologies.
