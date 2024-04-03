@@ -12549,3 +12549,5 @@ x=10
 # In summary, `db.sqlite3` is the default SQLite database file used by Django for development and testing purposes. It stores the data for your 
 # Django application and is managed automatically by Django's ORM (Object-Relational Mapping) system.
 
+# from .views import firstView->(yaani ki isey folder ke views mai se import karo firstView naam ke function ko)
+
