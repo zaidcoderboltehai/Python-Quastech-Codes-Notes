@@ -1,4 +1,38 @@
-from django.shortcuts import HttpResponse  #yeh webpage pai response bhejne ke liye kaam aata hai 
+from django.shortcuts import HttpResponse
 
-def firstView(request): #django mai jitne bhi views hote hai unmey ek parameter dena compulsory hai jiska naam hai'request'(yaha pai oops waale concept ki baat nahi hori hai)
-    return HttpResponse("welcome to first url") #HttpResponse ismey hamesha string he pass hota hai
+def home(request):
+    data="""
+<h1>welcome to home page</h1>
+<a href="firsturl">first page</a>
+<a href="secondurl">second page</a>
+<a href="thirdurl">third page</a>
+"""
+    return HttpResponse(data)
+
+def firstView(request):
+    data="""
+<h1>welcome to first page</h1>
+<a href="secondurl">second page</a>
+<a href="thirdurl">third page</a>
+<a href="/">home page</a>
+"""
+    return HttpResponse(data)
+
+def secondView(request):
+    data="""
+<h1>welcome to second page</h1>
+<a href="firsturl">first page</a>
+<a href="thirdurl">third page</a>
+<a href="/">home page</a>
+"""
+    return HttpResponse(data)
+
+def thirdView(request):
+    data="""
+<h1>welcome to third page</h1>
+<a href="firsturl">first page</a>
+<a href="secondurl">second page</a>
+<a href="/">home page</a>
+"""
+    return HttpResponse(data)
+

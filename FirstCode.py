@@ -1,3 +1,7 @@
+# Interpreter->yeh ek-ek line(code) padhega aur output dega aur agar kuch error aaya toh yeh wahi terminate hojayega aagai ka code nahi 
+# dekhega stop hojayega program wahi run karna.
+# Compiler->yeh ek saath pura line(code) padhega aur output dega aur agar kuch error aaya toh yeh kya error hai woh show karke aagai 
+# ka line bhi padhega pura means yeh terminate nahi hoga bich mai error aane pai.
 # Python is a high level case-sensitive independent interpreted programing language which is used for general 
 # purpose and allow to operate on any operating systems.
 # Case-Sensitive means small 'a' is not equal to capital 'A'.
@@ -12551,3 +12555,13 @@ x=10
 
 # from .views import firstView->(yaani ki isey folder ke views mai se import karo firstView naam ke function ko)
 
+# from django.shortcuts import HttpResponse  #yeh webpage pai response bhejne ke liye kaam aata hai 
+
+# def firstView(request): #django mai jitne bhi views hote hai unmey ek parameter dena compulsory hai jiska naam hai'request'aur r,
+# s,j etc. kuch bhi ek word de sakte hai edhar(yaha pai oops waale concept ki baat nahi hori hai)
+#     return HttpResponse("welcome to first url") #return HttpResponse ismey hamesha string he pass hota hai
+
+# views.py:isme humlog woh likhte hai joh hum dikhana chahte hai apne webpage pai
+
+# from .views import firstView, secondView, thirdView
+# from .import views as v
