@@ -3,7 +3,5 @@ from . import views as v
 urlpatterns = [
     path("",v.home),
     path("first",v.first),
-    path("second",v.second),
-    path("third",v.third)
-
+    path("second",v.second)
 ]

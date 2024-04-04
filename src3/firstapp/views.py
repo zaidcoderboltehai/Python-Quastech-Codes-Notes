@@ -9,5 +9,3 @@ def first(request):
 def second(request):
     return render(request,"second.html")
 
-def third(request):
-    return   render(request,"third.html")
