@@ -12565,3 +12565,15 @@ x=10
 
 # from .views import firstView, secondView, thirdView
 # from .import views as v
+
+# <form action="/add-details" method="get">
+# get saamne dikha dega ki kya daale hai input jaise ki 'name','city' wagaira mai
+# post saamne nahi dikhata hai ki kya input daaley hai jaise ki 'name','city' wagaira mai
+
+# <h1>current data</h1>
+# {%if not none in user%}
+# <h1>{{user}}</h1>
+# {%endif%}
+
+# {{user}}->yeh display karne ka kaam karta hai,isko ginger bracket ya django bracket bolte hai.
+
