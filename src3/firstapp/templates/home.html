@@ -1,3 +1,4 @@
+{%extends "master.html"%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +7,8 @@
     <title>Document</title>
 </head>
 <body>
+    {%block 'content'%}
     <h1>welcome to home page</h1>
-    <h2><a href="/register">Register</a></h2>
-    <h2><a href="/register2">Register2</a></h2>
-    <h2><a href="alldata">alldata</a></h2>
+    {%endblock%}
 </body>
 </html>

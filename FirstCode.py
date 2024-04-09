@@ -12577,3 +12577,9 @@ x=10
 
 # {{user}}->yeh display karne ka kaam karta hai,isko ginger bracket ya django bracket bolte hai.
 
+
+
+
+
+
+

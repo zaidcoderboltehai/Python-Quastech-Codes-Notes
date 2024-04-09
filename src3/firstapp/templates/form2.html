@@ -1,3 +1,4 @@
+{%extends 'master.html'%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    {%block 'content'%}
     <h1>enter user details here</h1>
 
     <form action="/add-details2" method="post">
@@ -33,6 +35,11 @@
             </tr>
         </table>
     </form>
-    
+    {%endblock%}
 </body>
 </html>
+
+
+
+
+
