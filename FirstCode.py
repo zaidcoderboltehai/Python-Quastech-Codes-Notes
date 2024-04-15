@@ -12577,6 +12577,44 @@ x=10
 
 # {{user}}->yeh display karne ka kaam karta hai,isko ginger bracket ya django bracket bolte hai.
 
+# template inheritance
+# Template inheritance in Django allows you to create a base template with common elements that are shared across multiple pages of your website. 
+# You can then create child templates that inherit from this base template and override specific blocks or sections as needed.
+
+# ORM
+# In Django, ORM stands for Object-Relational Mapping. Here's a breakdown of what it means:
+
+# 1. **Object-Relational Mapping (ORM)**:
+#    - ORM is a programming technique that allows developers to interact with a relational database using an object-oriented approach.
+#    - It essentially bridges the gap between the relational database model (tables, rows, columns) and the object-oriented programming model 
+# (classes, objects, methods).
+#    - With ORM, database tables are represented as classes, rows as objects, and columns as object attributes.
+
+# 2. **Key Features**:
+#    - **Abstraction**: ORM abstracts away the complexities of SQL queries and database operations. Developers can work with high-level Python 
+# objects and methods instead of writing raw SQL.
+#    - **Cross-Platform Compatibility**: ORM frameworks are often cross-platform, meaning they can work with various database systems such as 
+# SQLite, MySQL, PostgreSQL, etc., without requiring significant changes to the code.
+#    - **Security**: ORM frameworks provide built-in protection against common security threats such as SQL injection attacks.
+#    - **Database Agnostic**: Developers can write database-agnostic code, allowing them to switch between different database backends easily.
+
+# 3. **Django ORM**:
+#    - Django comes with its own built-in ORM, which is powerful and easy to use.
+#    - Models in Django are Python classes that inherit from `django.db.models.Model`.
+#    - Each model class represents a database table, and its attributes represent fields/columns in that table.
+#    - Developers define models using Python classes and Django's field types (e.g., `CharField`, `IntegerField`, `ForeignKey`, etc.).
+#    - Django ORM provides methods for querying, creating, updating, and deleting database records without writing raw SQL.
+
+# 4. **Benefits**:
+#    - **Productivity**: ORM simplifies database operations and reduces the amount of boilerplate code required, leading to faster development.
+#    - **Maintainability**: Using ORM makes code more maintainable and readable, as database-related logic is encapsulated within model classes.
+#    - **Portability**: Since ORM abstracts away the underlying database, applications developed using Django ORM can easily switch between 
+# different database systems.
+#    - **Integration**: ORM seamlessly integrates with other Django components, such as forms, admin interface, and serializers.
+
+# Overall, Django ORM simplifies database interaction in Django projects, allowing developers to focus more on application logic and less on 
+# database management.
+
 
 
 
