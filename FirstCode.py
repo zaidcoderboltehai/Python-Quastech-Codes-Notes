@@ -12367,6 +12367,8 @@ x=10
 # True
 # False
 
+# Django notes:-
+
 # Django support mvt and api but not mvc
 
 # What is Django
@@ -12649,8 +12651,505 @@ x=10
 # Using `makemigrations` and `migrate` commands together allows you to manage your database schema efficiently as your Django project evolves. It 
 # helps ensure that your database structure reflects the changes you make to your models, keeping your database and codebase in sync.
 
+# filter(name__contains=srch)->working like a 'like operator' in mysql
+
+# urls.py practiceproject
+
+# from django.contrib import admin
+# from django.urls import path,include
+
+# urlpatterns = [
+#     path('admin/', admin.site.urls),
+#     path("",include("firstapp.urls"))
+# ]
+
+# Explanation:-
+
+# This code configures the URL patterns for a Django project:
+
+# 1. It imports the `admin` module from `django.contrib` to enable the Django admin interface.
+# 2. It imports the `path` and `include` functions from `django.urls`, which are used to define URL patterns.
+# 3. It sets up a list called `urlpatterns`, which contains all the URL patterns for the project.
+# 4. It defines a URL pattern for accessing the Django admin interface at `admin/`.
+# 5. It includes the URL patterns defined in the `urls.py` file of the `firstapp` application at the root URL (`""`).
+
+# In simple terms, this code allows access to the Django admin interface and routes all other URLs to the URL patterns defined in the `urls.py` 
+# file of the `firstapp` application.
+
+# practiceproject firstapp models.py
+# from django.db import models
+# class User(models.Model):
+#     name=models.CharField(max_length=30)
+#     phone=models.IntegerField(null=True)
+#     email=models.EmailField(max_length=30,unique=True)
+#     password=models.CharField(max_length=20,default="")
+
+#     class  Meta:
+#         db_table="user"
+
+# Explanation:-
+
+# This code defines a Django model named `User` that represents users in a database. Let's simplify what each part does:
+
+# 1. `from django.db import models`: This imports the `models` module from Django, which allows us to define database models.
+
+# 2. `class User(models.Model):`: This line declares a Python class called `User` that inherits from `models.Model`. This means that `User` is a 
+# Django model.
+
+# 3. Inside the `User` class, there are several fields defined using different types provided by Django's `models` module:
+#    - `name = models.CharField(max_length=30)`: This creates a field called `name` that can store up to 30 characters of text.
+#    - `phone = models.IntegerField(null=True)`: This creates a field called `phone` that can store integer values. The `null=True` option allows 
+#    this field to be optional.
+#    - `email = models.EmailField(max_length=30, unique=True)`: This creates a field called `email` that is meant for storing email addresses. The
+#    `unique=True` option ensures that each email address stored in this field must be unique across all records in the database.
+#    - `password = models.CharField(max_length=20, default="")`: This creates a field called `password` that can store up to 20 characters of text.
+#    The `default=""` option sets the default value of this field to an empty string.
+
+# 4. `class Meta:`: This is a class inside the `User` class that holds metadata for the model.
+   
+# 5. `db_table="user"`: This specifies the name of the database table to use for storing instances of the `User` model. In this case, it sets the 
+# table name to "user".
+
+# In simple terms, this code defines a database table structure for storing user information. Each user will have a name, phone number 
+# (which is optional), email address (which must be unique), and password. This table will be named "user" in the database.
+
+# practiceproject firstapp urls.py
+# from django.urls import path
+# from . import views as v
+# urlpatterns = [
+#     path("",v.home),
+#     path("add-user",v.addUser),
+#     path("list",v.list),
+#     path("delete",v.delete),
+#     path("delete2/<int:pk>",v.delete2),
+#     path("edit/<int:pk>",v.edit),
+#     path("search",v.search)
+# ] 
+
+# Explanation:-
+
+# This code defines the URL patterns for routing requests to different views (or functions) in a Django web application. Let's break down each 
+#    part:
+
+# 1. `from django.urls import path`: This imports the `path` function from the `django.urls` module. The `path` function is used to define URL 
+# patterns.
+
+# 2. `from . import views as v`: This imports the views module (assumed to be named `views.py`) from the current directory (denoted by `.`). It 
+# aliases the imported module as `v` for convenience.
+
+# 3. `urlpatterns = [ ... ]`: This variable holds a list of URL patterns for the application.
+
+# 4. Inside the `urlpatterns` list:
+#    - `path("",v.home)`: Maps the empty path (i.e., the base URL) to the `home` view function in the `views.py` module.
+#    - `path("add-user",v.addUser)`: Maps the path "/add-user" to the `addUser` view function in the `views.py` module.
+#    - `path("list",v.list)`: Maps the path "/list" to the `list` view function in the `views.py` module.
+#    - `path("delete",v.delete)`: Maps the path "/delete" to the `delete` view function in the `views.py` module.
+#    - `path("delete2/<int:pk>",v.delete2)`: Maps the path "/delete2/<int:pk>" to the `delete2` view function in the `views.py` module. Here, 
+# `<int:pk>` is a path converter that matches an integer value and assigns it to the variable `pk`, which is passed as an argument to the `delete2` 
+# view function.
+#    - `path("edit/<int:pk>",v.edit)`: Maps the path "/edit/<int:pk>" to the `edit` view function in the `views.py` module. Similar to the previous 
+# pattern, it captures an integer value as `pk`.
+#    - `path("search",v.search)`: Maps the path "/search" to the `search` view function in the `views.py` module.
+
+# In summary, these URL patterns define how incoming requests to specific URLs are routed to corresponding view functions in the Django application.
+# Each path is associated with a specific function that handles the request and generates an appropriate response.
+
+# practiceproject firstapp views.py
+
+# from django.shortcuts import render,HttpResponse,redirect
+# from .models import *
+# def home(request):
+#     return render(request,"home.html")
+
+# def addUser(request):
+#     if(request.method=="POST"):
+#         name=request.POST.get("name")
+#         phone=request.POST.get("phone")
+#         email=request.POST.get("email")
+#         password=request.POST.get("password")
+
+#         print(name,phone,email,password)
+#         # return HttpResponse("success")
+#         user=User()
+#         user.name=name
+#         user.phone=phone
+#         user.email=email
+#         user.password=password
+#         user.save()
+#         return redirect("/")
+    
+#     else:
+#         return render(request,"adduser.html")
+    
+# def list(request):
+#     users=User.objects.all()
+#     return render(request,"list.html",{"users":users})
+
+# def delete(request):
+#     id=request.GET.get("id")
+#     user=User.objects.get(id=id)
+#     user.delete()
+#     return redirect("/list")
+
+# def delete2(request,pk):
+#     user=User.objects.get(id=pk)
+#     user.delete()
+#     return redirect("/list")
+
+# def edit(request,pk):
+#     user=User.objects.get(id=pk)
+#     if(request.method=="POST"):
+#         name=request.POST.get("name")
+#         phone=request.POST.get("phone")
+#         email=request.POST.get("email")
+#         password=request.POST.get("password")
+#         user.name=name
+#         user.phone=phone
+#         user.email=email
+#         user.password=password
+#         user.save()
+#         return redirect("/list")
+#     else:
+#         return render(request,"editform.html",{"user":user})
+
+# def search(request):
+#     srch=request.GET.get("srch")
+#     users=User.objects.filter(name__contains=srch)
+#     return render(request,"list.html",{"users":users})
+
+# Explanation:-
+
+# This Django code defines several view functions for handling different HTTP requests and rendering HTML templates:
+
+# 1. `home(request)`: Renders the "home.html" template when the base URL ("/") is accessed.
+
+# 2. `addUser(request)`: Handles the addition of a new user. If the request method is POST, it retrieves user data from the form, creates a new 
+# `User` object, saves it to the database, and redirects to the home page ("/"). If the method is GET, it renders the "adduser.html" template to 
+# display the form.
+
+# 3. `list(request)`: Retrieves all users from the database and passes them to the "list.html" template for rendering.
+
+# 4. `delete(request)`: Deletes a user based on the ID obtained from the request parameters and redirects to the user list page ("/list").
+
+# 5. `delete2(request, pk)`: Similar to `delete`, but it receives the user ID (`pk`) as a parameter directly from the URL pattern.
+
+# 6. `edit(request, pk)`: Retrieves a user based on the ID (`pk`) from the URL pattern, updates the user's data if the request method is POST, and 
+# redirects to the user list page. If the method is GET, it renders the "editform.html" template with the user data for editing.
+
+# 7. `search(request)`: Retrieves user data based on the search query (`srch`) from the request parameters, filters the users whose names contain 
+# the search query, and renders the "list.html" template with the filtered users.
+
+# In summary, these view functions handle various user interactions such as adding, listing, editing, and deleting users, and they utilize 
+# Django's ORM to interact with the database and render HTML templates to provide a user interface.
+
+# practiceproject firstapp templates adduser.html
+# <!DOCTYPE html>
+# <html lang="en">
+# <head>
+#     <meta charset="UTF-8">
+#     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+#     <title>Document</title>
+# </head>
+# <body>
+#     <h1>Add user details here</h1>
+#     <form method="post">
+#         {%csrf_token%}
+#         <table>
+#             <tr>
+#                 <td>Name</td>
+#                 <td><input type="text" name="name"></td>
+#             </tr>
+#             <tr>
+#                 <td>phone</td>
+#                 <td><input type="number" name="phone"></td>
+#             </tr>
+#             <tr>
+#                 <td>email</td>
+#                 <td><input type="text" name="email"></td>
+#             </tr>
+#             <tr>
+#                 <td>password</td>
+#                 <td><input type="text" name="password"></td>
+#             </tr>
+#             <tr>
+#                 <td><input type="submit"></td>
+#                 <td><input type="reset"></td>
+#             </tr>
+
+#         </table>
+#     </form>
+# </body>
+# </html>
+
+# Explanation:-
+
+# This HTML code represents a form for adding user details:
+
+# 1. The `<form>` element is used to create a form that allows users to input data.
+
+# 2. `{% csrf_token %}` is a Django template tag that inserts a CSRF (Cross-Site Request Forgery) token into the form. This token helps protect 
+# against CSRF attacks.
+
+# 3. Inside the form, there's a table layout with rows and columns for organizing the input fields.
+
+# 4. Each row (`<tr>`) contains two cells (`<td>`): one for the label (e.g., "Name", "phone", "email", "password") and one for the input field.
+
+# 5. The input fields (`<input>`) allow users to enter data. The `type` attribute specifies the type of input (e.g., text, number). The `name` 
+# attribute provides a name for each input field, which is used to identify the data when the form is submitted.
+
+# 6. The last row contains two cells with `<input type="submit">` and `<input type="reset">` buttons. The "Submit" button is used to submit the 
+# form data to the server, while the "Reset" button clears the form fields.
+
+# Overall, this form allows users to input user details such as name, phone number, email, and password, and then submit the data to be processed 
+# by the Django view function for adding users.
 
 
+# practiceproject firstapp templates editform.html
+# <!DOCTYPE html>
+# <html lang="en">
+# <head>
+#     <meta charset="UTF-8">
+#     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+#     <title>Document</title>
+# </head>
+# <body>
+#     <h1>Add user details here</h1>
+#     <form method="post">
+#         {%csrf_token%}
+#         <table>
+#             <tr>
+#                 <td>Name</td>
+#                 <td><input type="text" name="name" value="{{user.name}}"></td>
+#             </tr>
+#             <tr>
+#                 <td>phone</td>
+#                 <td><input type="number" name="phone" value="{{user.phone}}"></td>
+#             </tr>
+#             <tr>
+#                 <td>email</td>
+#                 <td><input type="text" name="email" value="{{user.email}}"></td>
+#             </tr>
+#             <tr>
+#                 <td>password</td>
+#                 <td><input type="text" name="password" value="{{user.password}}"></td>
+#             </tr>
+#             <tr>
+#                 <td><input type="submit"></td>
+#                 <td><input type="reset"></td>
+#             </tr>
+
+#         </table>
+#     </form>
+# </body>
+# </html>
+
+# Explanation:-
+
+# This HTML code is similar to the previous one, but it's used for editing user details:
+
+# 1. The `<form>` element is used to create a form for editing user details.
+
+# 2. Inside the form, there's a table layout with rows and columns for organizing the input fields.
+
+# 3. Each row (`<tr>`) contains two cells (`<td>`): one for the label (e.g., "Name", "phone", "email", "password") and one for the input field.
+
+# 4. The input fields (`<input>`) are pre-filled with the existing user data using the `value` attribute. This allows users to see the current 
+# data and make changes if needed.
+
+# 5. The `name` attribute provides a name for each input field, which is used to identify the data when the form is submitted.
+
+# 6. The last row contains two cells with `<input type="submit">` and `<input type="reset">` buttons. The "Submit" button is used to submit the 
+# form data to the server for editing, while the "Reset" button clears the form fields.
+
+# Overall, this form allows users to edit user details such as name, phone number, email, and password, and then submit the updated data to be 
+# processed by the Django view function for editing users.
+
+# practiceproject firstapp templates home.html
+# <!DOCTYPE html>
+# <html lang="en">
+# <head>
+#     <meta charset="UTF-8">
+#     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+#     <title>Document</title>
+# </head>
+# <body>
+#     <h1>welcome to home page</h1>
+#     <h2><a href="/add-user">Add User</a></h2>
+#     <h2><a href="/list">All users</a></h2>
+# </body>
+# </html>
+
+# Explanation:-
+
+# This HTML code represents a simple home page:
+
+# 1. The `<h1>` element displays a heading "Welcome to home page", indicating that this is the home page of the application.
+
+# 2. Two `<h2>` elements with hyperlinks (`<a>`) are provided for navigation:
+#    - The first link, "Add User", redirects the user to the "/add-user" URL, allowing them to add a new user.
+#    - The second link, "All users", redirects the user to the "/list" URL, where they can view a list of all users.
+
+# Overall, this home page provides easy navigation options for users to add new users or view existing users in the application.
+
+# practiceproject firstapp templates list.html
+# <!DOCTYPE html>
+# <html lang="en">
+#   <head>
+#     <meta charset="UTF-8" />
+#     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+#     <title>Document</title>
+#   </head>
+#   <body>
+#     <h1>All user data</h1>
+#     <form action="/search">
+#       <input type="text" name="srch"><button>submit</button>
+#     </form>
+#     {%if users%}
+#     <table border="1px" cellspacing="10px">
+#       <thead>
+#         <tr>
+#           <th>Id</th>
+#           <th>Name</th>
+#           <th>phone</th>
+#           <th>email</th>
+#           <th>password</th>
+#           <th colspan="3">action</th>
+#         </tr>
+#       </thead>
+#       <tbody>
+#         {%for user in users%}
+#         <tr>
+#           <td>{{user.id}}</td>
+#           <td>{{user.name}}</td>
+#           <td>{{user.phone}}</td>
+#           <td>{{user.email}}</td>
+#           <td>{{user.password}}</td>
+#           <td><a href="/delete?id={{user.id}}">delete</a></td>
+#           <td><a href="/edit/{{user.id}}">edit</a></td>
+#           <td><a href="/delete2/{{user.id}}">delete2</a></td>
+#         </tr>
+#         {%endfor%}
+#       </tbody>
+#     </table>
+#     {%else%}
+#     <h1>No records found</h1>
+#     {%endif%}
+#   </body>
+# </html>
+
+# Explanation:-
+
+# This HTML code represents a page displaying all user data:
+
+# 1. The `<h1>` element displays a heading "All user data", indicating that this page shows information about all users stored in the application.
+
+# 2. The `<form>` element allows users to search for specific users by entering a search query in the input field and clicking the "submit" button.
+# The form sends the search query to the "/search" URL.
+
+# 3. If there are users available (as indicated by `{% if users %}`), a `<table>` is displayed to present the user data in a tabular format.
+# The table has the following columns:
+#    - "Id": Displays the user's ID.
+#    - "Name": Displays the user's name.
+#    - "Phone": Displays the user's phone number.
+#    - "Email": Displays the user's email address.
+#    - "Password": Displays the user's password.
+#    - "Action": Provides links for performing actions on the user data, such as deleting or editing the user's information.
+#      - "delete": Links to delete the user's record by passing the user's ID to the "/delete" URL.
+#      - "edit": Links to edit the user's information by redirecting to the "/edit/{{user.id}}" URL.
+#      - "delete2": Links to an alternative delete action using a different URL pattern ("/delete2/{{user.id}}").
+
+# 4. If no users are available (when `{% if users %}` evaluates to `False`), the message "No records found" is displayed instead of the table,
+# indicating that there are no user records to display.
 
 
+# practiceproject settings.py
+# Application definition
+
+# INSTALLED_APPS = [
+#     'django.contrib.admin',
+#     'django.contrib.auth',
+#     'django.contrib.contenttypes',
+#     'django.contrib.sessions',
+#     'django.contrib.messages',
+#     'django.contrib.staticfiles',
+#     # my apps
+#     'firstapp',
+#     'secondapp'
+
+# ]
+
+# Explanation:-
+
+# In Django, the `INSTALLED_APPS` setting is used to specify the list of applications or components that are installed and available for use in 
+# the project. Each application can provide a set of functionalities, such as managing users, handling requests, or serving static files.
+
+# Here's a simple explanation of the `INSTALLED_APPS` setting:
+
+# - `'django.contrib.admin'`: This application provides the Django administration interface, allowing administrators to manage site content, users,
+# and permissions.
+# - `'django.contrib.auth'`: This application provides authentication functionalities, including user authentication, permissions, and groups.
+# - `'django.contrib.contenttypes'`: This application allows the use of generic relations and content types, enabling models to relate to other
+# models across different applications.
+# - `'django.contrib.sessions'`: This application handles session management for users, allowing you to store user-specific data across multiple
+#  requests.
+# - `'django.contrib.messages'`: This application provides a messaging framework for sending messages between different parts of the application.
+# - `'django.contrib.staticfiles'`: This application manages static files (e.g., CSS, JavaScript, images) and serves them during development or 
+# production.
+
+# Additionally, there are custom applications included in the `INSTALLED_APPS` setting:
+
+# - `'firstapp'`: This is a custom Django application named "firstapp." It could contain views, models, templates, and other components related to
+# specific functionalities within the project.
+# - `'secondapp'`: Similarly, this is another custom Django application named "secondapp." It may provide additional features or functionalities
+# separate from the first app.
+
+# Overall, the `INSTALLED_APPS` setting organizes and enables various components and functionalities within a Django project, both built-in and
+# custom, making them available for use throughout the application.
+
+# Database
+# https://docs.djangoproject.com/en/5.0/ref/settings/#databases
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'practice',
+#         'USER': 'root',
+#         'PASSWORD': 'ansarizaid1234',
+#         'HOST':  'localhost',
+#         'PORT' :3306
+#     }
+# }
+
+# Explanation:-(second waale databases ka explanation hai)
+
+# In Django, the `DATABASES` setting is used to configure the database connection for the project. It specifies the database engine, name, user 
+# credentials, host, and port to connect to the database server. Here's a simple explanation of each key-value pair in the `DATABASES` setting:
+
+# - `'default'`: This specifies the default database connection. You can define multiple database configurations by adding additional entries with
+# different keys.
+
+# - `'ENGINE'`: This specifies the database engine to use. In this case, it's set to `'django.db.backends.mysql'`, indicating that the project will
+# use MySQL as the database engine.
+
+# - `'NAME'`: This specifies the name of the database to connect to. In this example, it's set to `'practice'`.
+
+# - `'USER'`: This specifies the username used to authenticate with the database server. Here, it's set to `'root'`.
+
+# - `'PASSWORD'`: This specifies the password used to authenticate with the database server. In this example, it's set to `'ansarizaid1234'`.
+
+# - `'HOST'`: This specifies the hostname or IP address of the database server. In this case, it's set to `'localhost'`, indicating that the 
+# database server is running on the same machine as the Django application.
+
+# - `'PORT'`: This specifies the port number on which the database server is listening for connections. Here, it's set to `3306`, which is the 
+# default port for MySQL databases.
+
+# Overall, the `DATABASES` setting allows Django to establish a connection to the specified database server using the provided credentials,
+# enabling the project to interact with the database for data storage and retrieval.
 
