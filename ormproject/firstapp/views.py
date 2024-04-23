@@ -1,23 +1,25 @@
 from django.shortcuts import render,HttpResponse,redirect
-from .models import *
+from django.contrib.auth.hashers import make_password
+# from .models import *
+from django.contrib.auth.models import User
 def home(request):
-    return render(request,"home.html")
+    return render(request,"login.html")
 
 def addUser(request):
     if(request.method=="POST"):
-        name=request.POST.get("name")
-        phone=request.POST.get("phone")
+        fname=request.POST.get("fname")
+        lname=request.POST.get("lname")
         email=request.POST.get("email")
         password=request.POST.get("password")
+        # Hash the password
+        hashed_password=make_password(password)
 
-        print(name,phone,email,password)
-        # return HttpResponse("success")
-        user=User()
-        user.name=name
-        user.phone=phone
-        user.email=email
-        user.password=password
-        user.save()
+        user=User.objects.create(
+            first_name=fname,
+            last_name=lname,
+            email=email,
+            password=hashed_password
+        )
         return redirect("/")
     
     else:

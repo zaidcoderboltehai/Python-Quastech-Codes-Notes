@@ -1,0 +1,15 @@
+<h1>welcome to blog list</h1>
+{%if blogs%}
+    {%for i in blogs%}
+     <div>
+         <img src="{{i.blog_image.url}}" alt="{{i.title}}" width="200px">
+         </div>
+            <h1>{{i.title}}</h1>
+            <p>{{i.description}}</p>
+         </div>
+         <hr>
+     </div>
+    {%endfor%}
+{%else%}
+<h1>No Blogs Found</h1>
+{%endif%}

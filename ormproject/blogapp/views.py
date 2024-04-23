@@ -2,6 +2,7 @@ from django.shortcuts import render,redirect
 from firstapp.models import User
 from .models import Blog
 
+
 def addBlog(request,pk):
     if(request.method == "POST"):
         title = request.POST.get("title")
@@ -16,3 +17,8 @@ def addBlog(request,pk):
         return redirect("/list")
     else:
         return render(request,"addblog.html")
+    
+def viewBlog(request,pk):
+    user=User.objects.get(id=pk)
+    blogs=Blog.objects.filter(user=user)
+    return render(request,"bloglist.html",{"blogs":blogs})
