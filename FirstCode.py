@@ -5366,8 +5366,8 @@ x=10
 
 ## print(reversed_a)
 
-## deep copy means same location refer karna 
-## shallow copy means different location refer karna
+## deep copy means different location refer karta hai. 
+## shallow copy means same location refer karta hai.
 
 # a=[1001,1002,1003,1004,1005]
 
@@ -9163,8 +9163,8 @@ x=10
 #        return f'name: {self.name} score: {self.__score} life: {self.__life}'#automatically call hoga isko alag se call nahi karna parta hai like a constructor
                                                                               #woh bhi object create hone pai apne aap call hojata hai automatically call hojata hai
                                                                               #alag se call nahi karna parta hai aur __str__ ka used esliye kiya jaata hai
-                                                                              #taaki humko generator object ki value string mai mil sakai aur hum read kar sakai.
-# obj=Character("mario")
+                                                                              #taaki humko generator object ki value string mai mil sakai aur hum read kar sakai
+# obj=Character("mario")                                                      #print karne ke time yeh automatically call hojata hai.
 # obj.kick()
 # obj.stabbed()
 # obj.punch()
@@ -13152,4 +13152,6 @@ x=10
 
 # Overall, the `DATABASES` setting allows Django to establish a connection to the specified database server using the provided credentials,
 # enabling the project to interact with the database for data storage and retrieval.
+
+
 
