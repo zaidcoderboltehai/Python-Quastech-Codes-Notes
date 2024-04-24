@@ -3,7 +3,7 @@ from firstapp.models import User
 from .models import Blog
 
 
-def addBlog(request,pk):
+def addBlog(request):
     if(request.method == "POST"):
         title = request.POST.get("title")
         description = request.POST.get("description")
@@ -12,13 +12,12 @@ def addBlog(request,pk):
         blog.title=title
         blog.description=description
         blog.blog_image=img
-        blog.user= User.objects.get(id=pk)
+        blog.user=request.user
         blog.save()
-        return redirect("/list")
+        return redirect("/blogs/view")
     else:
         return render(request,"addblog.html")
     
-def viewBlog(request,pk):
-    user=User.objects.get(id=pk)
-    blogs=Blog.objects.filter(user=user)
+def viewBlog(request):
+    blogs=Blog.objects.filter(user=request.user)
     return render(request,"bloglist.html",{"blogs":blogs})

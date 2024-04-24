@@ -1,9 +1,25 @@
 from django.shortcuts import render,HttpResponse,redirect
 from django.contrib.auth.hashers import make_password
+from django.contrib.auth import authenticate,login
 # from .models import *
 from django.contrib.auth.models import User
+
 def home(request):
-    return render(request,"login.html")
+    return render(request,"home.html")
+
+def loginuser(request):
+    if(request.method=="POST"):
+        email=request.POST.get("email")
+        password=request.POST.get("password")
+        user=authenticate(request, username=email, password=password)
+        if user is not None:
+            login(request,user)
+            return redirect("/home")
+        
+        return render(request,"login.html")
+    
+    else:
+        return render(request,"login.html")
 
 def addUser(request):
     if(request.method=="POST"):
@@ -17,6 +33,7 @@ def addUser(request):
         user=User.objects.create(
             first_name=fname,
             last_name=lname,
+            username=email,
             email=email,
             password=hashed_password
         )

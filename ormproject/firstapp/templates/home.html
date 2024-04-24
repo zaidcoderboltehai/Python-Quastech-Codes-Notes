@@ -6,8 +6,11 @@
     <title>Document</title>
 </head>
 <body>
+    {%if user.is_authenticated%}
+         <h1>{{user.first_name}}</h1>
+    {%endif%}
     <h1>welcome to home page</h1>
-    <h2><a href="/add-user">Add User</a></h2>
-    <h2><a href="/list">All users</a></h2>
+    <h2><a href="/blogs/view">All Blogs</a></h2>
+    <h2><a href="/blogs/add">Add Blog</a></h2>
 </body>
 </html>

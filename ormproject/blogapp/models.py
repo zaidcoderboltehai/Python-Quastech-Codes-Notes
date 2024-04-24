@@ -1,5 +1,8 @@
 from django.db import models
-from firstapp.models import User
+# from firstapp.models import User
+from django.contrib.auth.models import User
+
+# Create your models here.
 class Blog(models.Model):
     title=models.CharField(max_length=30)
     description=models.CharField(max_length=40)
