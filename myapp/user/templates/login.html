@@ -12,6 +12,13 @@
   </head>
   <body>
     <section class="bg-light py-3 py-md-5">
+      {%if msg%}
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{msg}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      {%endif%}
+      
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
@@ -30,7 +37,8 @@
                 <h2 class="fs-6 fw-normal text-center text-secondary mb-4">
                   Sign in to your account
                 </h2>
-                <form action="#!">
+                <form method="post">
+                  {%csrf_token%}
                   <div class="row gy-2 overflow-hidden">
                     <div class="col-12">
                       <div class="form-floating mb-3">
@@ -99,3 +107,4 @@
     ></script>
   </body>
 </html>
+

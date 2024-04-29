@@ -1,3 +1,10 @@
 from django.shortcuts import render
 
-# Create your views here.
+def donorhome(reqeust):
+    return render(reqeust,'donorhome.html')
+
+def addFood(request):
+    if request.method=="POST":
+        pass
+    else:
+        return render(request,'addfood.html')

@@ -1,11 +1,26 @@
 from django.shortcuts import render,redirect
 from django.contrib.auth.models import User
 from django.contrib.auth.hashers import make_password
+from django.contrib.auth import authenticate,login,logout
 
 # Create your views here.
 
 def loginpage(request):
-    return render(request, "login.html")
+    if(request.method=="POST"):
+        email=request.POST.get("email")
+        password=request.POST.get("password")
+        user=authenticate(username=email,password=password)
+        if(user is not None):
+            login(request,user)
+            return redirect("/donorhome")
+        else:
+            return render(request, "login.html",{"msg":"invalid email or passowrd"})
+    else:
+        return render(request,"login.html")
+    
+def logoutuser(request):
+    logout(request)
+    return redirect("/")
 
 def signup(request):
     if(request.method=="POST"):
@@ -18,3 +33,4 @@ def signup(request):
         return redirect("/")
     else:
         return render(request,"signup.html")
+
