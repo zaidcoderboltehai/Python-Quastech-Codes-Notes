@@ -30,13 +30,14 @@ def editFood(request,pk):
         description=request.POST.get("description")
         expiry_date=request.POST.get("expiry_date")
         pickup_address=request.POST.get("pickup_address")
-        image=request.FILES.get("image")
         donor=request.user
         food.name=name
         food.description=description
         food.expiry_date=expiry_date
         food.pickup_address=pickup_address
-        food.image=image
+        if (request.FILES):
+            image=request.FILES.get("image")
+            food.image=image
         food.donor=donor
         food.save()
         return redirect("/donorhome")
