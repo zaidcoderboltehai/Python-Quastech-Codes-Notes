@@ -2,7 +2,7 @@
 # dekhega stop hojayega program wahi run karna.
 # Compiler->yeh ek saath pura line(code) padhega aur output dega aur agar kuch error aaya toh yeh kya error hai woh show karke aagai 
 # ka line bhi padhega pura means yeh terminate nahi hoga bich mai error aane pai.
-# Python is a high level case-sensitive independent interpreted programing language which is used for general 
+# Python is a high level case-sensitive independent interpreted programming language which is used for general 
 # purpose and allow to operate on any operating systems.
 # Case-Sensitive means small 'a' is not equal to capital 'A'.
 # Datatype->Datatype is a classification or categorization of data elements.
