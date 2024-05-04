@@ -7,3 +7,4 @@ urlpatterns=[
     path("edit-food/<int:pk>",v.editFood)
 
 ]
+

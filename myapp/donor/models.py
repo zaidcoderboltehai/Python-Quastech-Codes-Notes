@@ -12,3 +12,6 @@ class Food(models.Model):
 
     class Meta:
         db_table="food"
+
+
+
