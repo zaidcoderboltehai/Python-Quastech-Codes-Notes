@@ -2,7 +2,7 @@ from django.shortcuts import render,redirect
 from django.contrib.auth.models import User
 from django.contrib.auth.hashers import make_password
 from django.contrib.auth import authenticate,login,logout
-from donor.models import Food
+from donor.models import Food,Request
 
 def foodView(request,pk):
     food=Food.objects.get(id=pk)
@@ -45,4 +45,12 @@ def signup(request):
     else:
         return render(request,"signup.html")
     
+def send_request(request,pk):
+    user=request.user
+    food=Food.objects.get(id=pk)
+    reqobj=Request()
+    reqobj.user=user
+    reqobj.food=food
+    reqobj.save()
+    return redirect("/userhome")
 

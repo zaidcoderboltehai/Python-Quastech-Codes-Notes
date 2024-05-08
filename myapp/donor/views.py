@@ -44,4 +44,9 @@ def editFood(request,pk):
     else:
         return render(request,'editfood.html',{"food":food})
     
-
+def requests(request):
+    donor_foods=Food.objects.filter(donor=request.user)
+    pending_requests=Request.objects.filter(food_in=donor_foods,status='pending')
+    food_details=[{'food':req.food, 'user_email':req.user.email,"req_id":req.id} for req in pending_requests]
+    print(food_details)
+    return render(request,'requests.html',{'food_details':food_details})
