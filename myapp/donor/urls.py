@@ -1,11 +1,14 @@
 from django.urls import path,include
 from . import views as v
-urlpatterns=[
+
+
+urlpatterns = [
     path("donorhome",v.donorhome),
     path("add-food",v.addFood),
     path("delete-food/<int:pk>",v.deleteFood),
     path("edit-food/<int:pk>",v.editFood),
-    path("requests",v.requests)
-
+    path("requests",v.requests),
+    path("accept-request/<int:pk>",v.acceptRequest),
+    path("reject.request/<int:pk>",v.rejectRequest),
+ 
 ]
-

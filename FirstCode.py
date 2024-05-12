@@ -13153,5 +13153,24 @@ x=10
 # Overall, the `DATABASES` setting allows Django to establish a connection to the specified database server using the provided credentials,
 # enabling the project to interact with the database for data storage and retrieval.
 
+# RestAPI Notes:
+
+# RestAPI Notes:iska kaam hota hai backend ka data frontend mai dena,request accept karna aur response dena yehi kaam hai iska.
+# API:yeh links hoti hai.
+# Doo cheeze hoti hai yaha par:
+# 1.API creation:yeh backend mai banta hai.API call frontend mai hota hai.Frontend waala kabhi API banata nahi hai.Frontend waala frontend banata
+# hai.Aur iss tarha se frontend banata hai ki API ka agar data aaye toh woh proper display ho.
+# 2.API consumption:
+# JSON:harr language mai isko use kar sakte hai
+
+# json,xml   dictionary={"a":10,"b":30}
+#                  json={"a":10,"b":40}
+
+# rest,restapi(representional state transfer)
+
+
+
+
+
 
 

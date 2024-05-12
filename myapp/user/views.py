@@ -53,4 +53,3 @@ def send_request(request,pk):
     reqobj.food=food
     reqobj.save()
     return redirect("/userhome")
-

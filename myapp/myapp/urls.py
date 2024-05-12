@@ -8,8 +8,7 @@ urlpatterns = [
     path("",loginpage),
     path("signup",signup),
     path('admin/', admin.site.urls),
-    path("logout",logoutuser),
-    path("",include('user.urls')),
-    path("",include('donor.urls'))
+    path('logout',logoutuser),
+    path("",include("user.urls")),
+    path("",include("donor.urls"))
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
-

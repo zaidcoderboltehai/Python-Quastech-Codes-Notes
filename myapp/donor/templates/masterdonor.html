@@ -71,7 +71,7 @@
     <aside>
       <div id="brand">
 
-        <img src="{%static 'img/logo.jpg'%}" alt="" class="img-fluid" />
+        <img src="{%static 'images/chef logo.jpg'%}" alt="" class="img-fluid" />
         {% if request.user.is_authenticated %}
         <h4 style="text-align: center; color: rgba(31, 198, 210, 0.5);">Hello {{ request.user.first_name }}!!</h4>
         {% endif %}
@@ -79,7 +79,7 @@
       <ul class="list">
         <a href="/donorhome"><li>All Foods</li></a>
         <a href="/add-food"><li>Add Food</li></a>
-        <a href="/requests"><li>Request</li></a>
+        <a href="/requests"><li>Requests</li></a>
         <a href="/logout"><li>Logout</li></a>
       </ul>
     </aside>
