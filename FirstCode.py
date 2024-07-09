@@ -9172,7 +9172,7 @@ x=10
 #     def displayscore(self):
 #         return self.__score
 
-#    def __str__(self):                                                       #__str__ return type hamesha string he hoga aur print(obj) karne pai yeh 
+#    def __str__(self):                                                       #__str__ ka return type hamesha string he hoga aur print(obj) karne pai yeh 
 #        return f'name: {self.name} score: {self.__score} life: {self.__life}'#automatically call hoga isko alag se call nahi karna parta hai like a constructor
                                                                               #woh bhi object create hone pai apne aap call hojata hai automatically call hojata hai
                                                                               #alag se call nahi karna parta hai aur __str__ ka used esliye kiya jaata hai
