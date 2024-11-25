@@ -4553,7 +4553,7 @@ x=10
 
 # iterable 2
 #     for j in range(1,5):->for j in 2
-#         print(i,end=""):->print(1,end="")->print(1)
+#         print(i,end=""):->print(1,end="")->print(1)` `
 #     print()
 
 # iterable 3
@@ -7379,14 +7379,14 @@ x=10
 # 224 is not an Armstrong number.
 
 # write a program to check number is armstrong or not 
-# n =int(input("Enter a number :"))
+# n = int(input("Enter a number: "))
 
 # # Initialize variables
 # armstrong_sum = 0
 # temp = n
 # num_digits = len(str(n))
 
-# # Calculate the sum of cubes of digits
+# # Calculate the sum of digits raised to the power of num_digits
 # while temp > 0:
 #     digit = temp % 10
 #     armstrong_sum += digit ** num_digits
@@ -7397,6 +7397,7 @@ x=10
 #     print(f"{n} is an Armstrong number.")
 # else:
 #     print(f"{n} is not an Armstrong number.")
+
 # Output:
 # Enter a number :153
 # 153 is an Armstrong number.
@@ -8975,7 +8976,7 @@ x=10
 # It is start with ___init___.
 # It is implicitly call whenever we create an object.
 # constructor ke through instance variable ko initialize karwa sakte hai class ke.
-# method ko call karna parta hai but constructor ko call karne ki zaroorat nhi parti haiwoh automatically call hota hai.
+# method ko call karna parta hai but constructor ko call karne ki zaroorat nhi parti hai woh automatically call hota hai.
 # jab bhi humlog object create karte hai uss waqt constructor khud ba khud call hojata hai.
 # object ko create karte waqt constructor call hota hai automatically.
 # isme values daalna compulsory hai tabb he object banega nahi toh nahi banega. 
@@ -9080,7 +9081,7 @@ x=10
 
 # There are two types access specifiers are in python are :-
 # 1)Public:by default apna variable public access specifier he rehta hai
-# 2)Private:yeh start hota hai ____(underscore se ) aur yeh used hota hai variable ko secured rakhne ke liye
+# 2)Private:yeh start hota hai ____(double underscore se ) aur yeh used hota hai variable ko secured rakhne ke liye
 # private variable ko set karne ke liye setter ka use karte hai means kuch condition detai hai aur get karne ke liye getter ka use karte hai direct get ya set nahi kar
 # sakte hai private variable ko
 
